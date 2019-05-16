@@ -1,0 +1,6 @@
+use_frameworks!
+target 'HungryTools_Tests' do
+  pod 'HungryTools', :path => '../'
+  
+  
+end
