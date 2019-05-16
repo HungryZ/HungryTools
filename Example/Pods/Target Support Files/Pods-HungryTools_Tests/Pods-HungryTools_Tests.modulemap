@@ -1,0 +1,6 @@
+framework module Pods_HungryTools_Tests {
+  umbrella header "Pods-HungryTools_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

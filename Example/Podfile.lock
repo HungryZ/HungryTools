@@ -1,0 +1,16 @@
+PODS:
+  - HungryTools (0.1.0)
+
+DEPENDENCIES:
+  - HungryTools (from `../`)
+
+EXTERNAL SOURCES:
+  HungryTools:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HungryTools: 35f602c83a2b8be64aaa7bf1ad12673c05317c5c
+
+PODFILE CHECKSUM: ef3a255c127c49735b9ed2a1429e1198bb37fd76
+
+COCOAPODS: 1.6.1
