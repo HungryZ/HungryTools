@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D965CE9C364206A5C61551053322689 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
-		3DE712C2CBB24B7A256A51DE66B863DE /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B3FE29D41AB913DE8CA2646E52D357 /* ReplaceMe.m */; };
-		7D08C06E72FBAF77D849734CB8E358AE /* HungryTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51B8FE684F14CCAB7BA1BA5ABA883A2E /* HungryTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AFB476B440D986E06968D62C760A31D /* HungryTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5346290B02E0902CD126FC60CC9E56F /* HungryTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66126AF9C58228EF414E6FAA0F255193 /* HungryTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B82423E2B2D009BBD9D67B057EB722E1 /* HungryTools-dummy.m */; };
+		736A812CB27D89FB1788A3D32C0188BE /* NSString+Check.h in Headers */ = {isa = PBXBuildFile; fileRef = 966F52BDF7902DDAE99C808792B0A2EE /* NSString+Check.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7D1A0C463076459DDB57BECEEF620441 /* NSString+Check.m in Sources */ = {isa = PBXBuildFile; fileRef = F893045BC4570D2AD207C08FAAD5CB26 /* NSString+Check.m */; };
+		89BF986E236274125C246159B390B549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		A5970FE502FA9CA85C7DDACBF6391BC5 /* Pods-HungryTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 195B422EFC557E925FD8BB6A80F798D6 /* Pods-HungryTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B354E675A50EB0B843421DCD8F172DDE /* HungryTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB7AD3A6EF5933DBA3DBB09954D92A6 /* HungryTools-dummy.m */; };
 		BD9C2897897F5C34217D6E2C599FB0E6 /* Pods-HungryTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7303AE1D7E9A4DFC7FFF0B112ADC697 /* Pods-HungryTools_Tests-dummy.m */; };
 		D830D419840A84F84221EB20A45286B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 /* End PBXBuildFile section */
@@ -21,43 +22,44 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2CC5E4DF66DAA61C751774F3F74FC311;
+			remoteGlobalIDString = 1A5898F8F0BE2EDAA09CDDDEACEF9A4B;
 			remoteInfo = HungryTools;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00270EFBB26E26F58BBA48B9E5A83E88 /* Pods-HungryTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HungryTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		044DB8508ECF8618C0C396A4805944E9 /* HungryTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HungryTools.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		195B422EFC557E925FD8BB6A80F798D6 /* Pods-HungryTools_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HungryTools_Tests-umbrella.h"; sourceTree = "<group>"; };
 		29CE43884B131F99DE7974C500AB55F6 /* HungryTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HungryTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		515A906D47E8FD02D26F5A3DB304617E /* HungryTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HungryTools.xcconfig; sourceTree = "<group>"; };
-		51B8FE684F14CCAB7BA1BA5ABA883A2E /* HungryTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HungryTools-umbrella.h"; sourceTree = "<group>"; };
+		408EA57C88E3F1C49E6ABB854231E175 /* HungryTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HungryTools-Info.plist"; sourceTree = "<group>"; };
+		414CE5170DF2212A2F6EA242349BE116 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4757ACD13AA650D241FAA27A93568D8E /* HungryTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HungryTools-prefix.pch"; sourceTree = "<group>"; };
+		686B58477EBAE9E514F48CD62D816BB4 /* HungryTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HungryTools.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		700426A0574E2268C0E2BC01C0A79157 /* Pods-HungryTools_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HungryTools_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		84584332E31F29600F6B8BAD804C257C /* Pods-HungryTools_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HungryTools_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		97C7DA657111A6C0D9AB39324ACF06B5 /* HungryTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HungryTools-prefix.pch"; sourceTree = "<group>"; };
+		966F52BDF7902DDAE99C808792B0A2EE /* NSString+Check.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Check.h"; path = "HungryTools/Classes/NSString+Check.h"; sourceTree = "<group>"; };
+		981A625749FE69C3D2841F0EC9592FF8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1F3279771A908B7EBCA1D4E2F31E0DC /* Pods-HungryTools_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HungryTools_Tests.modulemap"; sourceTree = "<group>"; };
 		A7303AE1D7E9A4DFC7FFF0B112ADC697 /* Pods-HungryTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HungryTools_Tests-dummy.m"; sourceTree = "<group>"; };
 		AC298527B04690C6B893CDD9FE8C29F9 /* Pods_HungryTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HungryTools_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22B6127BC453A2DC812D214A8B45C20 /* Pods-HungryTools_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HungryTools_Tests-Info.plist"; sourceTree = "<group>"; };
-		B5B3FE29D41AB913DE8CA2646E52D357 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = HungryTools/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		B82423E2B2D009BBD9D67B057EB722E1 /* HungryTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HungryTools-dummy.m"; sourceTree = "<group>"; };
 		CB448CC0440CCAACD27192BF3303B4DF /* Pods-HungryTools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HungryTools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D9BF5A828CBC8E4F1B7C585A6A886877 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CCFCE66AF20952E64FF0DD7803FDC350 /* HungryTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HungryTools.xcconfig; sourceTree = "<group>"; };
+		D3A4AD423D1D203BD4ACA936A1A29C15 /* HungryTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HungryTools.modulemap; sourceTree = "<group>"; };
 		DC6E1C7A1CEC252A89DEE1D903A51161 /* Pods-HungryTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HungryTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E122E571A571B43AD50F96C5FD7ECFDA /* HungryTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HungryTools-Info.plist"; sourceTree = "<group>"; };
-		EFA0616804A66E32B7BA58304B643E65 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		F3E1840310E40A4622566A2AD494F705 /* HungryTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HungryTools.modulemap; sourceTree = "<group>"; };
-		FFB7AD3A6EF5933DBA3DBB09954D92A6 /* HungryTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HungryTools-dummy.m"; sourceTree = "<group>"; };
+		E5346290B02E0902CD126FC60CC9E56F /* HungryTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HungryTools-umbrella.h"; sourceTree = "<group>"; };
+		F893045BC4570D2AD207C08FAAD5CB26 /* NSString+Check.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Check.m"; path = "HungryTools/Classes/NSString+Check.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B58DAFEBDB050F27C97CEFD2FB0FC62F /* Frameworks */ = {
+		626E13ED0017AF026FB4307859B9D982 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D965CE9C364206A5C61551053322689 /* Foundation.framework in Frameworks */,
+				89BF986E236274125C246159B390B549 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,16 +74,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		04C868EFE821E71F882FB6B98FA500B9 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				044DB8508ECF8618C0C396A4805944E9 /* HungryTools.podspec */,
-				D9BF5A828CBC8E4F1B7C585A6A886877 /* LICENSE */,
-				EFA0616804A66E32B7BA58304B643E65 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
 		070187A90AAC2FF2C7E98994405A29DB /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,15 +82,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3E8A3EA946768527CFE62F250BB2FCB3 /* HungryTools */ = {
+		64CF5A05567F634E57D85948094F7D1C /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B5B3FE29D41AB913DE8CA2646E52D357 /* ReplaceMe.m */,
-				04C868EFE821E71F882FB6B98FA500B9 /* Pod */,
-				E94725A4D53F8089C2348DF1E4DCEB7D /* Support Files */,
+				FE6305A9B5E440C353D66C8A6E60635E /* HungryTools */,
 			);
-			name = HungryTools;
-			path = ../..;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		763A204230627E6C443D1F99E6300CF1 /* Pods-HungryTools_Tests */ = {
@@ -126,11 +115,35 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		A6EF5CDEC99F893AE36544C8A3A94AFD /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				686B58477EBAE9E514F48CD62D816BB4 /* HungryTools.podspec */,
+				981A625749FE69C3D2841F0EC9592FF8 /* LICENSE */,
+				414CE5170DF2212A2F6EA242349BE116 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		CB05147EACB5513BECF93CAAA4438A84 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3A4AD423D1D203BD4ACA936A1A29C15 /* HungryTools.modulemap */,
+				CCFCE66AF20952E64FF0DD7803FDC350 /* HungryTools.xcconfig */,
+				B82423E2B2D009BBD9D67B057EB722E1 /* HungryTools-dummy.m */,
+				408EA57C88E3F1C49E6ABB854231E175 /* HungryTools-Info.plist */,
+				4757ACD13AA650D241FAA27A93568D8E /* HungryTools-prefix.pch */,
+				E5346290B02E0902CD126FC60CC9E56F /* HungryTools-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HungryTools";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				DEAB3B03FAAC718039BBE714A6B19D34 /* Development Pods */,
+				64CF5A05567F634E57D85948094F7D1C /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				E2D211ED8BD7F8D23C16AB9C29CD8E66 /* Products */,
 				070187A90AAC2FF2C7E98994405A29DB /* Targets Support Files */,
@@ -145,14 +158,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DEAB3B03FAAC718039BBE714A6B19D34 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3E8A3EA946768527CFE62F250BB2FCB3 /* HungryTools */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		E2D211ED8BD7F8D23C16AB9C29CD8E66 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,18 +167,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E94725A4D53F8089C2348DF1E4DCEB7D /* Support Files */ = {
+		FE6305A9B5E440C353D66C8A6E60635E /* HungryTools */ = {
 			isa = PBXGroup;
 			children = (
-				F3E1840310E40A4622566A2AD494F705 /* HungryTools.modulemap */,
-				515A906D47E8FD02D26F5A3DB304617E /* HungryTools.xcconfig */,
-				FFB7AD3A6EF5933DBA3DBB09954D92A6 /* HungryTools-dummy.m */,
-				E122E571A571B43AD50F96C5FD7ECFDA /* HungryTools-Info.plist */,
-				97C7DA657111A6C0D9AB39324ACF06B5 /* HungryTools-prefix.pch */,
-				51B8FE684F14CCAB7BA1BA5ABA883A2E /* HungryTools-umbrella.h */,
+				966F52BDF7902DDAE99C808792B0A2EE /* NSString+Check.h */,
+				F893045BC4570D2AD207C08FAAD5CB26 /* NSString+Check.m */,
+				A6EF5CDEC99F893AE36544C8A3A94AFD /* Pod */,
+				CB05147EACB5513BECF93CAAA4438A84 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HungryTools";
+			name = HungryTools;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,25 +190,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		981EFA969EEEEADC5EEABC85DAE5A7F8 /* Headers */ = {
+		8044E1CE5E6A29DE3FDC39BACDB05FF4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D08C06E72FBAF77D849734CB8E358AE /* HungryTools-umbrella.h in Headers */,
+				0AFB476B440D986E06968D62C760A31D /* HungryTools-umbrella.h in Headers */,
+				736A812CB27D89FB1788A3D32C0188BE /* NSString+Check.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2CC5E4DF66DAA61C751774F3F74FC311 /* HungryTools */ = {
+		1A5898F8F0BE2EDAA09CDDDEACEF9A4B /* HungryTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AA807105B9B995B6493BB0E51E4F4496 /* Build configuration list for PBXNativeTarget "HungryTools" */;
+			buildConfigurationList = B63208DF12D6211C1E323DC81F41E4D4 /* Build configuration list for PBXNativeTarget "HungryTools" */;
 			buildPhases = (
-				981EFA969EEEEADC5EEABC85DAE5A7F8 /* Headers */,
-				FAA75EFC4366189B44CF47E4260CE1DE /* Sources */,
-				B58DAFEBDB050F27C97CEFD2FB0FC62F /* Frameworks */,
-				AFDEB209E1F1B254641413CF3AD1D8BF /* Resources */,
+				8044E1CE5E6A29DE3FDC39BACDB05FF4 /* Headers */,
+				B147D1A484167D1E335AFB7D3A2E2ACB /* Sources */,
+				626E13ED0017AF026FB4307859B9D982 /* Frameworks */,
+				9F3F762EDF8FE438DE6BCBB8761D9180 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -257,7 +261,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2CC5E4DF66DAA61C751774F3F74FC311 /* HungryTools */,
+				1A5898F8F0BE2EDAA09CDDDEACEF9A4B /* HungryTools */,
 				3FC5491B85DAB3B412207D8154014902 /* Pods-HungryTools_Tests */,
 			);
 		};
@@ -271,7 +275,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AFDEB209E1F1B254641413CF3AD1D8BF /* Resources */ = {
+		9F3F762EDF8FE438DE6BCBB8761D9180 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,12 +293,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FAA75EFC4366189B44CF47E4260CE1DE /* Sources */ = {
+		B147D1A484167D1E335AFB7D3A2E2ACB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B354E675A50EB0B843421DCD8F172DDE /* HungryTools-dummy.m in Sources */,
-				3DE712C2CBB24B7A256A51DE66B863DE /* ReplaceMe.m in Sources */,
+				66126AF9C58228EF414E6FAA0F255193 /* HungryTools-dummy.m in Sources */,
+				7D1A0C463076459DDB57BECEEF620441 /* NSString+Check.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,45 +308,15 @@
 		AB1F3C8659DF744928C2E0D8A17F4947 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = HungryTools;
-			target = 2CC5E4DF66DAA61C751774F3F74FC311 /* HungryTools */;
+			target = 1A5898F8F0BE2EDAA09CDDDEACEF9A4B /* HungryTools */;
 			targetProxy = F21790FFC04844395CDABEB4EE054AF1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		56014E652B535F07F6D37D789B4D2ED9 /* Debug */ = {
+		054786D7AC388D5A57542F67728403DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 515A906D47E8FD02D26F5A3DB304617E /* HungryTools.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HungryTools/HungryTools-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HungryTools/HungryTools-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HungryTools/HungryTools.modulemap";
-				PRODUCT_MODULE_NAME = HungryTools;
-				PRODUCT_NAME = HungryTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		848511332ADAC5B24A884E2D44AAF8FD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 515A906D47E8FD02D26F5A3DB304617E /* HungryTools.xcconfig */;
+			baseConfigurationReference = CCFCE66AF20952E64FF0DD7803FDC350 /* HungryTools.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -370,6 +344,36 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		392E4ED3AB96E107A0447DE4158AC634 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CCFCE66AF20952E64FF0DD7803FDC350 /* HungryTools.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HungryTools/HungryTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HungryTools/HungryTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HungryTools/HungryTools.modulemap";
+				PRODUCT_MODULE_NAME = HungryTools;
+				PRODUCT_NAME = HungryTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		AB4D69770D8ACE3A05E80BB3502666F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -573,11 +577,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AA807105B9B995B6493BB0E51E4F4496 /* Build configuration list for PBXNativeTarget "HungryTools" */ = {
+		B63208DF12D6211C1E323DC81F41E4D4 /* Build configuration list for PBXNativeTarget "HungryTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56014E652B535F07F6D37D789B4D2ED9 /* Debug */,
-				848511332ADAC5B24A884E2D44AAF8FD /* Release */,
+				392E4ED3AB96E107A0447DE4158AC634 /* Debug */,
+				054786D7AC388D5A57542F67728403DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

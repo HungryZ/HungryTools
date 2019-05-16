@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "NSString+Check.h"
 
 FOUNDATION_EXPORT double HungryToolsVersionNumber;
 FOUNDATION_EXPORT const unsigned char HungryToolsVersionString[];
