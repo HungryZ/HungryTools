@@ -30,13 +30,26 @@ Some tools often used, personal.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'HungryTools/Classes/**/*'
+#  s.source_files = 'HungryTools/Classes/**/*'
+#  s.public_header_files = 'HungryTools/Classes/HungryTools.h'
   
   # s.resource_bundles = {
   #   'HungryTools' => ['HungryTools/Assets/*.png']
   # }
 
-#   s.public_header_files = 'HungryTools/Classes/HungryTools.h'
-   s.frameworks = 'UIKit'
-   s.dependency 'Masonry', '~> 1.1.0'
+  s.frameworks = 'UIKit'
+  s.dependency 'Masonry', '~> 1.1.0'
+
+  #二级目录
+  s.subspec 'Macro' do |ss|
+    ss.source_files = 'HungryTools/Classes/Macro/**/*'
+  end
+  s.subspec 'Category' do |ss|
+    ss.source_files = 'HungryTools/Classes/Category/**/*'
+  end
+  s.subspec 'ZHCTextField' do |ss|
+    ss.source_files = 'HungryTools/Classes/ZHCTextField/**/*'
+    ss.dependency 'HungryTools/Category'
+    ss.dependency 'HungryTools/Macro'
+  end
 end

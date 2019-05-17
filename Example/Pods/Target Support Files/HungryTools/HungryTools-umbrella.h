@@ -10,7 +10,14 @@
 #endif
 #endif
 
-#import "HungryTools.h"
+#import "NSString+Attributed.h"
+#import "NSString+Check.h"
+#import "NSString+md5.h"
+#import "UIButton+Initializer.h"
+#import "UIImage+Chameleon.h"
+#import "UILabel+Initializer.h"
+#import "UtilsMacro.h"
+#import "ZHCTextField.h"
 
 FOUNDATION_EXPORT double HungryToolsVersionNumber;
 FOUNDATION_EXPORT const unsigned char HungryToolsVersionString[];

@@ -18,12 +18,32 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "HungryTools/Classes/**/*",
-  "public_header_files": "HungryTools/Classes/HungryTools.h",
   "frameworks": "UIKit",
   "dependencies": {
     "Masonry": [
       "~> 1.1.0"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "Macro",
+      "source_files": "HungryTools/Classes/Macro/*"
+    },
+    {
+      "name": "Category",
+      "source_files": "HungryTools/Classes/Category/*"
+    },
+    {
+      "name": "ZHCTextField",
+      "source_files": "HungryTools/Classes/ZHCTextField/*",
+      "dependencies": {
+        "HungryTools/Category": [
+
+        ],
+        "HungryTools/Macro": [
+
+        ]
+      }
+    }
+  ]
 }
