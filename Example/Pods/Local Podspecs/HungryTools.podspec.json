@@ -1,6 +1,6 @@
 {
   "name": "HungryTools",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "Some tools often used.",
   "description": "Some tools often used, personal.",
   "homepage": "https://github.com/HungryZ/HungryTools",
@@ -13,10 +13,17 @@
   },
   "source": {
     "git": "https://github.com/HungryZ/HungryTools.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "HungryTools/Classes/**/*"
+  "source_files": "HungryTools/Classes/**/*",
+  "public_header_files": "HungryTools/Classes/HungryTools.h",
+  "frameworks": "UIKit",
+  "dependencies": {
+    "Masonry": [
+      "~> 1.1.0"
+    ]
+  }
 }

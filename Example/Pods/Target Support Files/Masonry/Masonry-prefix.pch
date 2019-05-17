@@ -10,8 +10,3 @@
 #endif
 #endif
 
-#import "HungryTools.h"
-
-FOUNDATION_EXPORT double HungryToolsVersionNumber;
-FOUNDATION_EXPORT const unsigned char HungryToolsVersionString[];
-

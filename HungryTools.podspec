@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HungryTools'
-  s.version          = '0.2.0'
+  s.version          = '1.0.0'
   s.summary          = 'Some tools often used.'
 
 # This description is used to generate tags and improve search results.
@@ -36,7 +36,7 @@ Some tools often used, personal.
   #   'HungryTools' => ['HungryTools/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+#   s.public_header_files = 'HungryTools/Classes/HungryTools.h'
+   s.frameworks = 'UIKit'
+   s.dependency 'Masonry', '~> 1.1.0'
 end

@@ -1,16 +1,24 @@
 PODS:
-  - HungryTools (0.1.0)
+  - HungryTools (1.0.0):
+    - Masonry (~> 1.1.0)
+  - Masonry (1.1.0)
 
 DEPENDENCIES:
   - HungryTools (from `../`)
+  - Masonry (~> 1.1.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Masonry
 
 EXTERNAL SOURCES:
   HungryTools:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HungryTools: 79308a9e3e866afc66c9f803965fbe7060caf667
+  HungryTools: 3d169d3685db51b565bb8d87e0573483aab7bdfa
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: ef3a255c127c49735b9ed2a1429e1198bb37fd76
+PODFILE CHECKSUM: 9b7e2b3533b0f69c275585b94193720bd4c84f71
 
 COCOAPODS: 1.6.1
