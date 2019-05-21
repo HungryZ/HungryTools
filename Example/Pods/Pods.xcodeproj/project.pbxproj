@@ -38,11 +38,11 @@
 		960C1E0BFC82E5F0E4B16FC7A31DDC39 /* Pods-HungryTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A7303AE1D7E9A4DFC7FFF0B112ADC697 /* Pods-HungryTools_Tests-dummy.m */; };
 		9629277B960C3E9154EB571C3BE613CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */; };
 		96BB275F80288BC1CA3AA950CCBD98F4 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 266270F46FD6D8E798173DEC66BEECE4 /* Masonry-dummy.m */; };
-		9704CF623B23BA9ACE296F70DA3E1F68 /* NSString+md5.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F6C83EB2B91E3EDCAE9EAE8FA18E07 /* NSString+md5.m */; };
+		9704CF623B23BA9ACE296F70DA3E1F68 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F6C83EB2B91E3EDCAE9EAE8FA18E07 /* NSString+MD5.m */; };
 		A35F08007FA4AB3655DFE3C304C975A5 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DFD4286E9402BFCF1A5042CBA515863 /* MASLayoutConstraint.m */; };
 		AD0EAD11FF0D839C4D21BA19F1B7D8F2 /* UIButton+Initializer.m in Sources */ = {isa = PBXBuildFile; fileRef = F771C6A5D0A5E40BB1E91DA49F71115D /* UIButton+Initializer.m */; };
 		B3FC26A33E6304456FDFD1BC19BBDBCA /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A7EABDD1A158A7C17608EAD787A8CD9 /* Masonry.framework */; };
-		B5235C8DFCDF96018ACBB1C6C229D48F /* NSString+md5.h in Headers */ = {isa = PBXBuildFile; fileRef = F0CC8C9A0805A7061AA1678A5C57EFF2 /* NSString+md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5235C8DFCDF96018ACBB1C6C229D48F /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = F0CC8C9A0805A7061AA1678A5C57EFF2 /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C57CEB712CA7D6D5F64D5BFA5EC5FB07 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = B2E90708D5E58877A06F2A402BF8FC16 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C6B6913ACC9D9DDC14021D8B05C25231 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A0EE7F78B3BD7C286ECD8E89FBD08EA3 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D38309E7099A74ADFCF763F3A9A511EE /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 89286B607043EF52DC1580A838A8D2F4 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -125,7 +125,7 @@
 		89286B607043EF52DC1580A838A8D2F4 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		8D6722CD2888FCCA295F26A6E263F932 /* UILabel+Initializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Initializer.h"; path = "HungryTools/Classes/Category/UILabel+Initializer.h"; sourceTree = "<group>"; };
 		8EF30F780E2BD14DF24481BDC5498546 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
-		94F6C83EB2B91E3EDCAE9EAE8FA18E07 /* NSString+md5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+md5.m"; path = "HungryTools/Classes/Category/NSString+md5.m"; sourceTree = "<group>"; };
+		94F6C83EB2B91E3EDCAE9EAE8FA18E07 /* NSString+MD5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "HungryTools/Classes/Category/NSString+MD5.m"; sourceTree = "<group>"; };
 		998D6634C115D4C55CB45C074E927E83 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DFD4286E9402BFCF1A5042CBA515863 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 		D98729D388525C1741E1AF5083C0B910 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		DC6E1C7A1CEC252A89DEE1D903A51161 /* Pods-HungryTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HungryTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EC6F744A3DA1C0EE12D10CB82411B05E /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		F0CC8C9A0805A7061AA1678A5C57EFF2 /* NSString+md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+md5.h"; path = "HungryTools/Classes/Category/NSString+md5.h"; sourceTree = "<group>"; };
+		F0CC8C9A0805A7061AA1678A5C57EFF2 /* NSString+MD5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "HungryTools/Classes/Category/NSString+MD5.h"; sourceTree = "<group>"; };
 		F25A48F8CF9DDA81E1A3C0263FBFA35F /* HungryTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HungryTools-Info.plist"; sourceTree = "<group>"; };
 		F4C7DE6E4FB2607791F1E38E82B0550F /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		F6FFE47506B20F92B135A335E50B6E9F /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
@@ -344,8 +344,8 @@
 				7F691E323F608337D2E96B073D54748F /* NSString+Attributed.m */,
 				B55748BA448BFA80E08AF0585008E2C7 /* NSString+Check.h */,
 				1DD9C6726450870B0C9B3D2FEDC297F7 /* NSString+Check.m */,
-				F0CC8C9A0805A7061AA1678A5C57EFF2 /* NSString+md5.h */,
-				94F6C83EB2B91E3EDCAE9EAE8FA18E07 /* NSString+md5.m */,
+				F0CC8C9A0805A7061AA1678A5C57EFF2 /* NSString+MD5.h */,
+				94F6C83EB2B91E3EDCAE9EAE8FA18E07 /* NSString+MD5.m */,
 				32059DD719083C8E7B59161FD502FFFB /* UIButton+Initializer.h */,
 				F771C6A5D0A5E40BB1E91DA49F71115D /* UIButton+Initializer.m */,
 				B3800B5E7A9BE078A2F16A4D1C064DDA /* UIImage+Chameleon.h */,
@@ -432,7 +432,7 @@
 				D6E43DC22F587674B44A454F1492BE22 /* HungryTools-umbrella.h in Headers */,
 				2215B69AD52653D8163B88BCDDCB843C /* NSString+Attributed.h in Headers */,
 				FD64E2050AC27B244C587011B675A035 /* NSString+Check.h in Headers */,
-				B5235C8DFCDF96018ACBB1C6C229D48F /* NSString+md5.h in Headers */,
+				B5235C8DFCDF96018ACBB1C6C229D48F /* NSString+MD5.h in Headers */,
 				7C54DFDCA5D158886B6BEF856711642C /* UIButton+Initializer.h in Headers */,
 				FEEEBC257CA9455CF8C67EF1027775D7 /* UIImage+Chameleon.h in Headers */,
 				D939FD61A1E7B89C4267E2D46E73829A /* UILabel+Initializer.h in Headers */,
@@ -562,7 +562,7 @@
 				5E0CEEAFDA16F7484B733CE3F3CFE937 /* HungryTools-dummy.m in Sources */,
 				31C0E0CC5D8F1F6EBA190EB7E78CA2A1 /* NSString+Attributed.m in Sources */,
 				ECA3B49673FB0797438400282EE5DCC4 /* NSString+Check.m in Sources */,
-				9704CF623B23BA9ACE296F70DA3E1F68 /* NSString+md5.m in Sources */,
+				9704CF623B23BA9ACE296F70DA3E1F68 /* NSString+MD5.m in Sources */,
 				AD0EAD11FF0D839C4D21BA19F1B7D8F2 /* UIButton+Initializer.m in Sources */,
 				33D71F01BA576CA718B85485F0468251 /* UIImage+Chameleon.m in Sources */,
 				E6C9777993AF16E7ACD38B0DEE9A5085 /* UILabel+Initializer.m in Sources */,

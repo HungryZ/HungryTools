@@ -12,6 +12,9 @@
 
 #import "ZHCTextField.h"
 #import "NSString+Check.h"
+#import "Masonry.h"
+#import "UILabel+Initializer.h"
+#import "UIButton+Initializer.h"
 
 @interface ZHCTextField() <UITextFieldDelegate>
 

@@ -9,11 +9,11 @@
 #import "NSString+md5.h"
 #import <CommonCrypto/CommonDigest.h>
 
-@implementation NSString (md5)
+@implementation NSString (MD5)
 
 #pragma mark - 计算当前字符串的 MD5值
 
-- (NSString *) MD5 {
+- (NSString *)MD5 {
     // Create pointer to the string as UTF8
     const char* ptr = [self UTF8String];
     unsigned char md5Buffer[CC_MD5_DIGEST_LENGTH];
@@ -46,7 +46,7 @@
 }
 
 //哈希256
-- (NSString*) sha256
+- (NSString*)sha256
 {
     //    const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
     //    NSData *data = [NSData dataWithBytes:cstr length:self.length];

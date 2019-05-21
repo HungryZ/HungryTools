@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
                          target:(nullable id)target
                          action:(nullable SEL)action;
 
-//+ (instancetype)buttonWithThemeTitle:(NSString *)title target:(nullable id)target action:(nullable SEL)action;
++ (instancetype)buttonWithThemeTitle:(NSString *)title target:(nullable id)target action:(nullable SEL)action;
 
 + (instancetype)buttonWithTitle:(NSString *)title
                      titleColor:(UIColor *)titleColor
