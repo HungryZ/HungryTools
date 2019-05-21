@@ -6,7 +6,7 @@
 //  Copyright © 2017年 . All rights reserved.
 //
 
-#import "NSString+md5.h"
+#import "NSString+MD5.h"
 #import <CommonCrypto/CommonDigest.h>
 
 @implementation NSString (MD5)
@@ -46,7 +46,7 @@
 }
 
 //哈希256
-- (NSString*)sha256
+- (NSString *)sha256
 {
     //    const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
     //    NSData *data = [NSData dataWithBytes:cstr length:self.length];

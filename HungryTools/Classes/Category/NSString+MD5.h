@@ -16,6 +16,6 @@
 
 - (NSString *)MD5Hash;
 /**  哈希256 */
-- (NSString*)sha256;
+- (NSString *)sha256;
 
 @end
