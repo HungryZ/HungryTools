@@ -145,7 +145,7 @@
 		C9180485F2BCFF4A94B7CB86FC2291B3 /* UtilsMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UtilsMacro.h; path = HungryTools/Classes/Macro/UtilsMacro.h; sourceTree = "<group>"; };
 		CB448CC0440CCAACD27192BF3303B4DF /* Pods-HungryTools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HungryTools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		CB63C57847224F85E9FB63CCE53117E2 /* ZHCTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHCTextField.m; path = HungryTools/Classes/ZHCTextField/ZHCTextField.m; sourceTree = "<group>"; };
-		CC8EC624F522DCD7AB4EABE827F37738 /* HungryTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HungryTools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CC8EC624F522DCD7AB4EABE827F37738 /* HungryTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HungryTools.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		CE1F404471E734FD2E91B9AA72EE50D7 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
 		D7D0CE3A7C5113A488CBE068DD943759 /* UILabel+Initializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Initializer.m"; path = "HungryTools/Classes/Category/UILabel+Initializer.m"; sourceTree = "<group>"; };
 		D98729D388525C1741E1AF5083C0B910 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
@@ -286,9 +286,9 @@
 		7A1D66082A3DE0371AACF0AA1BD33047 /* HungryTools */ = {
 			isa = PBXGroup;
 			children = (
-				A66748AFF9B646F5652BD3A4D1CF4DCF /* Macro */,
-				B24543B346EF9D26C131D7CA59ADCDC6 /* Category */,
 				6444F2E266F7D35415D0AC05217F8DA1 /* ZHCTextField */,
+				B24543B346EF9D26C131D7CA59ADCDC6 /* Category */,
+				A66748AFF9B646F5652BD3A4D1CF4DCF /* Macro */,
 				3AD1848742F89D87A11EA9981E09A4ED /* Pod */,
 				F693754BF3493C58726310F7BA145EC5 /* Support Files */,
 			);

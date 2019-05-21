@@ -3,13 +3,15 @@
 //  FCHCL
 //
 //  Created by 张海川 on 2019/4/25.
+//  Copyright © 2019 封建. All rights reserved.
 //
 
+#ifndef ThemeColor
+#define ThemeColor [UIColor colorWithRed:255/255.f green:80/255.f blue:74/255.f alpha:1]
+#endif
+
 #import "ZHCTextField.h"
-#import "Masonry.h"
-#import "UtilsMacro.h"
-#import "UILabel+Initializer.h"
-#import "UIButton+Initializer.h"
+#import "NSString+Check.h"
 
 @interface ZHCTextField() <UITextFieldDelegate>
 
@@ -24,9 +26,9 @@
     self = [super init];
     if (self) {
         self.clearButtonMode = UITextFieldViewModeWhileEditing;
-        self.delegate = self;
-        _bottomLineColor = [UIColor orangeColor];
         [self addBottomLine];
+        self.delegate = self;
+        self.font = [UIFont systemFontOfSize:14];
     }
     return self;
 }
@@ -48,24 +50,47 @@
         return YES;
     }
     
+    NSInteger comingTextLength = textField.text.length + string.length - range.length;
+    
+    if (_maxLength) {
+        if (comingTextLength > _maxLength) {
+            return NO;
+        }
+    }
+    
     switch (_fieldType) {
         case ZHCFieldTypeDefault: {
             return YES;
             break;
         }
+        case ZHCFieldTypeNumber: {
+            return [string checkWithRegexString:@"[0-9]+"];
+            break;
+        }
         case ZHCFieldTypePhoneNumber: {
-            if (textField.text.length >= 11) {
+            if (comingTextLength > 11) {
                 return NO;
             }
-            return [@"0123456789" containsString:string];
+            return [string checkWithRegexString:@"[0-9]+"];
             break;
         }
         case ZHCFieldTypePassword: {
-            return [[NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"[A-Za-z0-9_]"] evaluateWithObject:string];
+            return [string checkWithRegexString:@"[A-Za-z0-9_]"];
             break;
         }
         case ZHCFieldTypeMoney: {
-            return [@"0123456789." containsString:string];
+            return [string checkWithRegexString:@"[0-9.]+"];
+            break;
+        }
+        case ZHCFieldTypeIDNumber: {
+            if (comingTextLength > 18) {
+                return NO;
+            }
+            return [string checkWithRegexString:@"[0-9Xx]+"];
+            break;
+        }
+        case ZHCFieldTypeChinese: {
+            return [string checkWithRegexString:@"[\\u4e00-\\u9fa5]+"];
             break;
         }
     }
@@ -73,7 +98,7 @@
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
-    self.bottomLineView.backgroundColor = _bottomLineColor;
+    self.bottomLineView.backgroundColor = ThemeColor;
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
@@ -93,7 +118,9 @@
     
     [self addSubview:self.bottomLineView];
     [self.bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.bottom.right.mas_equalTo(0);
+        make.left.mas_equalTo(10);
+        make.bottom.mas_equalTo(0);
+        make.right.mas_equalTo(-10);
         make.height.mas_equalTo(0.5);
     }];
 }
@@ -106,26 +133,54 @@
     
     _fieldType = fieldType;
     
-    if (_fieldType == ZHCFieldTypePassword) {
-        self.secureTextEntry = YES;
-        self.rightView = self.secureButton;
-        self.rightViewMode = UITextFieldViewModeAlways;
+    switch (_fieldType) {
+        case ZHCFieldTypeDefault: {
+            
+            break;
+        }
+        case ZHCFieldTypeNumber: {
+            self.keyboardType = UIKeyboardTypeNumberPad;
+            break;
+        }
+        case ZHCFieldTypePhoneNumber: {
+            self.keyboardType = UIKeyboardTypePhonePad;
+            break;
+        }
+        case ZHCFieldTypePassword:{
+            self.secureTextEntry = YES;
+            self.rightView = self.secureButton;
+            self.rightViewMode = UITextFieldViewModeAlways;
+            self.keyboardType = UIKeyboardTypeAlphabet;
+            break;
+        }
+        case ZHCFieldTypeMoney: {
+            self.keyboardType = UIKeyboardTypeDecimalPad;
+            break;
+        }
+        case ZHCFieldTypeIDNumber: {
+            
+            break;
+        }
+        case ZHCFieldTypeChinese: {
+            
+            break;
+        }
     }
 }
 
 - (void)setLeftText:(NSString *)leftText {
     
     UIView * leftView = [UIView new];
-    UILabel * subView = [UILabel labelWithFontSize:14.f text:leftText];
-    [leftView addSubview:subView];
-    [subView mas_makeConstraints:^(MASConstraintMaker *make) {
+    UILabel * textLabel = [UILabel labelWithFontSize:14.f text:leftText];
+    [leftView addSubview:textLabel];
+    [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(0);
         make.left.mas_equalTo(10);
         make.right.mas_equalTo(-10);
     }];
     // 给leftView一个宽度
     [leftView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(subView).offset(20);
+        make.width.mas_equalTo(textLabel).offset(20);
     }];
     
     self.leftView = leftView;
@@ -162,7 +217,7 @@
 - (UIView *)bottomLineView {
     if (!_bottomLineView) {
         _bottomLineView = [UIView new];
-        _bottomLineView.backgroundColor = [UIColor lightGrayColor];
+        _bottomLineView.backgroundColor = [UIColor colorWithRed:216/255.f green:216/255.f blue:216/255.f alpha:1];
     }
     return _bottomLineView;
 }

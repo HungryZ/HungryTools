@@ -1,6 +1,6 @@
 {
   "name": "HungryTools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "Some tools often used.",
   "description": "Some tools often used, personal.",
   "homepage": "https://github.com/HungryZ/HungryTools",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/HungryZ/HungryTools.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"
@@ -27,15 +27,15 @@
   "subspecs": [
     {
       "name": "Macro",
-      "source_files": "HungryTools/Classes/Macro/*"
+      "source_files": "HungryTools/Classes/Macro/**/*"
     },
     {
       "name": "Category",
-      "source_files": "HungryTools/Classes/Category/*"
+      "source_files": "HungryTools/Classes/Category/**/*"
     },
     {
       "name": "ZHCTextField",
-      "source_files": "HungryTools/Classes/ZHCTextField/*",
+      "source_files": "HungryTools/Classes/ZHCTextField/**/*",
       "dependencies": {
         "HungryTools/Category": [
 

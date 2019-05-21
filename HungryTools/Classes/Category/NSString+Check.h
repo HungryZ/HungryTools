@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (Check)
 
+- (BOOL)checkWithRegexString:(NSString *)regexString;
+
 - (BOOL)isPhoneNumber;
 
 - (BOOL)isEmail;
