@@ -14,10 +14,12 @@ typedef enum : NSUInteger {
     ZHCFieldTypeDefault,
     ZHCFieldTypeNumber,
     ZHCFieldTypePhoneNumber,
+    ZHCFieldTypePhoneNumberWithoutSpacing,
     ZHCFieldTypePassword,
     ZHCFieldTypeMoney,
-    ZHCFieldTypeIDNumber,
+    ZHCFieldTypeIDCardNumber,
     ZHCFieldTypeChinese,
+    ZHCFieldTypeBankCardNumber,
 } ZHCFieldType;
 
 @interface ZHCTextField : UITextField
@@ -28,7 +30,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) int           maxLength;
 
 @property (nonatomic, copy) NSString *      leftText;
-@property (nonatomic, copy) NSString *      leftImageString;
+@property (nonatomic, copy) NSString *      leftImageName;
 
 @property (nonatomic, assign) BOOL          isShowBottomLine;
 

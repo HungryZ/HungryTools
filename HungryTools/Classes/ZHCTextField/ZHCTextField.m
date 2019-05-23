@@ -71,9 +71,13 @@
             break;
         }
         case ZHCFieldTypePhoneNumber: {
-            if (comingTextLength > 11) {
-                return NO;
+            if (self.text.length == 3 || self.text.length == 8) {
+                self.text = [self.text stringByAppendingString:@" "];
             }
+            return [string checkWithRegexString:@"[0-9]+"];
+            break;
+        }
+        case ZHCFieldTypePhoneNumberWithoutSpacing: {
             return [string checkWithRegexString:@"[0-9]+"];
             break;
         }
@@ -85,15 +89,16 @@
             return [string checkWithRegexString:@"[0-9.]+"];
             break;
         }
-        case ZHCFieldTypeIDNumber: {
-            if (comingTextLength > 18) {
-                return NO;
-            }
+        case ZHCFieldTypeIDCardNumber: {
             return [string checkWithRegexString:@"[0-9Xx]+"];
             break;
         }
         case ZHCFieldTypeChinese: {
             return [string checkWithRegexString:@"[\\u4e00-\\u9fa5]+"];
+            break;
+        }
+        case ZHCFieldTypeBankCardNumber: {
+            return [string checkWithRegexString:@"[0-9]+"];
             break;
         }
     }
@@ -121,10 +126,15 @@
     
     [self addSubview:self.bottomLineView];
     [self.bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(10);
-        make.bottom.mas_equalTo(0);
-        make.right.mas_equalTo(-10);
+        make.left.bottom.right.mas_equalTo(0);
         make.height.mas_equalTo(0.5);
+    }];
+}
+
+- (void)updateBottomLineConstraints {
+    [self.bottomLineView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
     }];
 }
 
@@ -147,6 +157,12 @@
         }
         case ZHCFieldTypePhoneNumber: {
             self.keyboardType = UIKeyboardTypePhonePad;
+            self.maxLength = 13;
+            break;
+        }
+        case ZHCFieldTypePhoneNumberWithoutSpacing: {
+            self.keyboardType = UIKeyboardTypePhonePad;
+            self.maxLength = 11;
             break;
         }
         case ZHCFieldTypePassword:{
@@ -154,18 +170,24 @@
             self.rightView = self.secureButton;
             self.rightViewMode = UITextFieldViewModeAlways;
             self.keyboardType = UIKeyboardTypeAlphabet;
+            self.maxLength = 18;
             break;
         }
         case ZHCFieldTypeMoney: {
             self.keyboardType = UIKeyboardTypeDecimalPad;
+            self.maxLength = 8;
             break;
         }
-        case ZHCFieldTypeIDNumber: {
-            
+        case ZHCFieldTypeIDCardNumber: {
+            self.maxLength = 18;
             break;
         }
         case ZHCFieldTypeChinese: {
             
+            break;
+        }
+        case ZHCFieldTypeBankCardNumber: {
+            self.maxLength = 19;
             break;
         }
     }
@@ -188,9 +210,11 @@
     
     self.leftView = leftView;
     self.leftViewMode = UITextFieldViewModeAlways;
+    
+    [self updateBottomLineConstraints];
 }
 
-- (void)setLeftImageString:(NSString *)leftImageString {
+- (void)setLeftImageName:(NSString *)leftImageString {
     
     UIView * leftView = [UIView new];
     UIImageView * subView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:leftImageString]];
@@ -207,6 +231,8 @@
     
     self.leftView = leftView;
     self.leftViewMode = UITextFieldViewModeAlways;
+    
+    [self updateBottomLineConstraints];
 }
 
 - (void)setIsShowBottomLine:(BOOL)isShowBottomLine {
