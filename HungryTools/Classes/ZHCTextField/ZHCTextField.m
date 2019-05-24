@@ -265,8 +265,8 @@
 
 - (UIButton *)secureButton {
     if (!_secureButton) {
-        _secureButton = [UIButton buttonWithImageName:@"eye_close" target:self action:@selector(secureBtnClicked)];
-        [_secureButton setImage:[UIImage imageNamed:@"eye_open"] forState:UIControlStateSelected];
+        _secureButton = [UIButton buttonWithImageName:@"Resource.bundle/eye_close" target:self action:@selector(secureBtnClicked)];
+        [_secureButton setImage:[UIImage imageNamed:@"Resource.bundle/eye_open"] forState:UIControlStateSelected];
         _secureButton.frame = CGRectMake(0, 0, 23, 20);
         _secureButton.selected = YES;
     }
