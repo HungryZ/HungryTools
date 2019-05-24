@@ -19,6 +19,8 @@
 		31C0E0CC5D8F1F6EBA190EB7E78CA2A1 /* NSString+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F691E323F608337D2E96B073D54748F /* NSString+Attributed.m */; };
 		33D71F01BA576CA718B85485F0468251 /* UIImage+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C3E108921D13B76A8E0EB2E11C436 /* UIImage+Chameleon.m */; };
 		33E792A222979E21008DAD40 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = 33E792A122979E21008DAD40 /* Resource */; };
+		33E792A92297CF6D008DAD40 /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 33E792A72297CF6D008DAD40 /* UIImage+Color.h */; };
+		33E792AA2297CF6D008DAD40 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E792A82297CF6D008DAD40 /* UIImage+Color.m */; };
 		463C14ABBC86C1C77CAA9AABFB97C120 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */; };
 		519FE823B439EFB3CC101DBCD5F6DF83 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FFE47506B20F92B135A335E50B6E9F /* MASViewConstraint.m */; };
 		51D6B0C418D035AA70733CFC802A72C8 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B4B23715DFE401486641D6284C1C47 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -109,6 +111,8 @@
 		31BA2CDBF46DCD8CA514150C57E64824 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		32059DD719083C8E7B59161FD502FFFB /* UIButton+Initializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Initializer.h"; path = "HungryTools/Classes/Category/UIButton+Initializer.h"; sourceTree = "<group>"; };
 		33E792A122979E21008DAD40 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resource; path = HungryTools/Assets/Resource; sourceTree = "<group>"; };
+		33E792A72297CF6D008DAD40 /* UIImage+Color.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Color.h"; path = "HungryTools/Classes/Category/UIImage+Color.h"; sourceTree = "<group>"; };
+		33E792A82297CF6D008DAD40 /* UIImage+Color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Color.m"; path = "HungryTools/Classes/Category/UIImage+Color.m"; sourceTree = "<group>"; };
 		3BFD67B873B4698815067F9F9347FBAF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3F1C3E108921D13B76A8E0EB2E11C436 /* UIImage+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Chameleon.m"; path = "HungryTools/Classes/Category/UIImage+Chameleon.m"; sourceTree = "<group>"; };
 		43BA56A061873718EC06171526FE1A00 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
@@ -343,6 +347,8 @@
 		B24543B346EF9D26C131D7CA59ADCDC6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				33E792A72297CF6D008DAD40 /* UIImage+Color.h */,
+				33E792A82297CF6D008DAD40 /* UIImage+Color.m */,
 				214E74D8B1C7D46A4AC08B0C5DDF3C12 /* NSString+Attributed.h */,
 				7F691E323F608337D2E96B073D54748F /* NSString+Attributed.m */,
 				B55748BA448BFA80E08AF0585008E2C7 /* NSString+Check.h */,
@@ -434,6 +440,7 @@
 			files = (
 				D6E43DC22F587674B44A454F1492BE22 /* HungryTools-umbrella.h in Headers */,
 				2215B69AD52653D8163B88BCDDCB843C /* NSString+Attributed.h in Headers */,
+				33E792A92297CF6D008DAD40 /* UIImage+Color.h in Headers */,
 				FD64E2050AC27B244C587011B675A035 /* NSString+Check.h in Headers */,
 				B5235C8DFCDF96018ACBB1C6C229D48F /* NSString+MD5.h in Headers */,
 				7C54DFDCA5D158886B6BEF856711642C /* UIButton+Initializer.h in Headers */,
@@ -569,6 +576,7 @@
 				9704CF623B23BA9ACE296F70DA3E1F68 /* NSString+MD5.m in Sources */,
 				AD0EAD11FF0D839C4D21BA19F1B7D8F2 /* UIButton+Initializer.m in Sources */,
 				33D71F01BA576CA718B85485F0468251 /* UIImage+Chameleon.m in Sources */,
+				33E792AA2297CF6D008DAD40 /* UIImage+Color.m in Sources */,
 				E6C9777993AF16E7ACD38B0DEE9A5085 /* UILabel+Initializer.m in Sources */,
 				5550B28280CBDD9036DDB4C07944E4D2 /* ZHCTextField.m in Sources */,
 			);
