@@ -94,7 +94,7 @@
             break;
         }
         case ZHCFieldTypeChinese: {
-            return [string checkWithRegexString:@"[\\u4e00-\\u9fa5]+"];
+            return [string checkWithRegexString:@"[a-z\\u4e00-\\u9fa5]+"];
             break;
         }
         case ZHCFieldTypeBankCardNumber: {
@@ -239,6 +239,18 @@
     
     _isShowBottomLine = isShowBottomLine;
     self.bottomLineView.hidden = !_isShowBottomLine;
+}
+
+- (void)setSecureButtonImages:(NSArray *)secureButtonImages {
+    if (secureButtonImages.count != 2) {
+        return;
+    }
+    if ([secureButtonImages[0] isKindOfClass:[UIImage class]]) {
+        [_secureButton setImage:secureButtonImages[0] forState:UIControlStateSelected];
+    }
+    if ([secureButtonImages[1] isKindOfClass:[UIImage class]]) {
+        [_secureButton setImage:secureButtonImages[1] forState:UIControlStateNormal];
+    }
 }
 
 #pragma mark - Getter

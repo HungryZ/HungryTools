@@ -18,6 +18,7 @@
 		317F7647A96A3CAC9E566E1680896556 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B2014C24ADA03537F3B21DB6735E4 /* ViewController+MASAdditions.m */; };
 		31C0E0CC5D8F1F6EBA190EB7E78CA2A1 /* NSString+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F691E323F608337D2E96B073D54748F /* NSString+Attributed.m */; };
 		33D71F01BA576CA718B85485F0468251 /* UIImage+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1C3E108921D13B76A8E0EB2E11C436 /* UIImage+Chameleon.m */; };
+		33E792A222979E21008DAD40 /* Resource in Resources */ = {isa = PBXBuildFile; fileRef = 33E792A122979E21008DAD40 /* Resource */; };
 		463C14ABBC86C1C77CAA9AABFB97C120 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */; };
 		519FE823B439EFB3CC101DBCD5F6DF83 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FFE47506B20F92B135A335E50B6E9F /* MASViewConstraint.m */; };
 		51D6B0C418D035AA70733CFC802A72C8 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 02B4B23715DFE401486641D6284C1C47 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -107,6 +108,7 @@
 		3015FEEEE50C4FE51F845C11D4154A84 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		31BA2CDBF46DCD8CA514150C57E64824 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		32059DD719083C8E7B59161FD502FFFB /* UIButton+Initializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Initializer.h"; path = "HungryTools/Classes/Category/UIButton+Initializer.h"; sourceTree = "<group>"; };
+		33E792A122979E21008DAD40 /* Resource */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Resource; path = HungryTools/Assets/Resource; sourceTree = "<group>"; };
 		3BFD67B873B4698815067F9F9347FBAF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3F1C3E108921D13B76A8E0EB2E11C436 /* UIImage+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Chameleon.m"; path = "HungryTools/Classes/Category/UIImage+Chameleon.m"; sourceTree = "<group>"; };
 		43BA56A061873718EC06171526FE1A00 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
@@ -286,6 +288,7 @@
 		7A1D66082A3DE0371AACF0AA1BD33047 /* HungryTools */ = {
 			isa = PBXGroup;
 			children = (
+				33E792A122979E21008DAD40 /* Resource */,
 				6444F2E266F7D35415D0AC05217F8DA1 /* ZHCTextField */,
 				B24543B346EF9D26C131D7CA59ADCDC6 /* Category */,
 				A66748AFF9B646F5652BD3A4D1CF4DCF /* Macro */,
@@ -549,6 +552,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33E792A222979E21008DAD40 /* Resource in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

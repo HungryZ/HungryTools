@@ -31,6 +31,8 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, copy) NSString *      leftText;
 @property (nonatomic, copy) NSString *      leftImageName;
+/// 密码明暗文切换图片数组，需传入两个UIImage，第一个代表明文，第二个暗文。
+@property (nonatomic, strong) NSArray *     secureButtonImages;
 
 @property (nonatomic, assign) BOOL          isShowBottomLine;
 

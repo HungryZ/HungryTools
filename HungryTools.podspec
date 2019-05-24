@@ -51,5 +51,8 @@ Some tools often used, personal.
     ss.source_files = 'HungryTools/Classes/ZHCTextField/**/*'
     ss.dependency 'HungryTools/Category'
     ss.dependency 'HungryTools/Macro'
+    ss.resource_bundles = {
+      'Resource' => ['HungryTools/Assets/Resource/*.png']
+    }
   end
 end
