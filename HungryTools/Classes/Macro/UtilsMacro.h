@@ -45,5 +45,9 @@
 
 #define Font(x)                             [UIFont systemFontOfSize:(x)]
 
+#define ImageView(name)                     [[UIImageView alloc] initWithImage:[UIImage imageNamed:name]]
+
+#define TableGrouped                        [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped]
+
 
 #endif /* UtilsMacro_h */
