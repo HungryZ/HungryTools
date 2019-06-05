@@ -6,8 +6,13 @@
 //  Copyright © 2019 张海川. All rights reserved.
 //
 
+#ifndef SeparatorLineColor
+#define SeparatorLineColor  [UIColor colorWithRed:230/255.f green:230/255.f blue:230/255.f alpha:1.f]
+#endif
+
 #import "UITableViewCell+SeparatorLine.h"
 #import <objc/runtime.h>
+#import "Masonry.h"
 
 @implementation UITableViewCell (SeparatorLine)
 
@@ -21,7 +26,8 @@
     
     if (showSeparatorLine) {
         if (![self viewWithTag:10086]) {
-            UIView * separatorLine = [UIView viewWithBackgroundColor:HexColor(0xE6E6E6)];
+            UIView * separatorLine = [UIView new];
+            separatorLine.backgroundColor = SeparatorLineColor;
             separatorLine.tag = 10086;
             [self addSubview:separatorLine];
             [separatorLine mas_makeConstraints:^(MASConstraintMaker *make) {
