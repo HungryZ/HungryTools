@@ -17,6 +17,8 @@
 		2867517A0C8AC13D1E3B96650DAB3298 /* UtilsMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = C9180485F2BCFF4A94B7CB86FC2291B3 /* UtilsMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		317F7647A96A3CAC9E566E1680896556 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B2014C24ADA03537F3B21DB6735E4 /* ViewController+MASAdditions.m */; };
 		31C0E0CC5D8F1F6EBA190EB7E78CA2A1 /* NSString+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F691E323F608337D2E96B073D54748F /* NSString+Attributed.m */; };
+		337B0519229E32D300CD666E /* UITableViewCell+SeparatorLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 337B0517229E32D300CD666E /* UITableViewCell+SeparatorLine.h */; };
+		337B051A229E32D300CD666E /* UITableViewCell+SeparatorLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 337B0518229E32D300CD666E /* UITableViewCell+SeparatorLine.m */; };
 		33AF8BAE229D1A7800F6A1F7 /* UIView+Resign.h in Headers */ = {isa = PBXBuildFile; fileRef = 33AF8BAA229D1A7800F6A1F7 /* UIView+Resign.h */; };
 		33AF8BAF229D1A7800F6A1F7 /* UIView+Resign.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AF8BAB229D1A7800F6A1F7 /* UIView+Resign.m */; };
 		33AF8BB0229D1A7800F6A1F7 /* UIView+Initializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AF8BAC229D1A7800F6A1F7 /* UIView+Initializer.m */; };
@@ -114,6 +116,8 @@
 		3015FEEEE50C4FE51F845C11D4154A84 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		31BA2CDBF46DCD8CA514150C57E64824 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		32059DD719083C8E7B59161FD502FFFB /* UIButton+Initializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Initializer.h"; path = "HungryTools/Classes/Category/UIButton+Initializer.h"; sourceTree = "<group>"; };
+		337B0517229E32D300CD666E /* UITableViewCell+SeparatorLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+SeparatorLine.h"; path = "HungryTools/Classes/Category/UITableViewCell+SeparatorLine.h"; sourceTree = "<group>"; };
+		337B0518229E32D300CD666E /* UITableViewCell+SeparatorLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+SeparatorLine.m"; path = "HungryTools/Classes/Category/UITableViewCell+SeparatorLine.m"; sourceTree = "<group>"; };
 		33AF8BAA229D1A7800F6A1F7 /* UIView+Resign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIView+Resign.h"; path = "HungryTools/Classes/Category/UIView+Resign.h"; sourceTree = "<group>"; };
 		33AF8BAB229D1A7800F6A1F7 /* UIView+Resign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Resign.m"; path = "HungryTools/Classes/Category/UIView+Resign.m"; sourceTree = "<group>"; };
 		33AF8BAC229D1A7800F6A1F7 /* UIView+Initializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIView+Initializer.m"; path = "HungryTools/Classes/Category/UIView+Initializer.m"; sourceTree = "<group>"; };
@@ -355,6 +359,8 @@
 		B24543B346EF9D26C131D7CA59ADCDC6 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				337B0517229E32D300CD666E /* UITableViewCell+SeparatorLine.h */,
+				337B0518229E32D300CD666E /* UITableViewCell+SeparatorLine.m */,
 				33AF8BAD229D1A7800F6A1F7 /* UIView+Initializer.h */,
 				33AF8BAC229D1A7800F6A1F7 /* UIView+Initializer.m */,
 				33AF8BAA229D1A7800F6A1F7 /* UIView+Resign.h */,
@@ -462,6 +468,7 @@
 				D939FD61A1E7B89C4267E2D46E73829A /* UILabel+Initializer.h in Headers */,
 				2867517A0C8AC13D1E3B96650DAB3298 /* UtilsMacro.h in Headers */,
 				D7C19DD77E9EC885F568FEF522C447EC /* ZHCTextField.h in Headers */,
+				337B0519229E32D300CD666E /* UITableViewCell+SeparatorLine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +594,7 @@
 				5E0CEEAFDA16F7484B733CE3F3CFE937 /* HungryTools-dummy.m in Sources */,
 				31C0E0CC5D8F1F6EBA190EB7E78CA2A1 /* NSString+Attributed.m in Sources */,
 				33AF8BAF229D1A7800F6A1F7 /* UIView+Resign.m in Sources */,
+				337B051A229E32D300CD666E /* UITableViewCell+SeparatorLine.m in Sources */,
 				ECA3B49673FB0797438400282EE5DCC4 /* NSString+Check.m in Sources */,
 				9704CF623B23BA9ACE296F70DA3E1F68 /* NSString+MD5.m in Sources */,
 				AD0EAD11FF0D839C4D21BA19F1B7D8F2 /* UIButton+Initializer.m in Sources */,
