@@ -12,8 +12,6 @@
 
 #define ApplicationDelegate                 ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 
-#define KeyWindow                           [UIApplication sharedApplication].keyWindow
-
 #define UserDefaults                        [NSUserDefaults standardUserDefaults]
 // 状态栏高度
 #define StatusBarHeight                     [[UIApplication sharedApplication] statusBarFrame].size.height
