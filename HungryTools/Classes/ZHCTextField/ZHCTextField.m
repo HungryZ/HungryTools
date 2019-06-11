@@ -3,7 +3,6 @@
 //  FCHCL
 //
 //  Created by 张海川 on 2019/4/25.
-//  Copyright © 2019 封建. All rights reserved.
 //
 
 #ifndef ThemeColor
@@ -197,6 +196,12 @@
     
     UIView * leftView = [UIView new];
     UILabel * textLabel = [UILabel labelWithFontSize:14.f text:leftText];
+    if (_leftTextColor) {
+        textLabel.textColor = _leftTextColor;
+    }
+    if (_leftTextFontSize > 0) {
+        textLabel.font = [UIFont systemFontOfSize:_leftTextFontSize];
+    }
     [leftView addSubview:textLabel];
     [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(0);
@@ -235,10 +240,10 @@
     [self updateBottomLineConstraints];
 }
 
-- (void)setIsShowBottomLine:(BOOL)isShowBottomLine {
+- (void)setShowBottomLine:(BOOL)isShowBottomLine {
     
-    _isShowBottomLine = isShowBottomLine;
-    self.bottomLineView.hidden = !_isShowBottomLine;
+    _showBottomLine = isShowBottomLine;
+    self.bottomLineView.hidden = !_showBottomLine;
 }
 
 - (void)setSecureButtonImages:(NSArray *)secureButtonImages {
