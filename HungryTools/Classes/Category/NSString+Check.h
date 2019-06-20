@@ -1,6 +1,6 @@
 //
 //  NSString+Check.h
-//  iOSerBuilding
+//  HungryTools
 //
 //  Created by 张海川 on 2019/3/14.
 //

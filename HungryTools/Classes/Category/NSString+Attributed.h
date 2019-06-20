@@ -1,6 +1,6 @@
 //
 //  NSString+Attributed.h
-//  clq
+//  HungryTools
 //
 //  Created by 张海川 on 2019/5/14.
 //

@@ -1,13 +1,13 @@
 //
-//  UtilsMacro.h
-//  StoneCopy
+//  HungryToolsMacro.h
+//  HungryTools
 //
 //  Created by 张海川 on 2018/9/6.
 //  Copyright © 2018年 张海川. All rights reserved.
 //
 
-#ifndef UtilsMacro_h
-#define UtilsMacro_h
+#ifndef HungryToolsMacro_h
+#define HungryToolsMacro_h
 
 
 #define ApplicationDelegate                 ((AppDelegate *)[[UIApplication sharedApplication] delegate])
@@ -52,4 +52,4 @@
 #define TableGrouped                        [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped]
 
 
-#endif /* UtilsMacro_h */
+#endif /* HungryToolsMacro_h */

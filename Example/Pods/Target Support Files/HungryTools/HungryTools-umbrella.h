@@ -12,11 +12,15 @@
 
 #import "NSString+Attributed.h"
 #import "NSString+Check.h"
-#import "NSString+md5.h"
+#import "NSString+MD5.h"
 #import "UIButton+Initializer.h"
 #import "UIImage+Chameleon.h"
+#import "UIImage+Color.h"
 #import "UILabel+Initializer.h"
-#import "UtilsMacro.h"
+#import "UITableViewCell+SeparatorLine.h"
+#import "UIView+Initializer.h"
+#import "UIView+Resign.h"
+#import "HungryToolsMacro.h"
 #import "ZHCTextField.h"
 
 FOUNDATION_EXPORT double HungryToolsVersionNumber;

@@ -1,6 +1,6 @@
 //
 //  ZHCTextField.h
-//  FCHCL
+//  HungryTools
 //
 //  Created by 张海川 on 2019/4/25.
 //
@@ -25,7 +25,7 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, assign) ZHCFieldType  fieldType;
 
-/// 长度限制
+/// 文本长度限制
 @property (nonatomic, assign) int           maxLength;
 
 /// 左视图文字颜色，需在leftText之前赋值
