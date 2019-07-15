@@ -19,6 +19,10 @@
 		2B389D9717157C44C8FAAF028F5E10C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */; };
 		2C4091A2F22468F2A4B266B42E95023D /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B2014C24ADA03537F3B21DB6735E4 /* ViewController+MASAdditions.m */; };
 		2E6E7DDAFDC6101CA5C8DF56AC9C376C /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6C501769E2DA3CE22CE4BA9B61BD90 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33916C1C22DC216300DA94D6 /* UIViewController+Current.h in Headers */ = {isa = PBXBuildFile; fileRef = 33916C1822DC216200DA94D6 /* UIViewController+Current.h */; };
+		33916C1D22DC216300DA94D6 /* UIAlertController+Show.h in Headers */ = {isa = PBXBuildFile; fileRef = 33916C1922DC216200DA94D6 /* UIAlertController+Show.h */; };
+		33916C1E22DC216300DA94D6 /* UIAlertController+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 33916C1A22DC216200DA94D6 /* UIAlertController+Show.m */; };
+		33916C1F22DC216300DA94D6 /* UIViewController+Current.m in Sources */ = {isa = PBXBuildFile; fileRef = 33916C1B22DC216200DA94D6 /* UIViewController+Current.m */; };
 		339248629BDD441D71491A948E0B95ED /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = A0EE7F78B3BD7C286ECD8E89FBD08EA3 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D9BB196C2A97BF513E69D0F2F567A8F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 998D6634C115D4C55CB45C074E927E83 /* UIKit.framework */; };
 		3E81F8D32AF3691A699E57F5D583DB75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */; };
@@ -133,6 +137,10 @@
 		3015FEEEE50C4FE51F845C11D4154A84 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		30A8E7F7B7CDB9891430B64C5C02E74F /* UIButton+Initializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Initializer.h"; path = "HungryTools/Classes/Category/UIButton+Initializer.h"; sourceTree = "<group>"; };
 		31BA2CDBF46DCD8CA514150C57E64824 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		33916C1822DC216200DA94D6 /* UIViewController+Current.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Current.h"; path = "HungryTools/Classes/Category/UIViewController+Current.h"; sourceTree = "<group>"; };
+		33916C1922DC216200DA94D6 /* UIAlertController+Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+Show.h"; path = "HungryTools/Classes/Category/UIAlertController+Show.h"; sourceTree = "<group>"; };
+		33916C1A22DC216200DA94D6 /* UIAlertController+Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+Show.m"; path = "HungryTools/Classes/Category/UIAlertController+Show.m"; sourceTree = "<group>"; };
+		33916C1B22DC216200DA94D6 /* UIViewController+Current.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Current.m"; path = "HungryTools/Classes/Category/UIViewController+Current.m"; sourceTree = "<group>"; };
 		3AFB845B9B7297738D113A13EDFFA2A5 /* Resource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Resource.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		41CF2543FADCA143C4838C1BEC200AC0 /* HungryToolsMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HungryToolsMacro.h; path = HungryTools/Classes/Macro/HungryToolsMacro.h; sourceTree = "<group>"; };
 		43BA56A061873718EC06171526FE1A00 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
@@ -389,6 +397,10 @@
 		AD7B330F066DDA3B32742D371154DBA1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				33916C1922DC216200DA94D6 /* UIAlertController+Show.h */,
+				33916C1A22DC216200DA94D6 /* UIAlertController+Show.m */,
+				33916C1822DC216200DA94D6 /* UIViewController+Current.h */,
+				33916C1B22DC216200DA94D6 /* UIViewController+Current.m */,
 				F2143A22AAE65B18DE43BC3D8C48278F /* NSString+Attributed.h */,
 				2A8EB7655E394182C33DB936FF142CE8 /* NSString+Attributed.m */,
 				5F05927672BF7608856D5BC999985E07 /* NSString+Check.h */,
@@ -499,9 +511,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				05FD46061257876263FEFBCE128B03A2 /* HungryTools-umbrella.h in Headers */,
+				33916C1C22DC216300DA94D6 /* UIViewController+Current.h in Headers */,
 				6056DF9A1588EEA9E7B74CAE30C4F6F1 /* HungryToolsMacro.h in Headers */,
 				D98E2B8517F286A4FE34D33C401B20FB /* NSString+Attributed.h in Headers */,
 				5629C412EDD329CAB16CE1E8388F182F /* NSString+Check.h in Headers */,
+				33916C1D22DC216300DA94D6 /* UIAlertController+Show.h in Headers */,
 				F6CA5C166BF905854E7B85D51A13B033 /* NSString+MD5.h in Headers */,
 				711B785F73A0D5CAEA2CC2C36809497D /* UIButton+Initializer.h in Headers */,
 				7B3A3428906D36606A8EE8F8EFB75133 /* UIImage+Chameleon.h in Headers */,
@@ -667,6 +681,7 @@
 			files = (
 				A324C44EB7CB9A350EF1FD81D544616E /* HungryTools-dummy.m in Sources */,
 				90B2C3B3A5446D765E2AED62C52191BB /* NSString+Attributed.m in Sources */,
+				33916C1E22DC216300DA94D6 /* UIAlertController+Show.m in Sources */,
 				9E5FADD1D0287142C8419A35D37BB6B5 /* NSString+Check.m in Sources */,
 				8B313F45ED4F54C73F2920403714E760 /* NSString+MD5.m in Sources */,
 				08EDA4C817B787369995C110F155EA90 /* UIButton+Initializer.m in Sources */,
@@ -676,6 +691,7 @@
 				1B3262A69C30E28A59E7562ED331C508 /* UITableViewCell+SeparatorLine.m in Sources */,
 				9FFA3622B6D849D63CA06661678F65C1 /* UIView+Initializer.m in Sources */,
 				D05F574155472506D333AB09F3BEF6F6 /* UIView+Resign.m in Sources */,
+				33916C1F22DC216300DA94D6 /* UIViewController+Current.m in Sources */,
 				6682AA156C545F4D830353354C89C5DD /* ZHCTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

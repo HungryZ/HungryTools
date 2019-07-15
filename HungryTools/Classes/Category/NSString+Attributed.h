@@ -13,6 +13,22 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSMutableAttributedString *)setLineSpacing:(float)lineSpacing;
 
+- (NSMutableAttributedString *)addAttributeColor:(UIColor *)color range:(NSRange)range;
+
+- (NSMutableAttributedString *)addAttributeFontSize:(float)fontSize range:(NSRange)range;
+
+/**
+ dictionary 示例：
+ @{
+    @"color"            : UIColor,
+    @"colorRange"       : @"(2,3)",
+    @"fontSize"         : @(14),
+    @"fontSizeRange"    : @"(2,3)",
+    @"lineSpacing"      : @(6)
+ }
+ */
+- (NSMutableAttributedString *)addAttributes:(NSDictionary *)dictionary;
+
 @end
 
 NS_ASSUME_NONNULL_END
