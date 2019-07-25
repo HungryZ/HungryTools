@@ -14,6 +14,7 @@
 #import "Masonry.h"
 #import "UILabel+Initializer.h"
 #import "UIButton+Initializer.h"
+#import "UILabel+Size.h"
 
 @interface ZHCTextField() <UITextFieldDelegate>
 
@@ -144,9 +145,9 @@
 }
 
 - (void)updateBottomLineConstraints {
-    [self.bottomLineView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(10);
-        make.right.mas_equalTo(-10);
+    [self.bottomLineView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, 10, 0, -10));
+        make.height.mas_equalTo(0.5);
     }];
 }
 
@@ -207,7 +208,6 @@
 
 - (void)setLeftText:(NSString *)leftText {
     
-    UIView * leftView = [UIView new];
     UILabel * textLabel = [UILabel labelWithFontSize:14.f text:leftText];
     if (_leftTextColor) {
         textLabel.textColor = _leftTextColor;
@@ -215,15 +215,14 @@
     if (_leftTextFontSize > 0) {
         textLabel.font = [UIFont systemFontOfSize:_leftTextFontSize];
     }
+    
+    UIView * leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, textLabel.textWidth + 21, self.bounds.size.height)];
+    
     [leftView addSubview:textLabel];
     [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(0);
         make.left.mas_equalTo(10);
         make.right.mas_equalTo(-10);
-    }];
-    // 给leftView一个宽度
-    [leftView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(textLabel).offset(20);
     }];
     
     self.leftView = leftView;
@@ -234,17 +233,35 @@
 
 - (void)setLeftImageName:(NSString *)leftImageString {
     
-    UIView * leftView = [UIView new];
-    UIImageView * subView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:leftImageString]];
+    UIImage * image = [UIImage imageNamed:leftImageString];
+    UIImageView * subView = [[UIImageView alloc] initWithImage:image];
+    
+    UIView * leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, image.size.width + 20, self.bounds.size.height)];
+    
     [leftView addSubview:subView];
     [subView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerY.mas_equalTo(0);
         make.left.mas_equalTo(10);
         make.right.mas_equalTo(-10);
     }];
-    // 给leftView一个宽度
-    [leftView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.width.mas_equalTo(subView).offset(20);
+    
+    self.leftView = leftView;
+    self.leftViewMode = UITextFieldViewModeAlways;
+    
+    [self updateBottomLineConstraints];
+}
+
+- (void)setLeftImage:(UIImage *)leftImage {
+    
+    UIImageView * subView = [[UIImageView alloc] initWithImage:leftImage];
+    
+    UIView * leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, leftImage.size.width + 20, self.bounds.size.height)];
+    
+    [leftView addSubview:subView];
+    [subView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerY.mas_equalTo(0);
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
     }];
     
     self.leftView = leftView;

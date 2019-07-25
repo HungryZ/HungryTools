@@ -1,9 +1,8 @@
 //
 //  UILabel+Size.h
-//  StrategyPlus
+//  HungryTools
 //
 //  Created by 张海川 on 2019/7/25.
-//  Copyright © 2019 张海川. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
