@@ -19,6 +19,8 @@
 		2B389D9717157C44C8FAAF028F5E10C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5559CF883A4F2FF27FDED5EC5600A644 /* Foundation.framework */; };
 		2C4091A2F22468F2A4B266B42E95023D /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9B2014C24ADA03537F3B21DB6735E4 /* ViewController+MASAdditions.m */; };
 		2E6E7DDAFDC6101CA5C8DF56AC9C376C /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6C501769E2DA3CE22CE4BA9B61BD90 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		336DE7BE22E990EC0009A3C4 /* UILabel+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 336DE7BC22E990EC0009A3C4 /* UILabel+Size.h */; };
+		336DE7BF22E990EC0009A3C4 /* UILabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = 336DE7BD22E990EC0009A3C4 /* UILabel+Size.m */; };
 		33916C1C22DC216300DA94D6 /* UIViewController+Current.h in Headers */ = {isa = PBXBuildFile; fileRef = 33916C1822DC216200DA94D6 /* UIViewController+Current.h */; };
 		33916C1D22DC216300DA94D6 /* UIAlertController+Show.h in Headers */ = {isa = PBXBuildFile; fileRef = 33916C1922DC216200DA94D6 /* UIAlertController+Show.h */; };
 		33916C1E22DC216300DA94D6 /* UIAlertController+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 33916C1A22DC216200DA94D6 /* UIAlertController+Show.m */; };
@@ -137,6 +139,8 @@
 		3015FEEEE50C4FE51F845C11D4154A84 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		30A8E7F7B7CDB9891430B64C5C02E74F /* UIButton+Initializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Initializer.h"; path = "HungryTools/Classes/Category/UIButton+Initializer.h"; sourceTree = "<group>"; };
 		31BA2CDBF46DCD8CA514150C57E64824 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		336DE7BC22E990EC0009A3C4 /* UILabel+Size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UILabel+Size.h"; path = "HungryTools/Classes/Category/UILabel+Size.h"; sourceTree = "<group>"; };
+		336DE7BD22E990EC0009A3C4 /* UILabel+Size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Size.m"; path = "HungryTools/Classes/Category/UILabel+Size.m"; sourceTree = "<group>"; };
 		33916C1822DC216200DA94D6 /* UIViewController+Current.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Current.h"; path = "HungryTools/Classes/Category/UIViewController+Current.h"; sourceTree = "<group>"; };
 		33916C1922DC216200DA94D6 /* UIAlertController+Show.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+Show.h"; path = "HungryTools/Classes/Category/UIAlertController+Show.h"; sourceTree = "<group>"; };
 		33916C1A22DC216200DA94D6 /* UIAlertController+Show.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+Show.m"; path = "HungryTools/Classes/Category/UIAlertController+Show.m"; sourceTree = "<group>"; };
@@ -397,6 +401,8 @@
 		AD7B330F066DDA3B32742D371154DBA1 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				336DE7BC22E990EC0009A3C4 /* UILabel+Size.h */,
+				336DE7BD22E990EC0009A3C4 /* UILabel+Size.m */,
 				33916C1922DC216200DA94D6 /* UIAlertController+Show.h */,
 				33916C1A22DC216200DA94D6 /* UIAlertController+Show.m */,
 				33916C1822DC216200DA94D6 /* UIViewController+Current.h */,
@@ -518,6 +524,7 @@
 				33916C1D22DC216300DA94D6 /* UIAlertController+Show.h in Headers */,
 				F6CA5C166BF905854E7B85D51A13B033 /* NSString+MD5.h in Headers */,
 				711B785F73A0D5CAEA2CC2C36809497D /* UIButton+Initializer.h in Headers */,
+				336DE7BE22E990EC0009A3C4 /* UILabel+Size.h in Headers */,
 				7B3A3428906D36606A8EE8F8EFB75133 /* UIImage+Chameleon.h in Headers */,
 				275268D4257BF44A7ECE19D9606A4BB9 /* UIImage+Color.h in Headers */,
 				4E48638CE91FA7EF15644DAAC674E411 /* UILabel+Initializer.h in Headers */,
@@ -681,6 +688,7 @@
 			files = (
 				A324C44EB7CB9A350EF1FD81D544616E /* HungryTools-dummy.m in Sources */,
 				90B2C3B3A5446D765E2AED62C52191BB /* NSString+Attributed.m in Sources */,
+				336DE7BF22E990EC0009A3C4 /* UILabel+Size.m in Sources */,
 				33916C1E22DC216300DA94D6 /* UIAlertController+Show.m in Sources */,
 				9E5FADD1D0287142C8419A35D37BB6B5 /* NSString+Check.m in Sources */,
 				8B313F45ED4F54C73F2920403714E760 /* NSString+MD5.m in Sources */,

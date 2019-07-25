@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HungryTools'
-  s.version          = '1.3.1'
+  s.version          = '1.3.2'
   s.summary          = 'Some tools often used.'
 
 # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ Some tools often used, personal.
   # }
 
   s.frameworks = 'UIKit'
-  s.dependency 'Masonry', '~> 1.1.0'
+  s.dependency 'Masonry'
 
   #二级目录
   s.subspec 'Macro' do |ss|

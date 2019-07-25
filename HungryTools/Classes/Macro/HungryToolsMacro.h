@@ -49,7 +49,7 @@
 
 #define ImageView(name)                     [[UIImageView alloc] initWithImage:[UIImage imageNamed:name]]
 
-#define TableGrouped                        [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped]
+#define GroupedTable                        [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStyleGrouped]
 
 
 #endif /* HungryToolsMacro_h */

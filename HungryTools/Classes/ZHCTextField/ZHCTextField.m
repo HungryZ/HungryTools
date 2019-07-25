@@ -27,13 +27,19 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.clearButtonMode = UITextFieldViewModeWhileEditing;
-        [self addBottomLine];
-        self.delegate = self;
-        self.font = [UIFont systemFontOfSize:14];
+        [self initConfig];
     }
     return self;
 }
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self initConfig];
+    }
+    return self;
+}
+
 // 无效
 //- (CGRect)clearButtonRectForBounds:(CGRect)bounds {
 //    //        bounds.origin.x -= ViewWidth(self.rightView);
@@ -120,6 +126,13 @@
 }
 
 #pragma mark - Private Method
+
+- (void)initConfig {
+    self.clearButtonMode = UITextFieldViewModeWhileEditing;
+    [self addBottomLine];
+    self.delegate = self;
+    self.font = [UIFont systemFontOfSize:14];
+}
 
 - (void)addBottomLine {
     
