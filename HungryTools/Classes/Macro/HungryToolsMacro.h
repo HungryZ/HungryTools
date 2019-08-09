@@ -21,6 +21,10 @@
 #define NaviBarHeight                       (StatusBarHeight + 44.0)
 // 底部TabBar高度
 #define TabBarHeight                        (StatusBarHeight > 21.0 ? 83.0 : 49.0)
+// 刘海屏与非刘海屏StatusBar高度差
+#define StatusBarDifHeight                  (StatusBarHeight - 20)
+// 刘海屏与非刘海屏TabBar高度差
+#define TabBarDifHeight                     (TabBarHeight - 49)
 
 #define ScreenWidth                         [[UIScreen mainScreen] bounds].size.width
 

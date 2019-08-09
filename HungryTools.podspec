@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'HungryTools'
   s.version          = '1.3.3'
-  s.summary          = 'Some tools often used.'
+  s.summary          = 'Some common tools'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-Some tools often used, personal.
+Some tools often used.
                        DESC
 
   s.homepage         = 'https://github.com/HungryZ/HungryTools'

@@ -1,6 +1,6 @@
 use_frameworks!
 target 'HungryTools_Tests' do
   pod 'HungryTools', :path => '../'
-  pod 'Masonry', '~> 1.1.0'
+  pod 'Masonry'
   
 end
