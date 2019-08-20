@@ -30,6 +30,7 @@ typedef enum : NSUInteger {
 
 /// 左视图文字颜色，需在leftText之前赋值
 @property (nonatomic, strong) UIColor *     leftTextColor;
+
 /// 左视图文字颜色，需在leftText之前赋值
 @property (nonatomic, assign) float         leftTextFontSize;
 
@@ -40,7 +41,19 @@ typedef enum : NSUInteger {
 /// 密码明暗文切换图片数组，需传入两个UIImage，第一个代表明文，第二个暗文。
 @property (nonatomic, strong) NSArray *     secureButtonImages;
 
+
+
 @property (nonatomic, assign) BOOL          showBottomLine;
+/// 正在输入时下划线颜色
+@property (nonatomic, strong) UIColor *     bottomLineActiveColor;
+/// 失去焦点时下划线颜色
+@property (nonatomic, strong) UIColor *     bottomLinePassiveColor;
+/// 下划线高度，默认0.5
+@property (nonatomic, assign) float         bottomLineHeight;
+
+
+
+@property (nonatomic, strong) UIColor *     placeHolderColor;
 
 @end
 

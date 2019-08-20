@@ -21,6 +21,8 @@
 @property (nonatomic, strong) UIView *      bottomLineView;
 @property (nonatomic, strong) UIButton *    secureButton;
 
+@property (nonatomic, assign) BOOL          isContainLeftOrRightView;
+
 @end
 
 @implementation ZHCTextField
@@ -39,6 +41,17 @@
         [self initConfig];
     }
     return self;
+}
+
+- (void)initConfig {
+    self.clearButtonMode = UITextFieldViewModeWhileEditing;
+    self.delegate = self;
+    self.font = [UIFont systemFontOfSize:14];
+    
+    _isContainLeftOrRightView = NO;
+    _bottomLineHeight = 0.5;
+    
+    [self addBottomLine];
 }
 
 // 无效
@@ -112,11 +125,23 @@
 }
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField {
-    self.bottomLineView.backgroundColor = ThemeColor;
+    [UIView animateWithDuration:0.25 animations:^{
+        if (self.bottomLineActiveColor) {
+            self.bottomLineView.backgroundColor = self.bottomLineActiveColor;
+        } else {
+            self.bottomLineView.backgroundColor = ThemeColor;
+        }
+    }];
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField {
-    self.bottomLineView.backgroundColor = [UIColor lightGrayColor];
+    [UIView animateWithDuration:0.25 animations:^{
+        if (self.bottomLinePassiveColor) {
+            self.bottomLineView.backgroundColor = self.bottomLinePassiveColor;
+        } else {
+            self.bottomLineView.backgroundColor = [UIColor lightGrayColor];
+        }
+    }];
 }
 
 #pragma mark - Action
@@ -128,26 +153,22 @@
 
 #pragma mark - Private Method
 
-- (void)initConfig {
-    self.clearButtonMode = UITextFieldViewModeWhileEditing;
-    [self addBottomLine];
-    self.delegate = self;
-    self.font = [UIFont systemFontOfSize:14];
-}
-
 - (void)addBottomLine {
     
     [self addSubview:self.bottomLineView];
     [self.bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.right.mas_equalTo(0);
-        make.height.mas_equalTo(0.5);
+        make.height.mas_equalTo(self.bottomLineHeight);
     }];
 }
 
 - (void)updateBottomLineConstraints {
+    
+    _isContainLeftOrRightView = YES;
+    
     [self.bottomLineView mas_remakeConstraints:^(MASConstraintMaker *make) {
         make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, 10, 0, -10));
-        make.height.mas_equalTo(0.5);
+        make.height.mas_equalTo(self.bottomLineHeight);
     }];
 }
 
@@ -204,6 +225,16 @@
             break;
         }
     }
+}
+
+- (void)setLeftView:(UIView *)leftView {
+    [super setLeftView:leftView];
+    [self updateBottomLineConstraints];
+}
+
+- (void)setRightView:(UIView *)rightView {
+    [super setRightView:rightView];
+    [self updateBottomLineConstraints];
 }
 
 - (void)setLeftText:(NSString *)leftText {
@@ -286,6 +317,30 @@
     if ([secureButtonImages[1] isKindOfClass:[UIImage class]]) {
         [_secureButton setImage:secureButtonImages[1] forState:UIControlStateNormal];
     }
+}
+
+- (void)setBottomLinePassiveColor:(UIColor *)bottomLinePassiveColor {
+    _bottomLinePassiveColor = bottomLinePassiveColor;
+    self.bottomLineView.backgroundColor = _bottomLinePassiveColor;
+}
+
+- (void)setBottomLineHeight:(float)bottomLineHeight {
+    
+    _bottomLineHeight = bottomLineHeight;
+    
+    [self.bottomLineView mas_remakeConstraints:^(MASConstraintMaker *make) {
+        if (self.isContainLeftOrRightView) {
+            make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, 10, 0, -10));
+        } else {
+            make.left.bottom.right.mas_equalTo(0);
+        }
+        make.height.mas_equalTo(bottomLineHeight);
+    }];
+}
+
+- (void)setPlaceHolderColor:(UIColor *)placeHolderColor {
+    _placeHolderColor = placeHolderColor;
+    [self setValue:placeHolderColor forKeyPath:@"_placeholderLabel.textColor"];
 }
 
 #pragma mark - Getter

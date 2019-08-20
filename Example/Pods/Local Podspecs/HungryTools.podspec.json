@@ -1,8 +1,8 @@
 {
   "name": "HungryTools",
-  "version": "1.2.8",
-  "summary": "Some tools often used.",
-  "description": "Some tools often used, personal.",
+  "version": "1.3.3",
+  "summary": "Some common tools",
+  "description": "Some tools often used.",
   "homepage": "https://github.com/HungryZ/HungryTools",
   "license": {
     "type": "MIT",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/HungryZ/HungryTools.git",
-    "tag": "1.2.8"
+    "tag": "1.3.3"
   },
   "platforms": {
     "ios": "8.0"
@@ -21,7 +21,7 @@
   "frameworks": "UIKit",
   "dependencies": {
     "Masonry": [
-      "~> 1.1.0"
+
     ]
   },
   "subspecs": [

@@ -212,16 +212,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HungryTools_Tests/Pods-HungryTools_Tests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/HungryTools/HungryTools.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HungryTools.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
