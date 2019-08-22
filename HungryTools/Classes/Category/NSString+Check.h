@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)isEmail;
 
+- (BOOL)isPassword;
+
 @end
 
 NS_ASSUME_NONNULL_END

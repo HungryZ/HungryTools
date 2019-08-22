@@ -27,14 +27,6 @@
 
 @implementation ZHCTextField
 
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        [self initConfig];
-    }
-    return self;
-}
-
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
@@ -101,7 +93,8 @@
             break;
         }
         case ZHCFieldTypePassword: {
-            return [string checkWithRegexString:@"[A-Za-z0-9_]"];
+            // 半角字符 包括字母，数字，标点符号
+            return [string checkWithRegexString:@"[\\x00-\\xff]+"];
             break;
         }
         case ZHCFieldTypeMoney: {
@@ -148,7 +141,7 @@
 
 - (void)secureBtnClicked {
     self.secureTextEntry ^= 1;
-    self.secureButton.selected = self.isSecureTextEntry;
+    self.secureButton.selected = !self.isSecureTextEntry;
 }
 
 #pragma mark - Private Method
@@ -167,7 +160,7 @@
     _isContainLeftOrRightView = YES;
     
     [self.bottomLineView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, 10, 0, -10));
+        make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, 10, 0, 10));
         make.height.mas_equalTo(self.bottomLineHeight);
     }];
 }
@@ -330,7 +323,7 @@
     
     [self.bottomLineView mas_remakeConstraints:^(MASConstraintMaker *make) {
         if (self.isContainLeftOrRightView) {
-            make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, 10, 0, -10));
+            make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, 10, 0, 10));
         } else {
             make.left.bottom.right.mas_equalTo(0);
         }
@@ -338,12 +331,46 @@
     }];
 }
 
+- (void)setClearButtonImage:(UIImage *)clearButtonImage {
+    _clearButtonImage = clearButtonImage;
+    
+    UIButton *button =  [self valueForKey:@"_clearButton"];
+    [button setImage:clearButtonImage forState:UIControlStateNormal];
+}
+
 - (void)setPlaceHolderColor:(UIColor *)placeHolderColor {
     _placeHolderColor = placeHolderColor;
     [self setValue:placeHolderColor forKeyPath:@"_placeholderLabel.textColor"];
 }
 
+- (void)setPlaceHolderFont:(UIFont *)placeHolderFont {
+    _placeHolderFont = placeHolderFont;
+    [self setValue:placeHolderFont forKeyPath:@"_placeholderLabel.font"];
+}
+
+- (void)setPlaceholder:(NSString *)placeholder {
+    [super setPlaceholder:placeholder];
+    
+    if (_placeHolderColor) {
+        [self setValue:_placeHolderColor forKeyPath:@"_placeholderLabel.textColor"];
+    }
+    if (_placeHolderFont) {
+        [self setValue:_placeHolderFont forKeyPath:@"_placeholderLabel.font"];
+    }
+}
+
 #pragma mark - Getter
+
+- (NSString *)phoneNumberString {
+    
+    NSString * string;
+    
+    if (self.fieldType == ZHCFieldTypePhoneNumber) {
+        string = [self.text stringByReplacingOccurrencesOfString:@" " withString:@""];
+    }
+    
+    return string;
+}
 
 - (UIView *)bottomLineView {
     if (!_bottomLineView) {
@@ -357,8 +384,8 @@
     if (!_secureButton) {
         _secureButton = [UIButton buttonWithImageName:@"Resource.bundle/eye_close" target:self action:@selector(secureBtnClicked)];
         [_secureButton setImage:[UIImage imageNamed:@"Resource.bundle/eye_open"] forState:UIControlStateSelected];
-        _secureButton.frame = CGRectMake(0, 0, 23, 20);
-        _secureButton.selected = YES;
+        _secureButton.frame = CGRectMake(0, 0, 44, 30);
+        //        _secureButton.selected = YES;
     }
     return _secureButton;
 }

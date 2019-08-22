@@ -25,6 +25,9 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, assign) ZHCFieldType  fieldType;
 
+/// 删除空格后的手机号码，在 ZHCFieldType 为 ZHCFieldTypePhoneNumber 时有效。
+@property (nonatomic, strong) NSString *    phoneNumberString;
+
 /// 文本长度限制
 @property (nonatomic, assign) int           maxLength;
 
@@ -38,9 +41,12 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, copy) NSString *      leftImageName;
 
-/// 密码明暗文切换图片数组，需传入两个UIImage，第一个代表明文，第二个暗文。
-@property (nonatomic, strong) NSArray *     secureButtonImages;
 
+
+/// 密码明暗文切换图片数组，需包含两个UIImage，第一个代表明文，第二个代表暗文。
+@property (nonatomic, strong) NSArray *     secureButtonImages;
+/// clearButton 按钮图片
+@property (nonatomic, strong) UIImage *     clearButtonImage;
 
 
 @property (nonatomic, assign) BOOL          showBottomLine;
@@ -54,6 +60,7 @@ typedef enum : NSUInteger {
 
 
 @property (nonatomic, strong) UIColor *     placeHolderColor;
+@property (nonatomic, strong) UIFont *      placeHolderFont;
 
 @end
 

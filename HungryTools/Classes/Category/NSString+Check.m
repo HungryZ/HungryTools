@@ -28,4 +28,8 @@
     return [self checkWithRegexString:@"^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$"];
 }
 
+- (BOOL)isPassword {
+    return [self checkWithRegexString:@"^(?=.*\\d)(?=.*[A-Za-z]).{6,16}$"];
+}
+
 @end
