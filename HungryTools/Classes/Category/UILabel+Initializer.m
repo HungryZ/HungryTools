@@ -40,4 +40,12 @@
     return [self labelWithFontSize:size textColor:nil text:nil];
 }
 
++ (instancetype)labelWithMonospacedFontSize:(float)size {
+    
+    UILabel * label = [self new];
+    label.font = [UIFont fontWithName:@"Helvetica Neue" size:size];
+    
+    return label;
+}
+
 @end

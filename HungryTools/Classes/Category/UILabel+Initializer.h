@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)labelWithFontSize:(float)size text:(NSString *)text;
 + (instancetype)labelWithFontSize:(float)size;
 
+/// 等宽数字字体
++ (instancetype)labelWithMonospacedFontSize:(float)size;
+
 @end
 
 NS_ASSUME_NONNULL_END
