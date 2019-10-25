@@ -19,7 +19,7 @@ typedef NS_ENUM(NSUInteger, GradientType) {
 
 @interface UIImage (Chameleon)
 
-/** 生成渐变色图片 */
+/// 生成渐变色图片
 + (UIImage *)imageWithColors:(NSArray*)colors gradientType:(GradientType)gradientType size:(CGSize)imgSize;
 
 @end

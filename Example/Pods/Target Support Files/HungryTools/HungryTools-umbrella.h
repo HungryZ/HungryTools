@@ -21,7 +21,6 @@
 #import "UILabel+Size.h"
 #import "UITableViewCell+SeparatorLine.h"
 #import "UIView+Initializer.h"
-#import "UIView+Resign.h"
 #import "UIViewController+Current.h"
 #import "HungryToolsMacro.h"
 #import "ZHCTextField.h"

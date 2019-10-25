@@ -1,4 +1,5 @@
 use_frameworks!
 target 'HungryTools_Tests' do
-  pod 'HungryTools', :path => '../'  
+  pod 'HungryTools', :path => '../'
+  pod 'Masonry'
 end
