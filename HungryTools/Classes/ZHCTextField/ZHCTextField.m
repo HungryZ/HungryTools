@@ -19,6 +19,7 @@
 @interface ZHCTextField() <UITextFieldDelegate>
 
 @property (nonatomic, strong) UIView *      bottomLineView;
+@property (nonatomic, strong) UIView *      secureView;
 @property (nonatomic, strong) UIButton *    secureButton;
 
 @property (nonatomic, assign) BOOL          isContainLeftOrRightView;
@@ -165,6 +166,21 @@
     }];
 }
 
+- (void)setPlaceholderAttribute:(id)value {
+    
+    NSMutableAttributedString * attriString = [[NSMutableAttributedString alloc] initWithAttributedString:self.attributedPlaceholder];
+    
+    NSAttributedStringKey name;
+    if ([value isKindOfClass:UIFont.class]) {
+        name = NSFontAttributeName;
+    } else if ([value isKindOfClass:UIColor.class]) {
+        name = NSForegroundColorAttributeName;
+    }
+    [attriString addAttribute:name value:value range:NSMakeRange(0, self.placeholder.length)];
+    
+    self.attributedPlaceholder = attriString;
+}
+
 #pragma mark - Public Method
 
 #pragma mark - Setter
@@ -194,7 +210,7 @@
         }
         case ZHCFieldTypePassword:{
             self.secureTextEntry = YES;
-            self.rightView = self.secureButton;
+            self.rightView = self.secureView;
             self.rightViewMode = UITextFieldViewModeAlways;
             self.keyboardType = UIKeyboardTypeAlphabet;
             self.maxLength = 18;
@@ -214,6 +230,7 @@
             break;
         }
         case ZHCFieldTypeBankCardNumber: {
+            self.keyboardType = UIKeyboardTypeNumberPad;
             self.maxLength = 19;
             break;
         }
@@ -251,8 +268,6 @@
     
     self.leftView = leftView;
     self.leftViewMode = UITextFieldViewModeAlways;
-    
-    [self updateBottomLineConstraints];
 }
 
 - (void)setLeftImageName:(NSString *)leftImageString {
@@ -271,8 +286,6 @@
     
     self.leftView = leftView;
     self.leftViewMode = UITextFieldViewModeAlways;
-    
-    [self updateBottomLineConstraints];
 }
 
 - (void)setLeftImage:(UIImage *)leftImage {
@@ -290,8 +303,6 @@
     
     self.leftView = leftView;
     self.leftViewMode = UITextFieldViewModeAlways;
-    
-    [self updateBottomLineConstraints];
 }
 
 - (void)setShowBottomLine:(BOOL)isShowBottomLine {
@@ -300,7 +311,7 @@
     self.bottomLineView.hidden = !_showBottomLine;
 }
 
-- (void)setSecureButtonImages:(NSArray *)secureButtonImages {
+- (void)setSecureButtonImages:(NSArray<UIImage *> *)secureButtonImages {
     if (secureButtonImages.count != 2) {
         return;
     }
@@ -338,24 +349,24 @@
     [button setImage:clearButtonImage forState:UIControlStateNormal];
 }
 
-- (void)setPlaceHolderColor:(UIColor *)placeHolderColor {
-    _placeHolderColor = placeHolderColor;
-    [self setValue:placeHolderColor forKeyPath:@"_placeholderLabel.textColor"];
+- (void)setPlaceholderColor:(UIColor *)placeholderColor {
+    _placeholderColor = placeholderColor;
+    [self setPlaceholderAttribute:placeholderColor];
 }
 
-- (void)setPlaceHolderFont:(UIFont *)placeHolderFont {
-    _placeHolderFont = placeHolderFont;
-    [self setValue:placeHolderFont forKeyPath:@"_placeholderLabel.font"];
+- (void)setPlaceholderFont:(UIFont *)placeholderFont {
+    _placeholderFont = placeholderFont;
+    [self setPlaceholderAttribute:placeholderFont];
 }
 
 - (void)setPlaceholder:(NSString *)placeholder {
     [super setPlaceholder:placeholder];
     
-    if (_placeHolderColor) {
-        [self setValue:_placeHolderColor forKeyPath:@"_placeholderLabel.textColor"];
+    if (_placeholderColor) {
+        [self setPlaceholderAttribute:_placeholderColor];
     }
-    if (_placeHolderFont) {
-        [self setValue:_placeHolderFont forKeyPath:@"_placeholderLabel.font"];
+    if (_placeholderFont) {
+        [self setPlaceholderAttribute:_placeholderFont];
     }
 }
 
@@ -380,11 +391,20 @@
     return _bottomLineView;
 }
 
+- (UIView *)secureView {
+    if (!_secureView) {
+        _secureView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 64, 30)];
+        
+        self.secureButton.frame = CGRectMake(10, 0, 44, 30);
+        [_secureView addSubview:self.secureButton];
+    }
+    return _secureView;
+}
+
 - (UIButton *)secureButton {
     if (!_secureButton) {
         _secureButton = [UIButton buttonWithImageName:@"Resource.bundle/eye_close" target:self action:@selector(secureBtnClicked)];
         [_secureButton setImage:[UIImage imageNamed:@"Resource.bundle/eye_open"] forState:UIControlStateSelected];
-        _secureButton.frame = CGRectMake(0, 0, 44, 30);
         //        _secureButton.selected = YES;
     }
     return _secureButton;

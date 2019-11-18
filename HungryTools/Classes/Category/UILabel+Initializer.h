@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UILabel (Initializer)
 
 + (instancetype)labelWithFontSize:(float)size textColor:(nullable UIColor *)color text:(nullable NSString *)text;
-+ (instancetype)labelWithFontSize:(float)size textColor:(UIColor *)color;
-+ (instancetype)labelWithFontSize:(float)size text:(NSString *)text;
++ (instancetype)labelWithFontSize:(float)size textColor:(nullable UIColor *)color;
++ (instancetype)labelWithFontSize:(float)size text:(nullable NSString *)text;
 + (instancetype)labelWithFontSize:(float)size;
 
 /// 等宽数字字体

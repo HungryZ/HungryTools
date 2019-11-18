@@ -24,6 +24,7 @@
 #import "UIViewController+Current.h"
 #import "HungryToolsMacro.h"
 #import "ZHCTextField.h"
+#import "ZHCWebViewController.h"
 
 FOUNDATION_EXPORT double HungryToolsVersionNumber;
 FOUNDATION_EXPORT const unsigned char HungryToolsVersionString[];

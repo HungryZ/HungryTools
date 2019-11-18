@@ -1,24 +1,26 @@
 PODS:
-  - HungryTools (1.3.5):
-    - HungryTools/Category (= 1.3.5)
-    - HungryTools/Macro (= 1.3.5)
-    - HungryTools/ZHCTextField (= 1.3.5)
+  - HungryTools (1.3.6):
+    - HungryTools/Category (= 1.3.6)
+    - HungryTools/Macro (= 1.3.6)
+    - HungryTools/ZHCTextField (= 1.3.6)
+    - HungryTools/ZHCWebViewController (= 1.3.6)
     - Masonry
-  - HungryTools/Category (1.3.5):
+  - HungryTools/Category (1.3.6):
     - Masonry
-  - HungryTools/Macro (1.3.5):
+  - HungryTools/Macro (1.3.6):
     - Masonry
-  - HungryTools/ZHCTextField (1.3.5):
+  - HungryTools/ZHCTextField (1.3.6):
     - HungryTools/Category
+    - Masonry
+  - HungryTools/ZHCWebViewController (1.3.6):
     - Masonry
   - Masonry (1.1.0)
 
 DEPENDENCIES:
   - HungryTools (from `../`)
-  - Masonry
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Masonry
 
 EXTERNAL SOURCES:
@@ -26,9 +28,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HungryTools: b7a939a47731ca4870846c15655459c5436f41f9
+  HungryTools: e33b36611516e52619e0fd466313b27cbe5e28eb
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
-PODFILE CHECKSUM: 7dbc077f230c827ad1a988fdad03ca8040b12f03
+PODFILE CHECKSUM: 6717acd8e2ced525ae3a47b120dcd8c78d736bdd
 
 COCOAPODS: 1.8.4

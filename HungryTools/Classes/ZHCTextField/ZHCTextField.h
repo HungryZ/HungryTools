@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef enum : NSUInteger {
+typedef NS_ENUM(NSUInteger, ZHCFieldType) {
     ZHCFieldTypeDefault,
     ZHCFieldTypeNumber,
     ZHCFieldTypePhoneNumber,
@@ -19,7 +19,7 @@ typedef enum : NSUInteger {
     ZHCFieldTypeIDCardNumber,
     ZHCFieldTypeChinese,
     ZHCFieldTypeBankCardNumber,
-} ZHCFieldType;
+};
 
 @interface ZHCTextField : UITextField
 
@@ -44,7 +44,7 @@ typedef enum : NSUInteger {
 
 
 /// 密码明暗文切换图片数组，需包含两个UIImage，第一个代表明文，第二个代表暗文。
-@property (nonatomic, strong) NSArray *     secureButtonImages;
+@property (nonatomic, strong) NSArray<UIImage *> *  secureButtonImages;
 /// clearButton 按钮图片
 @property (nonatomic, strong) UIImage *     clearButtonImage;
 
@@ -59,8 +59,8 @@ typedef enum : NSUInteger {
 
 
 
-@property (nonatomic, strong) UIColor *     placeHolderColor;
-@property (nonatomic, strong) UIFont *      placeHolderFont;
+@property (nonatomic, strong) UIColor *     placeholderColor;
+@property (nonatomic, strong) UIFont *      placeholderFont;
 
 @end
 

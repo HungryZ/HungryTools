@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIButton (Initializer)
 
++ (instancetype)buttonWithThemeTitle:(NSString *)title target:(nullable id)target action:(nullable SEL)action;
+
 + (instancetype)buttonWithTitle:(NSString *)title
                      titleColor:(UIColor *)titleColor
                        fontSize:(float)fontSize
@@ -18,8 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
                  backgrondColor:(nullable UIColor *)backgrondColor
                          target:(nullable id)target
                          action:(nullable SEL)action;
-
-+ (instancetype)buttonWithThemeTitle:(NSString *)title target:(nullable id)target action:(nullable SEL)action;
 
 + (instancetype)buttonWithTitle:(NSString *)title
                      titleColor:(UIColor *)titleColor

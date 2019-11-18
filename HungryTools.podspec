@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HungryTools'
-  s.version          = '1.3.6'
+  s.version          = '1.3.7'
   s.summary          = 'Some common tools'
 
 # This description is used to generate tags and improve search results.
@@ -53,5 +53,8 @@ Some tools often used.
     ss.resource_bundles = {
       'Resource' => ['HungryTools/Assets/Resource/*.png']
     }
+  end
+  s.subspec 'ZHCWebViewController' do |ss|
+    ss.source_files = 'HungryTools/Classes/ZHCWebViewController/**/*'
   end
 end

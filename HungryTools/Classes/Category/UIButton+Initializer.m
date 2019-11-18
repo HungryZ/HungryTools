@@ -14,28 +14,17 @@
 #endif
 
 #import "UIButton+Initializer.h"
+#import "UIImage+Color.h"
 
 @implementation UIButton (Initializer)
 
-+ (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(float)fontSize cornerRadius:(float)cornerRadius backgrondColor:(UIColor *)backgrondColor target:(id)target action:(SEL)action {
++ (instancetype)buttonWithThemeTitle:(NSString *)title target:(id)target action:(SEL)action {
     
-    UIButton * button = [self buttonWithType:UIButtonTypeCustom];
-    button.titleLabel.font = [UIFont systemFontOfSize:fontSize];
-    [button setTitle:title forState:UIControlStateNormal];
-    [button setTitleColor:titleColor forState:UIControlStateNormal];
-    [button setAdjustsImageWhenHighlighted:NO];
+    UIButton * button = [self buttonWithTitle:title titleColor:[UIColor whiteColor] fontSize:16.f cornerRadius:4.f backgrondColor:nil target:target action:action];
     
-    if (cornerRadius) {
-        button.layer.cornerRadius = cornerRadius;
-    }
-    
-    if (backgrondColor) {
-        button.backgroundColor = backgrondColor;
-    }
-    
-    if (target && action) {
-        [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
-    }
+    [button setBackgroundImage:[UIImage imageWithColor:DisableColor] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageWithColor:ThemeColor] forState:UIControlStateSelected];
+    button.clipsToBounds = YES;
     
     return button;
 }
@@ -43,17 +32,6 @@
 + (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(float)fontSize cornerRadius:(float)cornerRadius {
     
     return [self buttonWithTitle:title titleColor:titleColor fontSize:fontSize cornerRadius:cornerRadius backgrondColor:nil target:nil action:nil];
-}
-
-+ (instancetype)buttonWithThemeTitle:(NSString *)title target:(id)target action:(SEL)action {
-    
-    UIButton * button = [self buttonWithTitle:title titleColor:[UIColor whiteColor] fontSize:16.f cornerRadius:4.f backgrondColor:nil target:target action:action];
-    
-    [button setBackgroundImage:[self imageWithColor:DisableColor] forState:UIControlStateNormal];
-    [button setBackgroundImage:[self imageWithColor:ThemeColor] forState:UIControlStateSelected];
-    button.clipsToBounds = YES;
-    
-    return button;
 }
 
 + (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(float)fontSize target:(id)target action:(SEL)action {
@@ -72,17 +50,34 @@
     return button;
 }
 
-+ (UIImage *)imageWithColor:(UIColor *)color {
++ (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(float)fontSize cornerRadius:(float)cornerRadius backgrondColor:(UIColor *)backgrondColor target:(id)target action:(SEL)action {
     
-    CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, color.CGColor);
-    CGContextFillRect(context, rect);
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
+    UIButton * button = [self buttonWithType:UIButtonTypeCustom];
+    button.titleLabel.font = [UIFont systemFontOfSize:fontSize];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:titleColor forState:UIControlStateNormal];
+    [button setAdjustsImageWhenHighlighted:NO];
+    [button setAdjustsImageWhenDisabled:NO];
     
-    return image;
+    if (cornerRadius) {
+        button.layer.cornerRadius = cornerRadius;
+    }
+    
+    if (backgrondColor) {
+        button.backgroundColor = backgrondColor;
+    }
+    
+    if (target && action) {
+        [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    }
+    
+    return button;
+}
+
+/// 在设置selected状态下点击时会先变成normal状态下的颜色，松开时再变化为selected状态下的颜色。
+/// 此时重写Highlighted的set方法即可（空方法，什么都不需要写）
+- (void)setHighlighted:(BOOL)highlighted {
+    
 }
 
 @end
