@@ -20,7 +20,7 @@
 
 + (instancetype)buttonWithThemeTitle:(NSString *)title target:(id)target action:(SEL)action {
     
-    UIButton * button = [self buttonWithTitle:title titleColor:[UIColor whiteColor] fontSize:16.f cornerRadius:4.f backgrondColor:nil target:target action:action];
+    UIButton * button = [self buttonWithTitle:title titleColor:[UIColor whiteColor] fontSize:16.f cornerRadius:4.f backgroundColor:nil target:target action:action];
     
     [button setBackgroundImage:[UIImage imageWithColor:DisableColor] forState:UIControlStateNormal];
     [button setBackgroundImage:[UIImage imageWithColor:ThemeColor] forState:UIControlStateSelected];
@@ -31,12 +31,12 @@
 
 + (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(float)fontSize cornerRadius:(float)cornerRadius {
     
-    return [self buttonWithTitle:title titleColor:titleColor fontSize:fontSize cornerRadius:cornerRadius backgrondColor:nil target:nil action:nil];
+    return [self buttonWithTitle:title titleColor:titleColor fontSize:fontSize cornerRadius:cornerRadius backgroundColor:nil target:nil action:nil];
 }
 
 + (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(float)fontSize target:(id)target action:(SEL)action {
     
-    return [self buttonWithTitle:title titleColor:titleColor fontSize:fontSize cornerRadius:0 backgrondColor:nil target:target action:action];
+    return [self buttonWithTitle:title titleColor:titleColor fontSize:fontSize cornerRadius:0 backgroundColor:nil target:target action:action];
 }
 
 + (instancetype)buttonWithImageName:(NSString *)imageName target:(id)target action:(SEL)action {
@@ -50,7 +50,7 @@
     return button;
 }
 
-+ (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(float)fontSize cornerRadius:(float)cornerRadius backgrondColor:(UIColor *)backgrondColor target:(id)target action:(SEL)action {
++ (instancetype)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor fontSize:(float)fontSize cornerRadius:(float)cornerRadius backgroundColor:(UIColor *)backgroundColor target:(id)target action:(SEL)action {
     
     UIButton * button = [self buttonWithType:UIButtonTypeCustom];
     button.titleLabel.font = [UIFont systemFontOfSize:fontSize];
@@ -63,8 +63,8 @@
         button.layer.cornerRadius = cornerRadius;
     }
     
-    if (backgrondColor) {
-        button.backgroundColor = backgrondColor;
+    if (backgroundColor) {
+        button.backgroundColor = backgroundColor;
     }
     
     if (target && action) {

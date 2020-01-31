@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
                      titleColor:(UIColor *)titleColor
                        fontSize:(float)fontSize
                    cornerRadius:(float)cornerRadius
-                 backgrondColor:(nullable UIColor *)backgrondColor
+                 backgroundColor:(nullable UIColor *)backgroundColor
                          target:(nullable id)target
                          action:(nullable SEL)action;
 

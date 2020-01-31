@@ -12,7 +12,9 @@
 
 #define ApplicationDelegate                 ((AppDelegate *)[[UIApplication sharedApplication] delegate])
 
-#define kWindow                             UIApplication.sharedApplication.delegate.window
+#define keyWindow                           [UIApplication sharedApplication].keyWindow
+
+#define deleWindow                          [UIApplication sharedApplication].delegate.window
 
 #define UserDefaults                        [NSUserDefaults standardUserDefaults]
 // 状态栏高度
