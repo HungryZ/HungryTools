@@ -10,11 +10,23 @@
 #endif
 
 #import "ZHCTextField.h"
-#import "NSString+Check.h"
 #import "Masonry.h"
-#import "UILabel+Initializer.h"
-#import "UIButton+Initializer.h"
-#import "UILabel+Size.h"
+
+#pragma mark - NSString Category
+
+@interface NSString (HGZCheck)
+
+@end
+
+@implementation NSString (HGZCheck)
+
+- (BOOL)hgz_checkWithRegexString:(NSString *)regexString {
+    return [[NSPredicate predicateWithFormat:@"SELF MATCHES %@", regexString] evaluateWithObject:self];
+}
+
+@end
+
+#pragma mark - ZHCTextField
 
 @interface ZHCTextField() <UITextFieldDelegate>
 
@@ -79,39 +91,39 @@
             break;
         }
         case ZHCFieldTypeNumber: {
-            return [string checkWithRegexString:@"[0-9]+"];
+            return [string hgz_checkWithRegexString:@"[0-9]+"];
             break;
         }
         case ZHCFieldTypePhoneNumber: {
             if (self.text.length == 3 || self.text.length == 8) {
                 self.text = [self.text stringByAppendingString:@" "];
             }
-            return [string checkWithRegexString:@"[0-9]+"];
+            return [string hgz_checkWithRegexString:@"[0-9]+"];
             break;
         }
         case ZHCFieldTypePhoneNumberWithoutSpacing: {
-            return [string checkWithRegexString:@"[0-9]+"];
+            return [string hgz_checkWithRegexString:@"[0-9]+"];
             break;
         }
         case ZHCFieldTypePassword: {
             // 半角字符 包括字母，数字，标点符号
-            return [string checkWithRegexString:@"[\\x00-\\xff]+"];
+            return [string hgz_checkWithRegexString:@"[\\x00-\\xff]+"];
             break;
         }
         case ZHCFieldTypeMoney: {
-            return [string checkWithRegexString:@"[0-9.]+"];
+            return [string hgz_checkWithRegexString:@"[0-9.]+"];
             break;
         }
         case ZHCFieldTypeIDCardNumber: {
-            return [string checkWithRegexString:@"[0-9Xx]+"];
+            return [string hgz_checkWithRegexString:@"[0-9Xx]+"];
             break;
         }
         case ZHCFieldTypeChinese: {
-            return [string checkWithRegexString:@"[a-z\\u4e00-\\u9fa5]+"];
+            return [string hgz_checkWithRegexString:@"[a-z\\u4e00-\\u9fa5]+"];
             break;
         }
         case ZHCFieldTypeBankCardNumber: {
-            return [string checkWithRegexString:@"[0-9]+"];
+            return [string hgz_checkWithRegexString:@"[0-9]+"];
             break;
         }
     }
@@ -249,7 +261,9 @@
 
 - (void)setLeftText:(NSString *)leftText {
     
-    UILabel * textLabel = [UILabel labelWithFontSize:14.f text:leftText];
+    UILabel * textLabel = [UILabel new];
+    textLabel.font = [UIFont systemFontOfSize:14];
+    textLabel.text = leftText;
     if (_leftTextColor) {
         textLabel.textColor = _leftTextColor;
     }
@@ -257,7 +271,8 @@
         textLabel.font = [UIFont systemFontOfSize:_leftTextFontSize];
     }
     
-    UIView * leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, textLabel.textWidth + 21, self.bounds.size.height)];
+    CGFloat textWidth = [textLabel.text sizeWithAttributes:@{NSFontAttributeName : textLabel.font}].width;
+    UIView * leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, textWidth + 21, self.bounds.size.height)];
     
     [leftView addSubview:textLabel];
     [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -403,7 +418,9 @@
 
 - (UIButton *)secureButton {
     if (!_secureButton) {
-        _secureButton = [UIButton buttonWithImageName:@"Resource.bundle/eye_close" target:self action:@selector(secureBtnClicked)];
+        _secureButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_secureButton addTarget:self action:@selector(secureBtnClicked) forControlEvents:UIControlEventTouchUpInside];
+        [_secureButton setImage:[UIImage imageNamed:@"Resource.bundle/eye_close"] forState:UIControlStateNormal];
         [_secureButton setImage:[UIImage imageNamed:@"Resource.bundle/eye_open"] forState:UIControlStateSelected];
         //        _secureButton.selected = YES;
     }

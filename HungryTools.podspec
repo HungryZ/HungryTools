@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HungryTools'
-  s.version          = '1.3.7'
+  s.version          = '1.4.0'
   s.summary          = 'Some common tools'
 
 # This description is used to generate tags and improve search results.
@@ -24,22 +24,22 @@ Some tools often used.
   s.homepage         = 'https://github.com/HungryZ/HungryTools'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Zhanghaichuan' => '924320752@qq.com' }
+  s.author           = { 'Hungry' => '924320752@qq.com' }
   s.source           = { :git => 'https://github.com/HungryZ/HungryTools.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-#  s.source_files = 'HungryTools/Classes/**/*'
-#  s.public_header_files = 'HungryTools/Classes/HungryTools.h'
+  
+  #  s.source_files = 'HungryTools/Classes/**/*'
+  #  s.public_header_files = 'HungryTools/Classes/HungryTools.h'
   
   # s.resource_bundles = {
   #   'HungryTools' => ['HungryTools/Assets/*.png']
   # }
-
+  
   s.frameworks = 'UIKit'
   s.dependency 'Masonry'
-
+  
   #二级目录
   s.subspec 'Macro' do |ss|
     ss.source_files = 'HungryTools/Classes/Macro/**/*'
@@ -49,7 +49,7 @@ Some tools often used.
   end
   s.subspec 'ZHCTextField' do |ss|
     ss.source_files = 'HungryTools/Classes/ZHCTextField/**/*'
-    ss.dependency 'HungryTools/Category'
+#    ss.dependency 'HungryTools/Category'
     ss.resource_bundles = {
       'Resource' => ['HungryTools/Assets/Resource/*.png']
     }

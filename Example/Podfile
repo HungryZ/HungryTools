@@ -1,4 +1,13 @@
 use_frameworks!
-target 'HungryTools_Tests' do
+
+platform :ios, '9.0'
+
+target 'HungryTools_Example' do
   pod 'HungryTools', :path => '../'
+
+  target 'HungryTools_Tests' do
+    inherit! :search_paths
+
+    
+  end
 end

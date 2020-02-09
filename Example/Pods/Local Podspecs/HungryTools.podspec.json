@@ -1,19 +1,19 @@
 {
   "name": "HungryTools",
-  "version": "1.3.6",
+  "version": "1.4.0",
   "summary": "Some common tools",
   "description": "Some tools often used.",
-  "homepage": "https://github.com/HungryZ/HungryTools",
+  "homepage": "https://github.com/Hungry/HungryTools",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Zhanghaichuan": "924320752@qq.com"
+    "Hungry": "924320752@qq.com"
   },
   "source": {
     "git": "https://github.com/HungryZ/HungryTools.git",
-    "tag": "1.3.6"
+    "tag": "1.4.0"
   },
   "platforms": {
     "ios": "8.0"
@@ -36,11 +36,6 @@
     {
       "name": "ZHCTextField",
       "source_files": "HungryTools/Classes/ZHCTextField/**/*",
-      "dependencies": {
-        "HungryTools/Category": [
-
-        ]
-      },
       "resource_bundles": {
         "Resource": [
           "HungryTools/Assets/Resource/*.png"
