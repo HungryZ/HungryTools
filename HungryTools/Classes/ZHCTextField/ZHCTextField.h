@@ -14,10 +14,10 @@ typedef NS_ENUM(NSUInteger, ZHCFieldType) {
     ZHCFieldTypeNumber,
     ZHCFieldTypePhoneNumber,
     ZHCFieldTypePhoneNumberWithoutSpacing,
-    ZHCFieldTypePassword,
+    ZHCFieldTypePassword,                   // 半角字符 包括字母，数字，标点符号
     ZHCFieldTypeMoney,
     ZHCFieldTypeIDCardNumber,
-    ZHCFieldTypeChinese,
+    ZHCFieldTypeName,                       // 人名 可以输入汉字、英文字母和数字
     ZHCFieldTypeBankCardNumber,
 };
 

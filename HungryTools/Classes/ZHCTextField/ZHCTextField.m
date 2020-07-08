@@ -12,29 +12,14 @@
 #import "ZHCTextField.h"
 #import "Masonry.h"
 
-#pragma mark - NSString Category
-
-@interface NSString (HGZCheck)
-
-@end
-
-@implementation NSString (HGZCheck)
-
-- (BOOL)hgz_checkWithRegexString:(NSString *)regexString {
-    return [[NSPredicate predicateWithFormat:@"SELF MATCHES %@", regexString] evaluateWithObject:self];
-}
-
-@end
-
-#pragma mark - ZHCTextField
-
 @interface ZHCTextField() <UITextFieldDelegate>
 
 @property (nonatomic, strong) UIView *      bottomLineView;
 @property (nonatomic, strong) UIView *      secureView;
 @property (nonatomic, strong) UIButton *    secureButton;
 
-@property (nonatomic, assign) BOOL          isContainLeftOrRightView;
+@property (nonatomic, assign) CGFloat       bottomLineLeftPadding;
+@property (nonatomic, assign) CGFloat       bottomLineRightPadding;
 
 @end
 
@@ -53,13 +38,13 @@
     self.delegate = self;
     self.font = [UIFont systemFontOfSize:14];
     
-    _isContainLeftOrRightView = NO;
+    _bottomLineLeftPadding = 0;
+    _bottomLineRightPadding = 0;
     _bottomLineHeight = 0.5;
     
     [self addBottomLine];
 }
 
-// 无效
 //- (CGRect)clearButtonRectForBounds:(CGRect)bounds {
 //    //        bounds.origin.x -= ViewWidth(self.rightView);
 //    CGRect frame = [super clearButtonRectForBounds:bounds];
@@ -91,39 +76,39 @@
             break;
         }
         case ZHCFieldTypeNumber: {
-            return [string hgz_checkWithRegexString:@"[0-9]+"];
+            return [self checkString:string withRegexString:@"[0-9]+"];
             break;
         }
         case ZHCFieldTypePhoneNumber: {
             if (self.text.length == 3 || self.text.length == 8) {
                 self.text = [self.text stringByAppendingString:@" "];
             }
-            return [string hgz_checkWithRegexString:@"[0-9]+"];
+            return [self checkString:string withRegexString:@"[0-9]+"];
             break;
         }
         case ZHCFieldTypePhoneNumberWithoutSpacing: {
-            return [string hgz_checkWithRegexString:@"[0-9]+"];
+            return [self checkString:string withRegexString:@"[0-9]+"];
             break;
         }
         case ZHCFieldTypePassword: {
             // 半角字符 包括字母，数字，标点符号
-            return [string hgz_checkWithRegexString:@"[\\x00-\\xff]+"];
+            return [self checkString:string withRegexString:@"[\\x00-\\xff]+"];
             break;
         }
         case ZHCFieldTypeMoney: {
-            return [string hgz_checkWithRegexString:@"[0-9.]+"];
+            return [self checkString:string withRegexString:@"[0-9.]+"];
             break;
         }
         case ZHCFieldTypeIDCardNumber: {
-            return [string hgz_checkWithRegexString:@"[0-9Xx]+"];
+            return [self checkString:string withRegexString:@"[0-9Xx]+"];
             break;
         }
-        case ZHCFieldTypeChinese: {
-            return [string hgz_checkWithRegexString:@"[a-z\\u4e00-\\u9fa5]+"];
+        case ZHCFieldTypeName: {
+            return [self checkString:string withRegexString:@"[A-Za-z0-9\\u4e00-\\u9fa5]+"];
             break;
         }
         case ZHCFieldTypeBankCardNumber: {
-            return [string hgz_checkWithRegexString:@"[0-9]+"];
+            return [self checkString:string withRegexString:@"[0-9]+"];
             break;
         }
     }
@@ -169,11 +154,8 @@
 }
 
 - (void)updateBottomLineConstraints {
-    
-    _isContainLeftOrRightView = YES;
-    
     [self.bottomLineView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, 10, 0, 10));
+        make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, self.bottomLineLeftPadding, 0, self.bottomLineRightPadding));
         make.height.mas_equalTo(self.bottomLineHeight);
     }];
 }
@@ -191,6 +173,10 @@
     [attriString addAttribute:name value:value range:NSMakeRange(0, self.placeholder.length)];
     
     self.attributedPlaceholder = attriString;
+}
+
+- (BOOL)checkString:(NSString *)string withRegexString:(NSString *)regexString {
+    return [[NSPredicate predicateWithFormat:@"SELF MATCHES %@", regexString] evaluateWithObject:string];
 }
 
 #pragma mark - Public Method
@@ -237,7 +223,7 @@
             self.maxLength = 18;
             break;
         }
-        case ZHCFieldTypeChinese: {
+        case ZHCFieldTypeName: {
             
             break;
         }
@@ -251,11 +237,13 @@
 
 - (void)setLeftView:(UIView *)leftView {
     [super setLeftView:leftView];
+    self.bottomLineLeftPadding = 10;
     [self updateBottomLineConstraints];
 }
 
 - (void)setRightView:(UIView *)rightView {
     [super setRightView:rightView];
+    self.bottomLineRightPadding = 10;
     [self updateBottomLineConstraints];
 }
 
@@ -348,11 +336,7 @@
     _bottomLineHeight = bottomLineHeight;
     
     [self.bottomLineView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        if (self.isContainLeftOrRightView) {
-            make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, 10, 0, 10));
-        } else {
-            make.left.bottom.right.mas_equalTo(0);
-        }
+        make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, self.bottomLineLeftPadding, 0, self.bottomLineRightPadding));
         make.height.mas_equalTo(bottomLineHeight);
     }];
 }
