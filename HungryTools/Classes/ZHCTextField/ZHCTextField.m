@@ -6,7 +6,7 @@
 //
 
 #ifndef ThemeColor
-#define ThemeColor [UIColor colorWithRed:255/255.f green:80/255.f blue:74/255.f alpha:1]
+    #define ThemeColor [UIColor colorWithRed:103/255.f green:94/255.f blue:247/255.f alpha:1]
 #endif
 
 #import "ZHCTextField.h"
@@ -45,15 +45,6 @@
     [self addBottomLine];
 }
 
-//- (CGRect)clearButtonRectForBounds:(CGRect)bounds {
-//    //        bounds.origin.x -= ViewWidth(self.rightView);
-//    CGRect frame = [super clearButtonRectForBounds:bounds];
-//    if (self.rightView) {
-//        frame.origin.x -= ViewWidth(self.rightView) + 10;
-//    }
-//    return frame;
-//}
-
 #pragma mark - UITextFieldDelegate
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
@@ -73,43 +64,36 @@
     switch (_fieldType) {
         case ZHCFieldTypeDefault: {
             return YES;
-            break;
         }
         case ZHCFieldTypeNumber: {
             return [self checkString:string withRegexString:@"[0-9]+"];
-            break;
         }
         case ZHCFieldTypePhoneNumber: {
             if (self.text.length == 3 || self.text.length == 8) {
                 self.text = [self.text stringByAppendingString:@" "];
             }
             return [self checkString:string withRegexString:@"[0-9]+"];
-            break;
         }
         case ZHCFieldTypePhoneNumberWithoutSpacing: {
             return [self checkString:string withRegexString:@"[0-9]+"];
-            break;
         }
         case ZHCFieldTypePassword: {
             // 半角字符 包括字母，数字，标点符号
             return [self checkString:string withRegexString:@"[\\x00-\\xff]+"];
-            break;
         }
         case ZHCFieldTypeMoney: {
             return [self checkString:string withRegexString:@"[0-9.]+"];
-            break;
         }
         case ZHCFieldTypeIDCardNumber: {
             return [self checkString:string withRegexString:@"[0-9Xx]+"];
-            break;
         }
         case ZHCFieldTypeName: {
-            return [self checkString:string withRegexString:@"[A-Za-z0-9\\u4e00-\\u9fa5]+"];
-            break;
+            // \\u4e00-\\u9fa5 中文字符
+            // \\u278B-\\u2792 ➋-➒ 适配原生九宫格输入法
+            return [self checkString:string withRegexString:@"[A-Za-z0-9\\u4e00-\\u9fa5\\u278B-\\u2792]+"];
         }
         case ZHCFieldTypeBankCardNumber: {
             return [self checkString:string withRegexString:@"[0-9]+"];
-            break;
         }
     }
     return NO;
