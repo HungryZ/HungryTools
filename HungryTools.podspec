@@ -28,7 +28,7 @@ Some tools often used.
   s.source           = { :git => 'https://github.com/HungryZ/HungryTools.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   
   #  s.source_files = 'HungryTools/Classes/**/*'
   #  s.public_header_files = 'HungryTools/Classes/HungryTools.h'
@@ -47,14 +47,15 @@ Some tools often used.
   s.subspec 'Category' do |ss|
     ss.source_files = 'HungryTools/Classes/Category/**/*'
   end
-  s.subspec 'ZHCTextField' do |ss|
-    ss.source_files = 'HungryTools/Classes/ZHCTextField/**/*'
+  s.subspec 'UITool' do |ss|
+    ss.source_files = 'HungryTools/Classes/UITool/**/*'
 #    ss.dependency 'HungryTools/Category'
-    ss.resource_bundles = {
-      'Resource' => ['HungryTools/Assets/Resource/*.png']
-    }
-  end
-  s.subspec 'ZHCWebViewController' do |ss|
-    ss.source_files = 'HungryTools/Classes/ZHCWebViewController/**/*'
+
+    ss.subspec 'ZHCTextField' do |sss|
+      sss.source_files = 'HungryTools/Classes/UITool/ZHCTextField/**/*'
+      sss.resource_bundles = {
+        'Resource' => ['HungryTools/Assets/Resource/*.png']
+      }
+    end
   end
 end

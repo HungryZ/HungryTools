@@ -2,16 +2,16 @@ PODS:
   - HungryTools (1.4.0):
     - HungryTools/Category (= 1.4.0)
     - HungryTools/Macro (= 1.4.0)
-    - HungryTools/ZHCTextField (= 1.4.0)
-    - HungryTools/ZHCWebViewController (= 1.4.0)
+    - HungryTools/UITool (= 1.4.0)
     - Masonry
   - HungryTools/Category (1.4.0):
     - Masonry
   - HungryTools/Macro (1.4.0):
     - Masonry
-  - HungryTools/ZHCTextField (1.4.0):
+  - HungryTools/UITool (1.4.0):
+    - HungryTools/UITool/ZHCTextField (= 1.4.0)
     - Masonry
-  - HungryTools/ZHCWebViewController (1.4.0):
+  - HungryTools/UITool/ZHCTextField (1.4.0):
     - Masonry
   - Masonry (1.1.0)
 
@@ -27,7 +27,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HungryTools: 285371cafaff24db1285bad2d4da22e377c7e1f1
+  HungryTools: 741d12ac57cc891891dd68ca692de8574cbb62d2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
 
 PODFILE CHECKSUM: 11e76a5bfd36752c3636cd66a8dd611a2df106ff

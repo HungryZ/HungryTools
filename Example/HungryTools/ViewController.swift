@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         field.backgroundColor = .white
         field.frame = CGRect(x: 12, y: 200, width: 414 - 24, height: 44)
         field.leftText = "测试"
-        field.fieldType = .number
+        field.fieldType = .password
         view.addSubview(field)
     }
 

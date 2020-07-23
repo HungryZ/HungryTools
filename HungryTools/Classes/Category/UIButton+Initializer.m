@@ -6,7 +6,7 @@
 //
 
 #ifndef ThemeColor
-    #define ThemeColor [UIColor colorWithRed:255/255.f green:80/255.f blue:74/255.f alpha:1]
+    #define ThemeColor [UIColor colorWithRed:103/255.f green:94/255.f blue:247/255.f alpha:1]
 #endif
 
 #ifndef DisableColor
@@ -15,8 +15,15 @@
 
 #import "UIButton+Initializer.h"
 #import "UIImage+Color.h"
+#import <objc/runtime.h>
 
 @implementation UIButton (Initializer)
+
++ (void)load {
+    Method originalMethod = class_getInstanceMethod(self, @selector(setSelected:));
+    Method swizzledMethod = class_getInstanceMethod(self, @selector(ex_setSelected:));
+    method_exchangeImplementations(originalMethod, swizzledMethod);
+}
 
 + (instancetype)buttonWithThemeTitle:(NSString *)title target:(id)target action:(SEL)action {
     
@@ -74,10 +81,27 @@
     return button;
 }
 
-/// 在设置selected状态下点击时会先变成normal状态下的颜色，松开时再变化为selected状态下的颜色。
-/// 此时重写Highlighted的set方法即可（空方法，什么都不需要写）
-- (void)setHighlighted:(BOOL)highlighted {
+- (void)ex_setSelected:(BOOL)selected {
+    [self ex_setSelected:selected];
     
+    UIFont *font = objc_getAssociatedObject(self, selected ? "selectedFont" : "normalFont");
+    if (font) {
+        self.titleLabel.font = font;
+    }
+}
+
+- (void)setFont:(UIFont *)font forState:(UIControlState)state {
+    if (state == UIControlStateNormal) {
+        objc_setAssociatedObject(self, "normalFont", font, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        if (!self.isSelected) {
+            self.titleLabel.font = font;
+        }
+    } else if (state == UIControlStateSelected) {
+        objc_setAssociatedObject(self, "selectedFont", font, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        if (self.isSelected) {
+            self.titleLabel.font = font;
+        }
+    }
 }
 
 @end

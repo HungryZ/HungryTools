@@ -18,6 +18,7 @@
 #import "UIButton+Initializer.h"
 #import "UIImage+Chameleon.h"
 #import "UIImage+Color.h"
+#import "UIImage+Compress.h"
 #import "UILabel+Initializer.h"
 #import "UILabel+Size.h"
 #import "UITableViewCell+SeparatorLine.h"
@@ -26,6 +27,7 @@
 #import "HungryToolsMacro.h"
 #import "ZHCTextField.h"
 #import "ZHCWebViewController.h"
+#import "ZHCTextField.h"
 
 FOUNDATION_EXPORT double HungryToolsVersionNumber;
 FOUNDATION_EXPORT const unsigned char HungryToolsVersionString[];

@@ -388,9 +388,14 @@
     if (!_secureButton) {
         _secureButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_secureButton addTarget:self action:@selector(secureBtnClicked) forControlEvents:UIControlEventTouchUpInside];
-        [_secureButton setImage:[UIImage imageNamed:@"Resource.bundle/eye_close"] forState:UIControlStateNormal];
-        [_secureButton setImage:[UIImage imageNamed:@"Resource.bundle/eye_open"] forState:UIControlStateSelected];
-        //        _secureButton.selected = YES;
+        
+        NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
+        NSString *path1 = [currentBundle pathForResource:@"eye_close@2x.png" ofType:nil inDirectory:@"Resource.bundle"];
+        NSString *path2 = [currentBundle pathForResource:@"eye_open@2x.png" ofType:nil inDirectory:@"Resource.bundle"];
+        [_secureButton setImage:[UIImage imageWithContentsOfFile:path1] forState:UIControlStateNormal];
+        [_secureButton setImage:[UIImage imageWithContentsOfFile:path2] forState:UIControlStateSelected];
+        [_secureButton setImage:[UIImage imageWithContentsOfFile:path2] forState:UIControlStateSelected | UIControlStateHighlighted];
+        _secureButton.adjustsImageWhenHighlighted = NO;
     }
     return _secureButton;
 }

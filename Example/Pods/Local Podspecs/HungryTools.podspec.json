@@ -16,7 +16,7 @@
     "tag": "1.4.0"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "frameworks": "UIKit",
   "dependencies": {
@@ -34,17 +34,19 @@
       "source_files": "HungryTools/Classes/Category/**/*"
     },
     {
-      "name": "ZHCTextField",
-      "source_files": "HungryTools/Classes/ZHCTextField/**/*",
-      "resource_bundles": {
-        "Resource": [
-          "HungryTools/Assets/Resource/*.png"
-        ]
-      }
-    },
-    {
-      "name": "ZHCWebViewController",
-      "source_files": "HungryTools/Classes/ZHCWebViewController/**/*"
+      "name": "UITool",
+      "source_files": "HungryTools/Classes/UITool/**/*",
+      "subspecs": [
+        {
+          "name": "ZHCTextField",
+          "source_files": "HungryTools/Classes/UITool/ZHCTextField/**/*",
+          "resource_bundles": {
+            "Resource": [
+              "HungryTools/Assets/Resource/*.png"
+            ]
+          }
+        }
+      ]
     }
   ]
 }

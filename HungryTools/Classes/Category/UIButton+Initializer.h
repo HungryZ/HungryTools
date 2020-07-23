@@ -37,6 +37,10 @@ NS_ASSUME_NONNULL_BEGIN
                              action:(nullable SEL)action;
 
 
+/// 只做了对Normal和Selected的支持
+- (void)setFont:(UIFont *)font forState:(UIControlState)state;
+
+
 @end
 
 NS_ASSUME_NONNULL_END
