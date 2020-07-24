@@ -3,7 +3,7 @@
 //  HungryTools
 //
 //  Created by 张海川 on 2020/7/23.
-//
+//  多用于autolayout
 
 #import <UIKit/UIKit.h>
 
@@ -20,8 +20,10 @@ typedef NS_ENUM(NSUInteger, ZHCButtonAlignment) {
 @property (nonatomic, assign) ZHCButtonAlignment    zhc_alignment;
 /// 图片与标题之间的间隔，默认0
 @property (nonatomic, assign) CGFloat               zhc_spacing;
-/// 内边距
-@property (nonatomic, assign) UIEdgeInsets          zhc_padding;
+/// 水平内边距，优先级低于 zhc_spacing
+@property (nonatomic, assign) CGFloat               zhc_horizontalPadding;
+/// 垂直内边距，优先级低于 zhc_spacing
+@property (nonatomic, assign) CGFloat               zhc_verticalPadding;
 
 + (instancetype)buttonwithAlignment:(ZHCButtonAlignment)alignment;
 

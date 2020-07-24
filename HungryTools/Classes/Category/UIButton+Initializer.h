@@ -13,21 +13,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)buttonWithThemeTitle:(NSString *)title target:(nullable id)target action:(nullable SEL)action;
 
-+ (instancetype)buttonWithTitle:(NSString *)title
-                     titleColor:(UIColor *)titleColor
++ (instancetype)buttonWithTitle:(nullable NSString *)title
+                     titleColor:(nullable UIColor *)titleColor
                        fontSize:(float)fontSize
                    cornerRadius:(float)cornerRadius
                 backgroundColor:(nullable UIColor *)backgroundColor
                          target:(nullable id)target
                          action:(nullable SEL)action;
 
-+ (instancetype)buttonWithTitle:(NSString *)title
-                     titleColor:(UIColor *)titleColor
++ (instancetype)buttonWithTitle:(nullable NSString *)title
+                     titleColor:(nullable UIColor *)titleColor
                        fontSize:(float)fontSize
                    cornerRadius:(float)cornerRadius;
 
-+ (instancetype)buttonWithTitle:(NSString *)title
-                     titleColor:(UIColor *)titleColor
++ (instancetype)buttonWithTitle:(nullable NSString *)title
+                     titleColor:(nullable UIColor *)titleColor
                        fontSize:(float)fontSize
                          target:(nullable id)target
                          action:(nullable SEL)action;

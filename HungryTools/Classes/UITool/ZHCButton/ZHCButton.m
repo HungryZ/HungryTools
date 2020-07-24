@@ -43,40 +43,15 @@
 
 - (void)config {
     _zhc_spacing = 0;
+    _zhc_horizontalPadding = 10;
+    _zhc_verticalPadding = 10;
+    self.titleLabel.textAlignment = NSTextAlignmentCenter;
 }
 
-- (void)sizeToFit {
-    [super sizeToFit];
+#pragma mark - overwrite
 
-    CGRect bounds = self.bounds;
-    bounds.size = [self intrinsicContentSize];
-    self.bounds = bounds;
-
-    CGFloat offset = 0;
-    CGSize imageSize = self.currentImage.size;
-    if ((self.currentTitle.length > 0 || self.currentAttributedTitle.length > 0) &&
-        (imageSize.width > 0 && imageSize.height > 0)) {
-        offset = _zhc_spacing * 0.5;
-    }
-
-    CGPoint center = self.center;
-    center.x += offset;
-    self.center = center;
-}
-
-- (CGSize)intrinsicContentSize {
-    CGSize size = [super intrinsicContentSize];
-    if (_zhc_alignment == ZHCButtonAlignmentHorizontal) {
-        size.width += _zhc_spacing;
-    } else {
-        size.height += _zhc_spacing;
-    }
-
-    return size;
-}
-
-- (CGRect)imageRectForContentRect:(CGRect)contentRect {
-    return _newImageRect;
+- (CGSize)sizeThatFits:(CGSize)size {
+    return [self zhc_contentSize];
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect {
@@ -84,51 +59,84 @@
     return _newTitleRect;
 }
 
+- (CGRect)imageRectForContentRect:(CGRect)contentRect {
+    return _newImageRect;
+}
+
+- (CGSize)intrinsicContentSize {
+    return [self zhc_contentSize];
+}
+
+#pragma mark - Helper
+
 - (void)calculateImageRectAndTitleRectForContentRect:(CGRect)contentRect {
-    if (self.zhc_alignment == ZHCButtonAlignmentHorizontal && _zhc_spacing == 0) {
-        // 普通状态
-        _newTitleRect = [super titleRectForContentRect:contentRect];
-        _newImageRect = [super imageRectForContentRect:contentRect];
-        return;
-    }
     if (CGRectIsEmpty(contentRect)) {
         return;
     }
     if (!CGRectIsEmpty(_newImageRect) || !CGRectIsEmpty(_newImageRect)) {
         return;
     }
-
-    CGRect imageRect = [super imageRectForContentRect:contentRect];
-    CGRect titleRect = [super titleRectForContentRect:contentRect];
-    if (self.zhc_alignment == ZHCButtonAlignmentVertical) {
-        CGFloat imageHeight = CGRectGetHeight(imageRect);
-        CGFloat titleHeight = CGRectGetHeight(titleRect);
+    
+    CGSize imageSize = [self imageSize];
+    CGSize titleSize = [self titleSize];
+    if (_zhc_alignment == ZHCButtonAlignmentHorizontal) {
+        _newImageRect = [super imageRectForContentRect:contentRect];
+        _newTitleRect = [super titleRectForContentRect:contentRect];
+        _newImageRect.origin.x -= _zhc_spacing / 2;
+        _newTitleRect.origin.x += _zhc_spacing / 2;
+    } else {
+        CGFloat imageHeight = imageSize.height;
+        CGFloat titleHeight = titleSize.height;
         CGFloat imageAndTitleHeight = imageHeight + _zhc_spacing + titleHeight;
         
-        CGFloat imageX = CGRectGetMidX(contentRect) - CGRectGetWidth(imageRect) / 2;
+        CGFloat imageX = CGRectGetMidX(contentRect) - imageSize.width / 2;
         CGFloat imageY = CGRectGetMidY(contentRect) - imageAndTitleHeight / 2;
-        _newImageRect = CGRectMake(imageX, imageY, CGRectGetWidth(imageRect), CGRectGetHeight(imageRect));
+        _newImageRect = CGRectMake(imageX, imageY, imageSize.width, imageSize.height);
         
         CGFloat titleBottom = CGRectGetMidY(contentRect) + imageAndTitleHeight / 2;
         CGFloat titleX = 0;
-        CGFloat titleY = titleBottom - CGRectGetHeight(titleRect);
-        _newTitleRect = CGRectMake(titleX, titleY, CGRectGetWidth(contentRect), CGRectGetHeight(titleRect));
-    } else {
-        imageRect.origin.x -= _zhc_spacing / 2;
-        _newImageRect = imageRect;
-        titleRect.origin.x += _zhc_spacing / 2;
-        _newTitleRect = titleRect;
+        CGFloat titleY = titleBottom - titleSize.height;
+        _newTitleRect = CGRectMake(titleX, titleY, CGRectGetWidth(contentRect), titleSize.height);
     }
 }
 
-#pragma mark - Setter
-
-- (void)setZhc_alignment:(ZHCButtonAlignment)alignment {
-    _zhc_alignment = alignment;
+- (CGSize)zhc_contentSize {
+    CGSize imageSize = [self imageSize];
+    CGSize titleSize = [self titleSize];
     
-    if (_zhc_alignment == ZHCButtonAlignmentVertical) {
-        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+    CGFloat width, height;
+    if (_zhc_alignment == ZHCButtonAlignmentHorizontal) {
+        // 水平布局
+        width = imageSize.width + _zhc_spacing + titleSize.width;
+        height = MAX(imageSize.height, titleSize.height);
+    } else {
+        // 垂直布局
+        width = MAX(imageSize.width, titleSize.width);
+        height = imageSize.height + _zhc_spacing + titleSize.height;
     }
+    // 加上边距
+    width += 2 * _zhc_horizontalPadding;
+    height += 2 * _zhc_verticalPadding;
+    
+    return CGSizeMake(ceil(width), ceil(height));
+}
+
+- (CGSize)imageSize {
+    UIImage *image = [self imageForState:self.state];
+    return image ? image.size : CGSizeZero;
+}
+
+- (CGSize)titleSize {
+    NSString *title = [self titleForState:self.state];
+    return title ? [self widthForString:title inFont:self.titleLabel.font] : CGSizeZero;
+}
+
+- (CGSize)widthForString:(NSString *)string inFont:(UIFont *)font {
+    
+    return [string boundingRectWithSize:CGSizeMake(MAXFLOAT, MAXFLOAT)
+                                options:NSStringDrawingUsesLineFragmentOrigin
+                             attributes:@{NSFontAttributeName : font}
+                                context:nil].size;
 }
 
 @end

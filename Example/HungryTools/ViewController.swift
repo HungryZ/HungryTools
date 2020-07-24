@@ -28,11 +28,14 @@ class ViewController: UIViewController {
         let button = ZHCButton(title: "123456789", titleColor: .black, fontSize: 16, target: nil, action: nil)
         button.setImage(UIImage(named: "image_alipay"), for: .normal)
         button.backgroundColor = .white
-        button.zhc_spacing = 40
-        button.zhc_alignment = .vertical
+        button.zhc_alignment = .horizontal
+        button.zhc_spacing = 10
+        button.zhc_verticalPadding = 10
         view.addSubview(button)
+//        button.frame = CGRect(x: 100, y: 200, width: 250, height: 80)
         button.snp.makeConstraints { (make) in
             make.center.equalTo(view)
+//            make.size.equalTo(100)
         }
         
         let label = UILabel(font: 14, text: "1234")
