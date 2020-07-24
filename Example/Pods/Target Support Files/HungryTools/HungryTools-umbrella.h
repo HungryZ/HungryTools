@@ -25,6 +25,7 @@
 #import "UIView+Initializer.h"
 #import "UIViewController+Current.h"
 #import "HungryToolsMacro.h"
+#import "ZHCButton.h"
 #import "ZHCTextField.h"
 #import "ZHCWebViewController.h"
 #import "ZHCTextField.h"

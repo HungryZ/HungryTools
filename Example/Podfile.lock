@@ -14,13 +14,16 @@ PODS:
   - HungryTools/UITool/ZHCTextField (1.4.0):
     - Masonry
   - Masonry (1.1.0)
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - HungryTools (from `../`)
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - Masonry
+    - SnapKit
 
 EXTERNAL SOURCES:
   HungryTools:
@@ -29,7 +32,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   HungryTools: 741d12ac57cc891891dd68ca692de8574cbb62d2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 11e76a5bfd36752c3636cd66a8dd611a2df106ff
+PODFILE CHECKSUM: 70a0323767b0e05f05c764f8cf393c0f2e247c0c
 
 COCOAPODS: 1.8.4
