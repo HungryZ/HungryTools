@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HungryTools'
-  s.version          = '1.4.0'
+  s.version          = '1.4.1'
   s.summary          = 'Some common tools'
 
 # This description is used to generate tags and improve search results.
@@ -39,6 +39,7 @@ Some tools often used.
   
   s.frameworks = 'UIKit'
   s.dependency 'Masonry'
+  s.default_subspecs = 'UITool', 'Category'
   
   #二级目录
   s.subspec 'Macro' do |ss|
@@ -50,12 +51,21 @@ Some tools often used.
   s.subspec 'UITool' do |ss|
     ss.source_files = 'HungryTools/Classes/UITool/**/*'
 #    ss.dependency 'HungryTools/Category'
+    ss.resource_bundles = {
+      'Resource' => ['HungryTools/Assets/Resource/**/*']
+    }
 
-    ss.subspec 'ZHCTextField' do |sss|
-      sss.source_files = 'HungryTools/Classes/UITool/ZHCTextField/**/*'
-      sss.resource_bundles = {
-        'Resource' => ['HungryTools/Assets/Resource/*.png']
-      }
-    end
+#    ss.subspec 'ZHCTextField' do |sss|
+#      sss.source_files = 'HungryTools/Classes/UITool/ZHCTextField/**/*'
+#      sss.resource_bundles = {
+#        'Resource' => ['HungryTools/Assets/Resource/TextField/*.png']
+#      }
+#    end
+#    ss.subspec 'ZHCNavigationController' do |sss|
+#      sss.source_files = 'HungryTools/Classes/UITool/ZHCNavigationController/**/*'
+#      sss.resource_bundles = {
+#        'Resource' => ['HungryTools/Assets/Resource/Navigation/*.png']
+#      }
+#    end
   end
 end

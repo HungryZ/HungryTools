@@ -12,7 +12,6 @@
 
 #import "UITableViewCell+SeparatorLine.h"
 #import <objc/runtime.h>
-#import "Masonry.h"
 
 @implementation UITableViewCell (SeparatorLine)
 
@@ -29,12 +28,15 @@
             UIView * separatorLine = [UIView new];
             separatorLine.backgroundColor = SeparatorLineColor;
             separatorLine.tag = 10086;
+            separatorLine.translatesAutoresizingMaskIntoConstraints = NO;
             [self addSubview:separatorLine];
             
-            [separatorLine mas_makeConstraints:^(MASConstraintMaker *make) {
-                make.top.left.right.mas_equalTo(self.zhc_separatorLineInset);
-                make.height.mas_equalTo(self.zhc_separatorLineHeight);
-            }];
+            [self addConstraints:@[
+                [NSLayoutConstraint constraintWithItem:separatorLine attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeTop multiplier:1 constant:self.zhc_separatorLineInset.top],
+                [NSLayoutConstraint constraintWithItem:separatorLine attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:self.zhc_separatorLineInset.left],
+                [NSLayoutConstraint constraintWithItem:separatorLine attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:-self.zhc_separatorLineInset.right],
+                [NSLayoutConstraint constraintWithItem:separatorLine attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeHeight multiplier:1 constant:self.zhc_separatorLineHeight],
+            ]];
         }
     } else {
         if ([self viewWithTag:10086]) {
