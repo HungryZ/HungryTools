@@ -18,6 +18,10 @@ class ZHCTextFieldController: UIViewController {
         
         var field = ZHCTextField(frame: CGRect(x: 0, y: 100, width: UIScreen.main.bounds.width, height: 50))
         field.showBottomLine = true
+        field.leftText = "1111"
+        field.bottomLineHeight = 10
+        field.rightView = UILabel(font: 14, text: "right")
+        field.rightViewMode = .always
         view.addSubview(field)
         
         field = ZHCTextField(frame: CGRect(x: 0, y: 150, width: UIScreen.main.bounds.width, height: 50))

@@ -2,12 +2,8 @@ PODS:
   - HungryTools (1.4.1):
     - HungryTools/Category (= 1.4.1)
     - HungryTools/UITool (= 1.4.1)
-    - Masonry
-  - HungryTools/Category (1.4.1):
-    - Masonry
-  - HungryTools/UITool (1.4.1):
-    - Masonry
-  - Masonry (1.1.0)
+  - HungryTools/Category (1.4.1)
+  - HungryTools/UITool (1.4.1)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
@@ -16,7 +12,6 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Masonry
     - SnapKit
 
 EXTERNAL SOURCES:
@@ -24,8 +19,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HungryTools: 96afbab5005670021f907aab54668606bc99b4c6
-  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  HungryTools: ce24da24c1dc2723237f5e79127946892eee8979
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: 99b76f049b097aa12df0aaf17cf282c9375fee19

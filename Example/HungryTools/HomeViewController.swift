@@ -90,7 +90,6 @@ extension HomeViewController: ZHCNavigationControllerDelegate {
     
     func zhc_navigationControllerDefaultAppearenceConfig() -> NaviBarConfigBlock {
     { naviBar in
-        print("1")
         naviBar.setBackgroundImage(UIImage(color: .white), for: .default)
         naviBar.titleTextAttributes = [
             NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .medium),

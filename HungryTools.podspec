@@ -37,8 +37,6 @@ Some tools often used.
   #   'HungryTools' => ['HungryTools/Assets/*.png']
   # }
   
-  s.frameworks = 'UIKit'
-  s.dependency 'Masonry'
   s.default_subspecs = 'UITool', 'Category'
   
   #二级目录

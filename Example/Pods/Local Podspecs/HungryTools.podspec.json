@@ -18,12 +18,6 @@
   "platforms": {
     "ios": "9.0"
   },
-  "frameworks": "UIKit",
-  "dependencies": {
-    "Masonry": [
-
-    ]
-  },
   "default_subspecs": [
     "UITool",
     "Category"

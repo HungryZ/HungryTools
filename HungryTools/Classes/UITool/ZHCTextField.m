@@ -10,7 +10,6 @@
 #endif
 
 #import "ZHCTextField.h"
-#import "Masonry.h"
 
 @interface ZHCTextField() <UITextFieldDelegate>
 
@@ -129,19 +128,27 @@
 #pragma mark - Private Method
 
 - (void)addBottomLine {
-    
     [self addSubview:self.bottomLineView];
-    [self.bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.bottom.right.mas_equalTo(0);
-        make.height.mas_equalTo(self.bottomLineHeight);
-    }];
+    [self updateBottomLineConstraints];
 }
 
 - (void)updateBottomLineConstraints {
-    [self.bottomLineView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, self.bottomLineLeftPadding, 0, self.bottomLineRightPadding));
-        make.height.mas_equalTo(self.bottomLineHeight);
-    }];
+    [self removeConstraints:self.constraints];
+    [self addConstraints:@[
+        [NSLayoutConstraint constraintWithItem:self.bottomLineView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeLeft multiplier:1 constant:self.bottomLineLeftPadding],
+        [NSLayoutConstraint constraintWithItem:self.bottomLineView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeBottom multiplier:1 constant:0],
+        [NSLayoutConstraint constraintWithItem:self.bottomLineView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:self attribute:NSLayoutAttributeRight multiplier:1 constant:-self.bottomLineRightPadding],
+        [NSLayoutConstraint constraintWithItem:self.bottomLineView attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeHeight multiplier:1 constant:self.bottomLineHeight],
+    ]];
+}
+
+- (void)setLeftViewConstraints:(UIView *)subView withLeftView:(UIView *)leftView {
+    subView.translatesAutoresizingMaskIntoConstraints = NO;
+    [leftView addConstraints:@[
+        [NSLayoutConstraint constraintWithItem:subView attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:leftView attribute:NSLayoutAttributeCenterY multiplier:1 constant:0],
+        [NSLayoutConstraint constraintWithItem:subView attribute:NSLayoutAttributeLeft relatedBy:NSLayoutRelationEqual toItem:leftView attribute:NSLayoutAttributeLeft multiplier:1 constant:10],
+        [NSLayoutConstraint constraintWithItem:subView attribute:NSLayoutAttributeRight relatedBy:NSLayoutRelationEqual toItem:leftView attribute:NSLayoutAttributeRight multiplier:1 constant:-10],
+    ]];
 }
 
 - (void)setPlaceholderAttribute:(id)value {
@@ -247,11 +254,7 @@
     UIView * leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, textWidth + 21, self.bounds.size.height)];
     
     [leftView addSubview:textLabel];
-    [textLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.mas_equalTo(0);
-        make.left.mas_equalTo(10);
-        make.right.mas_equalTo(-10);
-    }];
+    [self setLeftViewConstraints:textLabel withLeftView:leftView];
     
     self.leftView = leftView;
     self.leftViewMode = UITextFieldViewModeAlways;
@@ -265,11 +268,7 @@
     UIView * leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, image.size.width + 20, self.bounds.size.height)];
     
     [leftView addSubview:subView];
-    [subView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.mas_equalTo(0);
-        make.left.mas_equalTo(10);
-        make.right.mas_equalTo(-10);
-    }];
+    [self setLeftViewConstraints:subView withLeftView:leftView];
     
     self.leftView = leftView;
     self.leftViewMode = UITextFieldViewModeAlways;
@@ -282,11 +281,7 @@
     UIView * leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, leftImage.size.width + 20, self.bounds.size.height)];
     
     [leftView addSubview:subView];
-    [subView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.centerY.mas_equalTo(0);
-        make.left.mas_equalTo(10);
-        make.right.mas_equalTo(-10);
-    }];
+    [self setLeftViewConstraints:subView withLeftView:leftView];
     
     self.leftView = leftView;
     self.leftViewMode = UITextFieldViewModeAlways;
@@ -319,10 +314,7 @@
     
     _bottomLineHeight = bottomLineHeight;
     
-    [self.bottomLineView mas_remakeConstraints:^(MASConstraintMaker *make) {
-        make.left.bottom.right.mas_equalTo(UIEdgeInsetsMake(0, self.bottomLineLeftPadding, 0, self.bottomLineRightPadding));
-        make.height.mas_equalTo(bottomLineHeight);
-    }];
+    [self updateBottomLineConstraints];
 }
 
 - (void)setClearButtonImage:(UIImage *)clearButtonImage {
@@ -370,6 +362,7 @@
     if (!_bottomLineView) {
         _bottomLineView = [UIView new];
         _bottomLineView.backgroundColor = [UIColor colorWithRed:216/255.f green:216/255.f blue:216/255.f alpha:1];
+        _bottomLineView.translatesAutoresizingMaskIntoConstraints = NO;
     }
     return _bottomLineView;
 }
