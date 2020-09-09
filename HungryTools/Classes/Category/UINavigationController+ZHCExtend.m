@@ -103,9 +103,6 @@
     
     [self zhc_pushViewController:viewController animated:animated];
     
-    if (self.viewControllers.count == 1) {
-        [self configDefaultNavigationBarAppearence:viewController];
-    }
     [self refreshNavigationBarAppearenceIfneeded:0];
 }
 
@@ -268,15 +265,7 @@
     viewController.navigationItem.leftBarButtonItem = leftItem;
 }
 
-- (void)configDefaultNavigationBarAppearence:(UIViewController *)viewController {
-    UIViewController *rootVC = viewController;
-    NaviBarConfigBlock rootBlock = PerformSEL(rootVC, @selector(zhc_navigationControllerDefaultAppearenceConfig));
-
-    !rootBlock ?: rootBlock(self.navigationBar);
-}
-
-// 在push之后或pop之前调用
-// 0入栈 1出栈
+// 在push之后或pop之前调用 0入栈 1出栈
 - (void)refreshNavigationBarAppearenceIfneeded:(int)type {
     if (self.viewControllers.count == 0) {
         // 其实并不会等于零
@@ -292,29 +281,34 @@
             topVC.zhc_navigationBarRefreshBlock = PerformSEL(topVC, @selector(zhc_navigationControllerDefaultAppearenceConfig));
         }
     } else {                                // 栈中控制器数量大于1
-        UIViewController *topVC = self.viewControllers.lastObject;
-        UIViewController *secondVC = self.viewControllers[self.viewControllers.count - 2];
-        NaviBarConfigBlock topBlock = PerformSEL(topVC, @selector(zhc_navigationControllerSingleAppearenceConfig));
-        NaviBarConfigBlock secondBlock = PerformSEL(secondVC, @selector(zhc_navigationControllerSingleAppearenceConfig));
-        // 当任意一个block存在就需要刷新UI
-        if (topBlock || secondBlock) {
-            if (type == 0) {    // 入栈
-                if (topBlock) {
-                    topVC.zhc_navigationBarRefreshBlock = topBlock;
-                } else {
-                    topVC.zhc_navigationBarRefreshBlock = PerformSEL(topVC, @selector(zhc_navigationControllerDefaultAppearenceConfig));
-                }
-            } else {            // 出栈
-                if (self.viewControllers.count == 2) {
-                    // count == 2时出栈则显示RootVC，一般RootVC都是有zhc_navigationBarRefreshBlock(Default)的，这里重置一下，防止重复调用
-                    secondVC.zhc_navigationBarRefreshBlock = nil;
-                }
-                if (secondBlock) {
-                    secondVC.zhc_navigationBarRefreshBlock = secondBlock;
-                } else {
-                    secondVC.zhc_navigationBarRefreshBlock = PerformSEL(secondVC, @selector(zhc_navigationControllerDefaultAppearenceConfig));
-                }
+        UIViewController *appearingVC, *disappearingVC;
+        NaviBarConfigBlock appearingBlock, disappearingBlock;
+        if (type == 0) {    // 入栈
+            appearingVC = self.viewControllers.lastObject;
+            disappearingVC = self.viewControllers[self.viewControllers.count - 2];
+        } else {            // 出栈
+            appearingVC = self.viewControllers[self.viewControllers.count - 2];
+            disappearingVC = self.viewControllers.lastObject;
+            if (self.viewControllers.count == 2) {
+                // count == 2时出栈则显示RootVC，一般RootVC都是有zhc_navigationBarRefreshBlock(Default)的，
+                // 从前一个页面Pop回来，大概率是不需要刷新的，这里重置一下，防止重复调用
+                appearingVC.zhc_navigationBarRefreshBlock = nil;
             }
+        }
+        appearingBlock = PerformSEL(appearingVC, @selector(zhc_navigationControllerSingleAppearenceConfig));
+        disappearingBlock = PerformSEL(disappearingVC, @selector(zhc_navigationControllerSingleAppearenceConfig));
+        
+        // 当任意一个block存在说明前后两个VC样式不一样，需要刷新UI
+        BOOL needRefreshNavigationBar = appearingBlock || disappearingBlock;
+
+        if (needRefreshNavigationBar) {
+            if (appearingBlock) {
+                appearingVC.zhc_navigationBarRefreshBlock = appearingBlock;
+            } else {
+                appearingVC.zhc_navigationBarRefreshBlock = PerformSEL(appearingVC, @selector(zhc_navigationControllerDefaultAppearenceConfig));
+            }
+        } else {
+            appearingVC.zhc_navigationBarRefreshBlock = nil;
         }
     }
 }

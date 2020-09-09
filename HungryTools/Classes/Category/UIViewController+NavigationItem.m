@@ -13,4 +13,8 @@
     
 }
 
+- (void)navigationItemClicked:(int)direction atIndex:(NSInteger)index {
+    
+}
+
 @end

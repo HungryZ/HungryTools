@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ZHCTextFieldController: UIViewController {
+class ZHCTextFieldController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        view.backgroundColor = .white
         
         var field = ZHCTextField(frame: CGRect(x: 0, y: 100, width: UIScreen.main.bounds.width, height: 50))
         field.showBottomLine = true

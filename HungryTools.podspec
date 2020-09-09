@@ -30,16 +30,11 @@ Some tools often used.
 
   s.ios.deployment_target = '9.0'
   
-  #  s.source_files = 'HungryTools/Classes/**/*'
   #  s.public_header_files = 'HungryTools/Classes/HungryTools.h'
-  
-  # s.resource_bundles = {
-  #   'HungryTools' => ['HungryTools/Assets/*.png']
-  # }
   
   s.default_subspecs = 'UITool', 'Category'
   
-  #二级目录
+  #子目录
   s.subspec 'Macro' do |ss|
     ss.source_files = 'HungryTools/Classes/Macro/**/*'
   end

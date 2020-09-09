@@ -8,9 +8,9 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: BaseViewController {
     
-    let dataArray = ["ZHCTextField", "1", "2"]
+    let dataArray = ["ZHCTextField", "Navigation", "2"]
     
     lazy var mainTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
@@ -28,7 +28,6 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         navigationItem.title = "HungryTools"
-        view.backgroundColor = .white
         zhc_hideNavigationBar = false
         
         view.addSubview(mainTableView)
@@ -64,38 +63,13 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         switch indexPath.row {
         case 0:
             nextVC = ZHCTextFieldController()
+        case 1:
+            nextVC = NaviTestViewController()
         default:
             nextVC = nil
         }
         if let vc = nextVC {
             navigationController?.pushViewController(vc, animated: true)
-        }
-    }
-}
-
-extension HomeViewController: ZHCNavigationControllerDelegate {
-    
-    func zhc_navigationControllerCanPopBack() -> Bool {
-//        navigationController?.popViewController(animated: true)
-        return true
-    }
-    
-    func zhc_navigationControllerBackItemContent() -> Any {
-        "back"
-    }
-    
-//    func zhc_navigationControllerBackItemTintColor() -> UIColor {
-//        .red
-//    }
-    
-    func zhc_navigationControllerDefaultAppearenceConfig() -> NaviBarConfigBlock {
-    { naviBar in
-        naviBar.setBackgroundImage(UIImage(color: .white), for: .default)
-        naviBar.titleTextAttributes = [
-            NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .medium),
-            NSAttributedString.Key.foregroundColor : UIColor.black
-        ]
-        naviBar.tintColor = .black
         }
     }
 }
