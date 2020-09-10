@@ -15,6 +15,7 @@ typedef void(^NaviBarConfigBlock)(UINavigationBar *naviBar);
 
 @required
 /// 定制返回按钮内容，可以是NSString（图片名），UIImage，UIButton，UIView
+/// 与 zhc_navigationControllerBackItemTintColor 联合使用，可以灵活控制按钮颜色
 - (id)zhc_navigationControllerBackItemContent;
 
 @optional
