@@ -42,6 +42,11 @@
     return self;
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    NSLog(@"(%.2f, %.2f, %.2f, %.2f)", self.bounds.origin.x, self.bounds.origin.y, self.bounds.size.width, self.bounds.size.height);
+}
+
 - (CGSize)intrinsicContentSize {
     if (CGSizeEqualToSize(self.fixedIntrinsicContentSize, CGSizeZero)) {
         return [super intrinsicContentSize];
@@ -195,6 +200,10 @@
 }
 
 // Setter
+
+- (void)setFrame:(CGRect)frame {
+    [super setFrame:frame];
+}
 
 - (void)setZhc_alignment:(ZHCButtonAlignment)zhc_alignment {
     _zhc_alignment = zhc_alignment;

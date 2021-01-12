@@ -14,8 +14,8 @@ class ZHCButtonController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let button = ZHCButton.init()
-//        button.setImage(UIImage(named: "image_alipay"), for: .normal)
+        let button = ZHCButton()
+        button.setImage(UIImage(named: "image_alipay"), for: .normal)
         button.backgroundColor = .lightGray
         button.setTitle("BTN", for: .normal)
         button.setTitle("SELECTED", for: .selected)
@@ -34,6 +34,7 @@ class ZHCButtonController: BaseViewController {
         button.snp.makeConstraints { (make) in
             make.top.equalTo(200)
             make.centerX.equalTo(view)
+            make.size.equalTo(CGSize(width: 200, height: 200))
         }
     }
 

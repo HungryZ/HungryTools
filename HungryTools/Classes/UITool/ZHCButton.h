@@ -3,7 +3,8 @@
 //  HungryTools
 //
 //  Created by 张海川 on 2021/1/11.
-//
+//  为图片和标题之间添加间隔，实现图片和文字上下布局，左右布局可选
+//  仅在 AutoLayout 下使用，使用 Frame 布局会发生错乱
 
 #import <UIKit/UIKit.h>
 
@@ -20,7 +21,7 @@ typedef NS_ENUM(NSUInteger, ZHCButtonAlignment) {
 
 /// 布局方向，默认 ZHCButtonAlignmentHorizontal
 @property (nonatomic, assign) ZHCButtonAlignment    zhc_alignment;
-/// 图片与标题之间的间隔，默认10
+/// 图片与标题之间的间隔，默认0
 @property (nonatomic, assign) CGFloat               zhc_spacing;
 /// 内边距
 @property (nonatomic, assign) UIEdgeInsets          zhc_padding;
