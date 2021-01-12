@@ -19,6 +19,7 @@
 		932520D825090A810032ED61 /* NaviTest2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932520D725090A810032ED61 /* NaviTest2ViewController.swift */; };
 		936CB7DE25077E0D009FCFFA /* PublicHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936CB7DD25077E0D009FCFFA /* PublicHeader.swift */; };
 		936CB7E02507817A009FCFFA /* ZHCTextFieldController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936CB7DF2507817A009FCFFA /* ZHCTextFieldController.swift */; };
+		93F620CE25AC52AE00914D63 /* ZHCButtonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F620CD25AC52AE00914D63 /* ZHCButtonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		936CB7DD25077E0D009FCFFA /* PublicHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicHeader.swift; sourceTree = "<group>"; };
 		936CB7DF2507817A009FCFFA /* ZHCTextFieldController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZHCTextFieldController.swift; sourceTree = "<group>"; };
 		936F68C023F003BA0005A4F4 /* HungryTools_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HungryTools_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		93F620CD25AC52AE00914D63 /* ZHCButtonController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZHCButtonController.swift; sourceTree = "<group>"; };
 		A6782BA8A8CBBB61AA2D106F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E7C503A75015A310BEAC35F2 /* Pods-HungryTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HungryTools_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HungryTools_Tests/Pods-HungryTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		FFD7854D8D68F7E82B9441BC /* Pods-HungryTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HungryTools_Example.release.xcconfig"; path = "Target Support Files/Pods-HungryTools_Example/Pods-HungryTools_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				936CB7DF2507817A009FCFFA /* ZHCTextFieldController.swift */,
 				93030AD125090917002B5DF1 /* NaviTestViewController.swift */,
 				932520D725090A810032ED61 /* NaviTest2ViewController.swift */,
+				93F620CD25AC52AE00914D63 /* ZHCButtonController.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for HungryTools";
@@ -349,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				932520D825090A810032ED61 /* NaviTest2ViewController.swift in Sources */,
+				93F620CE25AC52AE00914D63 /* ZHCButtonController.swift in Sources */,
 				93030AD0250907FD002B5DF1 /* BaseViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* HomeViewController.swift in Sources */,
 				936CB7E02507817A009FCFFA /* ZHCTextFieldController.swift in Sources */,

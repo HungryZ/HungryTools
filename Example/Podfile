@@ -4,10 +4,11 @@ platform :ios, '11.0'
 
 target 'HungryTools_Example' do
   pod 'HungryTools', :path => '../'
+  pod 'HungryTools/Macro', :path => '../'
   
   pod 'SnapKit'
 #  pod 'FDFullscreenPopGesture'
-
+  
   target 'HungryTools_Tests' do
     inherit! :search_paths
 

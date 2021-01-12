@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: BaseViewController {
     
-    let dataArray = ["ZHCTextField", "Navigation", "2"]
+    let dataArray = ["ZHCTextField", "Navigation", "ZHCButton"]
     
     lazy var mainTableView: UITableView = {
         let tableView = UITableView(frame: .zero, style: .plain)
@@ -58,6 +58,8 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         let nextVC: UIViewController?
         
         switch indexPath.row {
@@ -66,7 +68,7 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
         case 1:
             nextVC = NaviTestViewController()
         default:
-            nextVC = nil
+            nextVC = ZHCButtonController()
         }
         if let vc = nextVC {
             navigationController?.pushViewController(vc, animated: true)

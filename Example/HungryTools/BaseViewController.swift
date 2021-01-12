@@ -46,13 +46,12 @@ extension BaseViewController: ZHCNavigationControllerDelegate {
 //    }
     
     func zhc_navigationControllerDefaultAppearenceConfig() -> NaviBarConfigBlock {
-    { naviBar in
-        print("Default")
-        naviBar.setBackgroundImage(UIImage(color: .white), for: .default)
-        naviBar.titleTextAttributes = [
-            NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .medium),
-            NSAttributedString.Key.foregroundColor : UIColor.black
-        ]
+        { naviBar in
+            naviBar.setBackgroundImage(UIImage(color: .white), for: .default)
+            naviBar.titleTextAttributes = [
+                NSAttributedString.Key.font : UIFont.systemFont(ofSize: 17, weight: .medium),
+                NSAttributedString.Key.foregroundColor : UIColor.black
+            ]
         }
     }
 }

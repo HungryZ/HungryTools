@@ -27,7 +27,7 @@ typedef void(^NaviBarConfigBlock)(UINavigationBar *naviBar);
 - (BOOL)zhc_navigationControllerCanPopBackByGesture;
 
 /// 返回按钮的颜色，仅当 zhc_navigationControllerBackItemContent 为NSString，UIImage时生效
-- (UIColor *)zhc_navigationControllerBackItemTintColor;
+- (UIColor *)zhc_navigationControllerBackItemTintColor API_AVAILABLE(ios(11));
 
 
 /// 默认导航栏样式（在没有实现「当前控制前导航栏样式」情况下只会调用一次）

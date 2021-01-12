@@ -2,8 +2,8 @@
 //  ZHCButton.h
 //  HungryTools
 //
-//  Created by 张海川 on 2020/5/12.
-//  实现图片和文字上下布局，左右布局可选，内边距
+//  Created by 张海川 on 2021/1/11.
+//
 
 #import <UIKit/UIKit.h>
 

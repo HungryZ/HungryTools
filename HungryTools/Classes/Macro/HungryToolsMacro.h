@@ -32,7 +32,7 @@
 
 #define kScreenHeight                       [[UIScreen mainScreen] bounds].size.height
 // 普通屏幕宽度375
-#define AdaptedWidth(x)                     (ScreenWidth / 375 * (x))
+#define AdaptedWidth(x)                     (kScreenWidth / 375 * (x))
 
 
 #define StringFormat(string, args...)       [NSString stringWithFormat:string, args]

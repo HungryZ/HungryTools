@@ -240,14 +240,10 @@
                 leftItem = [[UIBarButtonItem alloc] initWithImage:image style:UIBarButtonItemStylePlain target:self action:action];
                 leftItem.tintColor = [viewController performSelector:@selector(zhc_navigationControllerBackItemTintColor)];
             } else {
-                UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
-                UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 35, 44)];
+                UIView *customView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
                 
+                UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
                 [customView addSubview:imageView];
-                [imageView sizeToFit];
-                CGRect frame = imageView.frame;
-                frame.origin.x = 0;
-                imageView.frame = frame;
                 imageView.center = CGPointMake(imageView.center.x, customView.center.y);
                 
                 UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:action];
