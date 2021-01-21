@@ -21,7 +21,7 @@ class ZHCButtonController: BaseViewController {
         button.setTitle("SELECTED", for: .selected)
         button.setTitle("SELECTED", for: [.selected, .highlighted])
         button.setTitleColor(.purple, for: .normal)
-        button.setBackgroundImage(UIImage(named: "background"), for: .normal)
+//        button.setBackgroundImage(UIImage(named: "background"), for: .normal)
         button.adjustsImageWhenHighlighted = false
         button.zhc_spacing = 10
         button.zhc_alignment = .horizontal
@@ -34,7 +34,7 @@ class ZHCButtonController: BaseViewController {
         button.snp.makeConstraints { (make) in
             make.top.equalTo(200)
             make.centerX.equalTo(view)
-            make.size.equalTo(CGSize(width: 200, height: 200))
+//            make.size.equalTo(CGSize(width: 200, height: 200))
         }
     }
 

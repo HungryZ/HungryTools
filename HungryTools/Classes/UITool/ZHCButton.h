@@ -23,7 +23,7 @@ typedef NS_ENUM(NSUInteger, ZHCButtonAlignment) {
 @property (nonatomic, assign) ZHCButtonAlignment    zhc_alignment;
 /// 图片与标题之间的间隔，默认0
 @property (nonatomic, assign) CGFloat               zhc_spacing;
-/// 内边距
+/// 内边距，如果约束了按钮的大小，这个属性会失效
 @property (nonatomic, assign) UIEdgeInsets          zhc_padding;
 
 + (instancetype)buttonwithAlignment:(ZHCButtonAlignment)alignment;

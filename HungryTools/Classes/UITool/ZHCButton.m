@@ -35,6 +35,8 @@
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
+        [self addObserver:self forKeyPath:@"bounds" options:NSKeyValueObservingOptionNew context:nil];
+        [self addObserver:self forKeyPath:@"titleLabel" options:NSKeyValueObservingOptionInitial context:nil];
         [self.titleLabel addObserver:self forKeyPath:@"font" options:NSKeyValueObservingOptionNew context:nil];
         [self.titleLabel addObserver:self forKeyPath:@"text" options:NSKeyValueObservingOptionNew context:nil];
         [self.imageView addObserver:self forKeyPath:@"image" options:NSKeyValueObservingOptionNew context:nil];
@@ -192,7 +194,7 @@
 // KVO
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-    if ([keyPath isEqualToString:@"font"] || [keyPath isEqualToString:@"text"] || [keyPath isEqualToString:@"image"]) {
+    if ([keyPath isEqualToString:@"font"] || [keyPath isEqualToString:@"text"] || [keyPath isEqualToString:@"image"] || [keyPath isEqualToString:@"bounds"] || [keyPath isEqualToString:@"titleLabel"]) {
         [self updateImageAndTitleLayout];
     } else {
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
