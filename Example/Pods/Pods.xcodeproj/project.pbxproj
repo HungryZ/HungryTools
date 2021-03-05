@@ -7,267 +7,215 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000AD699F6A5D928D94A05AF120E6EE1 /* String+Check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F76D303D9DCAC86D3BCBC081FFE18AC /* String+Check.swift */; };
+		01F3B1B850307ED05C8069BA2E175366 /* eye_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DFD1A130FC16E68684D120AE57850A9B /* eye_close@2x.png */; };
 		095547A88EE037F12395713A469C9B60 /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */; };
 		0984A1BEA423644ABF10D39678EDCBFA /* Pods-HungryTools_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5C86BD0342E4D15E3C24B09CF5F6810 /* Pods-HungryTools_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A18C20D1AC4B77CBCC9161F687D711A /* ZHCTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = 18FA82A5F46E4DF2286C7905BA1E1038 /* ZHCTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BDF77E211AEDE81983D6DD81FB10A60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		0CFEFD1FB805716BB68EF02B6994F594 /* UITableViewCell+SeparatorLine.h in Headers */ = {isa = PBXBuildFile; fileRef = A2D3F9386EE00DE6CDBFEADB10D7C4AC /* UITableViewCell+SeparatorLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D7A7F3919AE48736753181756DE8AE8 /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */; };
 		0FA8E62C7A4A6DA9BB841007B5E16CD4 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */; };
-		11599778FD848C05FE58B5EA9F29A750 /* UIButton+Initializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9EF9679D0586768B6E936E14A8AAB1 /* UIButton+Initializer.m */; };
-		13F469F9BB5FDFABD4316B8D8FD88B99 /* NSString+Check.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7F7CB7121C14CAAE9FC6ADCAD63D13 /* NSString+Check.m */; };
 		14E9ACC5796C5E35C84DD6659BEB788F /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */; };
-		19E0FF32DCE5F2830167BAACFAA1F99D /* HungryToolsMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FD451AE1656858B362B10360EDC4EBB /* HungryToolsMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1D09ED03F0947B196F949DC14E8B785F /* UIViewController+Current.h in Headers */ = {isa = PBXBuildFile; fileRef = 75A5C0BE53344A9D5EEC8BF87C57BFA1 /* UIViewController+Current.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E7222663E9E895924DA857E0386B479 /* UIImage+Compress.h in Headers */ = {isa = PBXBuildFile; fileRef = 79D7CA2DE1D64E12E55B19E40EDCE466 /* UIImage+Compress.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		24E9010410406023AFEE5559CBFB1003 /* UIViewController+NavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = EB0FF418FD2D1D88A86FA6BD9C8F38AF /* UIViewController+NavigationItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16FDB8C6343498EC171FBE23C8A33022 /* UILabel+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0703EC8B3274A8CE5EA31DF6FDCE7C3 /* UILabel+Init.swift */; };
 		276EE563D9B688173DBBF47DB80D72D8 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */; };
 		28400157B63F40AA135BF16780AB4B96 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2ADB5A48AF8B9755E9859D4CE4F9E10D /* Pods-HungryTools_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 152515BDBD67FA0291239D404CF43CF4 /* Pods-HungryTools_Example-dummy.m */; };
-		31C90DB2FE5D01A319A8643AB3C8902C /* NSString+Attributed.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A6C5D7BCCC4A8A195BEDF534AFB794 /* NSString+Attributed.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35CDFA197D8219EB8DEFC227259A5C03 /* ConstraintMakerRelatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */; };
-		395012937D43EA836011BDCF163498D4 /* ZHCCountingButton.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7C5647FB241FFEA2EAF8174086521A /* ZHCCountingButton.m */; };
-		3F36C3578F2A3F872CF42C158D1F95D2 /* ZHCTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FD770D37CD7BABB5B811FDBF871ED25 /* ZHCTextField.m */; };
+		389ABFA3669C6E37E86D4B798BB5B511 /* navi_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 291DA2E509597CC5365E0B8CD52F8460 /* navi_back@2x.png */; };
+		3B60B74FCB08FEC40BE3C5F58DB55A89 /* UITableViewCell+Separator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D6F614852E249569DC8DF1EABF277A /* UITableViewCell+Separator.swift */; };
 		4268E348E6D5E9037A640ADC8E065009 /* ConstraintMakerEditable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */; };
-		443B12E6653BE2DEB123DB5000E17C6A /* UIAlertController+Show.h in Headers */ = {isa = PBXBuildFile; fileRef = 020E97ABFD358909F52DDC744B7F09A5 /* UIAlertController+Show.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		459251993F0C5643FFEE14517E3D5BB3 /* NSString+Check.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FA7961AE8EBF49938ADE2E5D795428B /* NSString+Check.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46801664D88FCFCA53043AEA9585B8B8 /* UILabel+Initializer.h in Headers */ = {isa = PBXBuildFile; fileRef = BBA70A316CF867D615C401CF1ABDA79C /* UILabel+Initializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		47610A3EB1E90687AC039D84C4702E23 /* UIButton+Initializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D774D5FE320D09E2702CDCFDE3DF783 /* UIButton+Initializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		499918AB99C4632A46CC9E76545C1A93 /* HungryTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F99EE43528D9FB8A03D16FF05BE17B8A /* HungryTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		549A1883809D805298CE2F4583A83FA8 /* ZHCWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AAD46FA4E5241E94A82A7B719849621 /* ZHCWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EAF1079D2108F98ECFDFDCC617C9B94 /* String+Attributed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B92206A358393B4A2BB5C4B5B02F28 /* String+Attributed.swift */; };
 		54D1686EFA926E23C4BED5EEE7A19C08 /* ConstraintInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */; };
 		5544BDD6A14E06C7FB3A878BC3E96299 /* ConstraintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */; };
-		579181D09022722BC1F21C5CFC287E9A /* ZHCButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 93E52DD24E9D6C6D0F0E40F135581BAA /* ZHCButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		594380B0966B5975226A1D1AA8DBCFBA /* UIViewController+NavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B610CB9DF47BE2A121B8751C593337F7 /* UIViewController+NavigationItem.m */; };
 		5C376607904258A10F4DDD6D42EFC491 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */; };
-		5D17047D5ACE00671963B73501F75F2E /* UINavigationController+ZHCExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 40F6F43647D9DD0CA6D158E7E90509D3 /* UINavigationController+ZHCExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5DBFB9A0499F04CBE806486211A4ABD0 /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */; };
+		5DD4CCE3CC9225204E9EA2E132ECB375 /* UIView+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF27B50627118D1CAC8DEB0359ED39B9 /* UIView+Init.swift */; };
 		5E88BEEA64C6DF3148A28EE350C5617B /* Pods-HungryTools_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 40B614110EF8F269618B34714BF61130 /* Pods-HungryTools_Tests-dummy.m */; };
-		62B1DBAAC4EF58AF999F49348EEED6F4 /* ZHCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D9FD0DEA8138BE30248B448AB98A8F9 /* ZHCWebViewController.m */; };
+		63ADF9A65B1A4F5054BD013AD0CDBBCC /* HungryTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C27D89F85C35B1791F5C0318D6D54A26 /* HungryTools-dummy.m */; };
+		698A6C206D05F41E6483061927B0E2E5 /* ZHCWeakProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE415DA2BC11ED4B155E55AEC4127F90 /* ZHCWeakProxy.swift */; };
 		6B43F2F53DD6C161CF414A9BF67550C5 /* ConstraintDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */; };
-		6DA0F75087CB24EAB71653D038DDF3DB /* UIView+Initializer.h in Headers */ = {isa = PBXBuildFile; fileRef = AC891AA40AF610866E4F090540DD7DD1 /* UIView+Initializer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		722AD944672328831E68981D74714660 /* UINavigationController+ZHCExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BE32981393A2ED1BF17D0597C3EF6BE /* UINavigationController+ZHCExtend.m */; };
+		6BB1C6EE2EFDBD2EC06FAA9D3E77269F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		72C2B5D60A24B4B663C8994276A962B6 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */; };
 		77A618FE4FF299682F776C974300EBA1 /* ConstraintView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */; };
 		78664B60B8F4CCAF407FA37A6645A672 /* Pods-HungryTools_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 647DD346F94F99542D537A6A6AD7CB54 /* Pods-HungryTools_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7ED12926E82C9D1DE457504DA75B80A9 /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */; };
-		85D816156EB003AFD3BEB49C5BACAAA4 /* NSDate+Format.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E70249E9781670F19F13EBC693312E2 /* NSDate+Format.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		879A47B7A336FDE6B6D7DFFD233D4BD4 /* NSDate+Format.m in Sources */ = {isa = PBXBuildFile; fileRef = B5E0371204E223BA49D1E1CF8BB261E3 /* NSDate+Format.m */; };
+		80DD2635585B6B0F2E7DC8BCE6030754 /* UIButton+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63E933933E40E80EB65C99BEB7017FED /* UIButton+Init.swift */; };
+		812D1B083CE840E4F14C4220E02DD183 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB30DD74EEF65073552F459F14815EA9 /* UIView+Frame.swift */; };
 		8B8BE709B46663F60DB6A661A3B2A28A /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */; };
-		8DFE87EA98F25A9E9D96B5B7F3A1A144 /* UILabel+Size.m in Sources */ = {isa = PBXBuildFile; fileRef = BA373405F8AE288F6BC30C6FBA9D9492 /* UILabel+Size.m */; };
+		8EEC16DB8C60EBCD902727F1F3238E32 /* UIImage+Compress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2515940CD2AAA2712D2C411094693BD6 /* UIImage+Compress.swift */; };
 		9432185152350A4A90F6DD19C33AC057 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */; };
-		95CE8794AD0EE28462D1589AED96885C /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 6108E75EF3F4F76CE607B299E4CF336F /* NSString+MD5.m */; };
 		98AE4E2F24A858A47B5A1B405CEAD8FD /* UILayoutSupport+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */; };
+		9BFCC14243381E4C44CD957BD89BB0B1 /* UILabel+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B392852DFF48561179C91023504680F /* UILabel+Size.swift */; };
 		9C1B52F438F4F693E3DA854B7C3B01CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		9E6184458532BFF2E3E3F804C54BD0E7 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */; };
 		9EE2D363A721ACFA89B5B899E1987633 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */; };
 		A04D46C4C48247D004BAE5C7AD6E05A3 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */; };
-		A0CFC4313E49F7156025D8D9C6840228 /* NSString+Attributed.m in Sources */ = {isa = PBXBuildFile; fileRef = F3783351A8E512A042B49FBB8C777A62 /* NSString+Attributed.m */; };
 		A3DEA82F229FDF7C9444CEFEE3D9AB84 /* ConstraintMultiplierTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */; };
 		A4070B8C9BD30965648B2876CD3C1C43 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */; };
+		A452C6F96A21488DEA2B53459A09D39D /* eye_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A16394E3332F5B5683F9169E73A417D9 /* eye_open@2x.png */; };
 		A482F623A133B7E947C01456C779622A /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */; };
-		A6C8D4911217FA49450227988BD25C28 /* UILabel+Initializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2004A8BA86ECE7F44BABF4E36F6394EE /* UILabel+Initializer.m */; };
-		AC343ED16986694AED6A70894E230844 /* UIImage+Chameleon.h in Headers */ = {isa = PBXBuildFile; fileRef = 9082AE8B32F709A049B3E504EBC98941 /* UIImage+Chameleon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC62496CC36D95CC536FD059547E184D /* HungryTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1F6F597C0F71D301C72683FA607683 /* HungryTools-dummy.m */; };
-		B622AC2D7E56933EE962331BC7DC2D57 /* eye_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CAE99B5AFEA082A51B350974CEFCA48 /* eye_close@2x.png */; };
-		B972DBBAE664D39D349EF717DCDC62F4 /* UIViewController+Current.m in Sources */ = {isa = PBXBuildFile; fileRef = 5912A4388FBCEB133A805C6C7AA22DE0 /* UIViewController+Current.m */; };
-		BB3D1EEC5E52C47B4B5785CC34FC6423 /* UITableViewCell+SeparatorLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911769104D2810C9AE54C792AAF8887 /* UITableViewCell+SeparatorLine.m */; };
-		BD28B6FBD6298C0D8BA1190DE8A6DA86 /* UIImage+Compress.m in Sources */ = {isa = PBXBuildFile; fileRef = 32650EC346F28334AC05D8116FC082E0 /* UIImage+Compress.m */; };
+		A94E3DC4395B0F7B2C890865581C80F1 /* UIImageView+Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F91718369E320CB905753076FF5D7E /* UIImageView+Init.swift */; };
+		BDF3D3593062B01D68A2F88754BCC433 /* UIImage+Chameleon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 922AF6E4DCC667A31B5B707A0A29D92B /* UIImage+Chameleon.swift */; };
 		BF7843175A0FB0180B6F4C0249B8874A /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */; };
-		C020D3D949580D556A85532FACE6C071 /* UIAlertController+Show.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B699B696430ED1C6AF0B48E86016EF /* UIAlertController+Show.m */; };
 		C1C2B61E08DAD3B59BA5D82964D39C3C /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */; };
-		C78E21F1E90540489E7378FCF7021FEB /* ZHCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D171988CCC0F89DDD431C2132B4EB49 /* ZHCButton.m */; };
+		C36C5E649B2952FEAC352CB981563A20 /* ZHCTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04EE2102BE25F48AD49CDF1F6B9215DD /* ZHCTextField.swift */; };
 		C89096F27EB7CAE5D2E2ADB1755A9E22 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		C988FEAAA78E3EFEEF4FFFF1BBD722C2 /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = A83B61A477B04095252B8721E2300550 /* UIImage+Color.m */; };
 		CA0FAE669FAB7067D09F7007AD838E19 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */; };
-		CDB06ABB752181B0E7AF58DDB8E5EE24 /* UIView+Initializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 877043C709C0D821650F59E8D636A1E9 /* UIView+Initializer.m */; };
-		D1BEF8A28FA3276FF0A184802D3CF236 /* eye_open@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F625CEF316F0BF38000056814669B27D /* eye_open@2x.png */; };
-		D6D5A2F47CCDAF2ABD2ACE90EB862F7E /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = F84942FCA45B3041243B3FBD53BA909E /* UIImage+Color.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D9F09C01FAEC1511C77A1E22B2A0CE9C /* NSString+MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 935FF6F075B7090581DF9EB7E48283F2 /* NSString+MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA5BCCB08B965F20C875FD9EE10683C4 /* HungryTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8100E07179BCAE4846C4C03EB4D1BC /* HungryTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBB93D3827327B8FB4CFA164C03357E5 /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */; };
 		DCCEFF1B52226DE5ABB2D0043442FE61 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */; };
-		DD6FAFA1EF7E4CC92D676B8FA6DE76B3 /* navi_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E65F9D57E6045014E256236770F6561 /* navi_back@2x.png */; };
+		DE1D39CA69AE1E9026CC382CFFE2B7E7 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = D161ED360F3CA74DA6A5004AE08F7764 /* UIImage+Color.swift */; };
 		DEC3E541DB551729EC407FA6566CEE54 /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */; };
-		E073B33EE0345D5F4688519780346A35 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4469ADEB375C0CBD8CA4A3A9A3FAF79 /* Resource.bundle */; };
-		E6E65F81457E392C6AB6149A2EAED6EA /* UIImage+Chameleon.m in Sources */ = {isa = PBXBuildFile; fileRef = AD88B5135CC8161950FEB61E5175D0CB /* UIImage+Chameleon.m */; };
 		E85BBB972867783044ADCD772438150F /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */; };
-		E88B8FA81D56FFB6F7125211CE4FF415 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		EA3E8235B054000848B54E5C361D4DC8 /* ZHCCountingButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE16129CD959A7CA240A73EB2C703BF /* ZHCCountingButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F41CA723E31884664B9C032D90EAEF1A /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */; };
 		F6C7F81AA5BBC4042A3A78D5EA8E62A4 /* ConstraintLayoutSupportDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */; };
-		FD38CCAE59BE3F0F9072EF9156033CDA /* UILabel+Size.h in Headers */ = {isa = PBXBuildFile; fileRef = 121462425F0485A2227F021A93A893CE /* UILabel+Size.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F95BA8A3210CEE8261085E93CF349409 /* ZHCCountingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5DDD54D8241B3A9A73F1B1788A9EC1 /* ZHCCountingButton.swift */; };
 		FF0E3F8B3FB568ACBB1BC433D67ED093 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */; };
+		FF76474AB833C2AECC3D9293174D8B54 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4469ADEB375C0CBD8CA4A3A9A3FAF79 /* Resource.bundle */; };
 		FFE7A02118B5288BC94F7422D6CFEB3F /* ConstraintLayoutGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3D29160E425EED6A8E61BCDFA2D391C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C87D517FAFB6788CCD4A2708A65D3DF7;
-			remoteInfo = HungryTools;
-		};
-		430B1BCD83E06ADF276AFD1175F85DF9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 768ED5A3788BC29F57FCF01850AB5C5B;
-			remoteInfo = "HungryTools-Resource";
-		};
-		8BDC978DDB7C8E67F235237A9EC1E995 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
-			remoteInfo = SnapKit;
-		};
-		DB7DFAE69D2D9297B4B417FAC54BCF71 /* PBXContainerItemProxy */ = {
+		72DC40ACB2A0115308461FC4B4B91C15 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6C1EB08B9580CAA1091FE8E5809A3CCA;
 			remoteInfo = "Pods-HungryTools_Example";
 		};
+		788051A9BD32A246FCB1C20F702DBE63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C87D517FAFB6788CCD4A2708A65D3DF7;
+			remoteInfo = HungryTools;
+		};
+		C4AFCC931C78642DF24A09E3C081265C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 19622742EBA51E823D6DAE3F8CDBFAD4;
+			remoteInfo = SnapKit;
+		};
+		C95FBE1B9D8B56BE3CAE510AC0877FFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 768ED5A3788BC29F57FCF01850AB5C5B;
+			remoteInfo = "HungryTools-Resource";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		00BB2CE9C8C7607CDA3E1B49246B760E /* Debugging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debugging.swift; path = Source/Debugging.swift; sourceTree = "<group>"; };
 		00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraintItem.swift; path = Source/LayoutConstraintItem.swift; sourceTree = "<group>"; };
-		020E97ABFD358909F52DDC744B7F09A5 /* UIAlertController+Show.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertController+Show.h"; path = "HungryTools/Classes/Category/UIAlertController+Show.h"; sourceTree = "<group>"; };
-		032BED5A3386CADEE08A24B18ACCE092 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		04EE2102BE25F48AD49CDF1F6B9215DD /* ZHCTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZHCTextField.swift; path = HungryTools/Classes/UITool/ZHCTextField.swift; sourceTree = "<group>"; };
 		09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintViewDSL.swift; path = Source/ConstraintViewDSL.swift; sourceTree = "<group>"; };
-		0CAE99B5AFEA082A51B350974CEFCA48 /* eye_close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "eye_close@2x.png"; path = "HungryTools/Assets/Resource/eye_close@2x.png"; sourceTree = "<group>"; };
-		0FA7961AE8EBF49938ADE2E5D795428B /* NSString+Check.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Check.h"; path = "HungryTools/Classes/Category/NSString+Check.h"; sourceTree = "<group>"; };
 		103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LayoutConstraint.swift; path = Source/LayoutConstraint.swift; sourceTree = "<group>"; };
-		121462425F0485A2227F021A93A893CE /* UILabel+Size.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Size.h"; path = "HungryTools/Classes/Category/UILabel+Size.h"; sourceTree = "<group>"; };
 		152515BDBD67FA0291239D404CF43CF4 /* Pods-HungryTools_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HungryTools_Example-dummy.m"; sourceTree = "<group>"; };
 		167298C628CB990B5B364F5E00636F69 /* Pods-HungryTools_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HungryTools_Tests.modulemap"; sourceTree = "<group>"; };
-		18FA82A5F46E4DF2286C7905BA1E1038 /* ZHCTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZHCTextField.h; path = HungryTools/Classes/UITool/ZHCTextField.h; sourceTree = "<group>"; };
-		19788F363692C048BCA379C8653C93A3 /* ResourceBundle-Resource-HungryTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Resource-HungryTools-Info.plist"; sourceTree = "<group>"; };
 		1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
-		1DE16129CD959A7CA240A73EB2C703BF /* ZHCCountingButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZHCCountingButton.h; path = HungryTools/Classes/UITool/ZHCCountingButton.h; sourceTree = "<group>"; };
-		2004A8BA86ECE7F44BABF4E36F6394EE /* UILabel+Initializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Initializer.m"; path = "HungryTools/Classes/Category/UILabel+Initializer.m"; sourceTree = "<group>"; };
-		234541DF09BE5BAEFE7BE9A1E29BA623 /* HungryTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HungryTools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2515940CD2AAA2712D2C411094693BD6 /* UIImage+Compress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Compress.swift"; path = "HungryTools/Classes/Category/UIImage+Compress.swift"; sourceTree = "<group>"; };
+		291DA2E509597CC5365E0B8CD52F8460 /* navi_back@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "navi_back@2x.png"; path = "HungryTools/Assets/Resource/navi_back@2x.png"; sourceTree = "<group>"; };
 		29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
 		298A0AC78FB5793197E9B13F10830492 /* HungryTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HungryTools.framework; path = HungryTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BE32981393A2ED1BF17D0597C3EF6BE /* UINavigationController+ZHCExtend.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+ZHCExtend.m"; path = "HungryTools/Classes/Category/UINavigationController+ZHCExtend.m"; sourceTree = "<group>"; };
-		2BEAF200A8F345B5BF4C687DF7820619 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		2E65F9D57E6045014E256236770F6561 /* navi_back@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "navi_back@2x.png"; path = "HungryTools/Assets/Resource/navi_back@2x.png"; sourceTree = "<group>"; };
-		2E9EF9679D0586768B6E936E14A8AAB1 /* UIButton+Initializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+Initializer.m"; path = "HungryTools/Classes/Category/UIButton+Initializer.m"; sourceTree = "<group>"; };
-		32650EC346F28334AC05D8116FC082E0 /* UIImage+Compress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compress.m"; path = "HungryTools/Classes/Category/UIImage+Compress.m"; sourceTree = "<group>"; };
 		3383F30CF2D14DDE218A29F11CD0F0F4 /* Pods-HungryTools_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HungryTools_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		33A71B529991C1FD13331309E907A54E /* Pods-HungryTools_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HungryTools_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		3B569D02FFB2C8143A71D4511C970AC4 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
-		3C8469703477ECC0D1F362D8B79A2B0A /* HungryTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HungryTools.release.xcconfig; sourceTree = "<group>"; };
 		40B614110EF8F269618B34714BF61130 /* Pods-HungryTools_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HungryTools_Tests-dummy.m"; sourceTree = "<group>"; };
-		40F6F43647D9DD0CA6D158E7E90509D3 /* UINavigationController+ZHCExtend.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+ZHCExtend.h"; path = "HungryTools/Classes/Category/UINavigationController+ZHCExtend.h"; sourceTree = "<group>"; };
 		4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintLayoutGuide+Extensions.swift"; path = "Source/ConstraintLayoutGuide+Extensions.swift"; sourceTree = "<group>"; };
 		42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
-		43A6C5D7BCCC4A8A195BEDF534AFB794 /* NSString+Attributed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Attributed.h"; path = "HungryTools/Classes/Category/NSString+Attributed.h"; sourceTree = "<group>"; };
+		4451765D92FBB7A1C2AE4D2C7C1A1516 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		44F4692E14F86C8AD3D49FFCEEBFE6D9 /* HungryTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HungryTools-prefix.pch"; sourceTree = "<group>"; };
 		460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		4D171988CCC0F89DDD431C2132B4EB49 /* ZHCButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHCButton.m; path = HungryTools/Classes/UITool/ZHCButton.m; sourceTree = "<group>"; };
-		4D9FD0DEA8138BE30248B448AB98A8F9 /* ZHCWebViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHCWebViewController.m; path = HungryTools/Classes/UITool/ZHCWebViewController.m; sourceTree = "<group>"; };
+		4B392852DFF48561179C91023504680F /* UILabel+Size.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Size.swift"; path = "HungryTools/Classes/Category/UILabel+Size.swift"; sourceTree = "<group>"; };
 		4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILayoutSupport+Extensions.swift"; path = "Source/UILayoutSupport+Extensions.swift"; sourceTree = "<group>"; };
 		5077D10DEAD34271BE7E8129AC0A8DD9 /* Pods-HungryTools_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HungryTools_Example.modulemap"; sourceTree = "<group>"; };
 		51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 		53C0E155CC32C8D9864EC6D13B5A9896 /* Pods-HungryTools_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HungryTools_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5911769104D2810C9AE54C792AAF8887 /* UITableViewCell+SeparatorLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableViewCell+SeparatorLine.m"; path = "HungryTools/Classes/Category/UITableViewCell+SeparatorLine.m"; sourceTree = "<group>"; };
-		5912A4388FBCEB133A805C6C7AA22DE0 /* UIViewController+Current.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+Current.m"; path = "HungryTools/Classes/Category/UIViewController+Current.m"; sourceTree = "<group>"; };
+		56B92206A358393B4A2BB5C4B5B02F28 /* String+Attributed.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Attributed.swift"; path = "HungryTools/Classes/Category/String+Attributed.swift"; sourceTree = "<group>"; };
+		56F2E642A2E556E4FF5E7E0DD00C1438 /* HungryTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HungryTools.release.xcconfig; sourceTree = "<group>"; };
 		5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		5C1F6F597C0F71D301C72683FA607683 /* HungryTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HungryTools-dummy.m"; sourceTree = "<group>"; };
-		6108E75EF3F4F76CE607B299E4CF336F /* NSString+MD5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MD5.m"; path = "HungryTools/Classes/Category/NSString+MD5.m"; sourceTree = "<group>"; };
 		6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
+		63E933933E40E80EB65C99BEB7017FED /* UIButton+Init.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Init.swift"; path = "HungryTools/Classes/Category/UIButton+Init.swift"; sourceTree = "<group>"; };
 		647DD346F94F99542D537A6A6AD7CB54 /* Pods-HungryTools_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HungryTools_Tests-umbrella.h"; sourceTree = "<group>"; };
-		6AAD46FA4E5241E94A82A7B719849621 /* ZHCWebViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZHCWebViewController.h; path = HungryTools/Classes/UITool/ZHCWebViewController.h; sourceTree = "<group>"; };
+		65F91718369E320CB905753076FF5D7E /* UIImageView+Init.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Init.swift"; path = "HungryTools/Classes/Category/UIImageView+Init.swift"; sourceTree = "<group>"; };
 		6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuideDSL.swift; path = Source/ConstraintLayoutGuideDSL.swift; sourceTree = "<group>"; };
 		7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerExtendable.swift; path = Source/ConstraintMakerExtendable.swift; sourceTree = "<group>"; };
-		75A5C0BE53344A9D5EEC8BF87C57BFA1 /* UIViewController+Current.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+Current.h"; path = "HungryTools/Classes/Category/UIViewController+Current.h"; sourceTree = "<group>"; };
 		766CC484A3E4DD46665D9EF06679B007 /* ConstraintMakerEditable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerEditable.swift; path = Source/ConstraintMakerEditable.swift; sourceTree = "<group>"; };
-		79D7CA2DE1D64E12E55B19E40EDCE466 /* UIImage+Compress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compress.h"; path = "HungryTools/Classes/Category/UIImage+Compress.h"; sourceTree = "<group>"; };
 		7A3284DB6C9BFEF88606695BBC11E150 /* ConstraintView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintView.swift; path = Source/ConstraintView.swift; sourceTree = "<group>"; };
-		7D119A95B41DB28AAFA3DDB71493894D /* HungryTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HungryTools.modulemap; sourceTree = "<group>"; };
+		7F76D303D9DCAC86D3BCBC081FFE18AC /* String+Check.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Check.swift"; path = "HungryTools/Classes/Category/String+Check.swift"; sourceTree = "<group>"; };
 		807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		82446E9A9DB3B8B5557D8BAD0E878870 /* Pods-HungryTools_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HungryTools_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		848E9BA38AE7A77B37C78B343E836974 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
-		855EFBFECEA6CC4E14C0C8B07DD98EBA /* HungryTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HungryTools-prefix.pch"; sourceTree = "<group>"; };
-		877043C709C0D821650F59E8D636A1E9 /* UIView+Initializer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+Initializer.m"; path = "HungryTools/Classes/Category/UIView+Initializer.m"; sourceTree = "<group>"; };
 		8A7B2CCE5ADE87A1A1660B529BC3FBF1 /* Pods-HungryTools_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HungryTools_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8A8100E07179BCAE4846C4C03EB4D1BC /* HungryTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HungryTools-umbrella.h"; sourceTree = "<group>"; };
+		8BB1EF4B7FA9DDE2531196E1CD59B9A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
-		8E70249E9781670F19F13EBC693312E2 /* NSDate+Format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Format.h"; path = "HungryTools/Classes/Category/NSDate+Format.h"; sourceTree = "<group>"; };
 		8F2D0C7209EFA17EFECCB8074F0E9071 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintAttributes.swift; path = Source/ConstraintAttributes.swift; sourceTree = "<group>"; };
 		8F9ACAA36267FE696F063E66BCF492E4 /* Pods_HungryTools_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HungryTools_Example.framework; path = "Pods-HungryTools_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9082AE8B32F709A049B3E504EBC98941 /* UIImage+Chameleon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Chameleon.h"; path = "HungryTools/Classes/Category/UIImage+Chameleon.h"; sourceTree = "<group>"; };
 		91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
+		922AF6E4DCC667A31B5B707A0A29D92B /* UIImage+Chameleon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Chameleon.swift"; path = "HungryTools/Classes/Category/UIImage+Chameleon.swift"; sourceTree = "<group>"; };
 		935CD06D972B8E7F1D408ACE440C34EF /* Pods-HungryTools_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HungryTools_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		935FF6F075B7090581DF9EB7E48283F2 /* NSString+MD5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MD5.h"; path = "HungryTools/Classes/Category/NSString+MD5.h"; sourceTree = "<group>"; };
-		93B699B696430ED1C6AF0B48E86016EF /* UIAlertController+Show.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertController+Show.m"; path = "HungryTools/Classes/Category/UIAlertController+Show.m"; sourceTree = "<group>"; };
-		93E52DD24E9D6C6D0F0E40F135581BAA /* ZHCButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZHCButton.h; path = HungryTools/Classes/UITool/ZHCButton.h; sourceTree = "<group>"; };
 		979486118B3E90C08386079D57962701 /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D774D5FE320D09E2702CDCFDE3DF783 /* UIButton+Initializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+Initializer.h"; path = "HungryTools/Classes/Category/UIButton+Initializer.h"; sourceTree = "<group>"; };
+		9CB9A65AE24D6220E22029FFD7C388FE /* HungryTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HungryTools.modulemap; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9FD451AE1656858B362B10360EDC4EBB /* HungryToolsMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HungryToolsMacro.h; path = HungryTools/Classes/Macro/HungryToolsMacro.h; sourceTree = "<group>"; };
-		9FD770D37CD7BABB5B811FDBF871ED25 /* ZHCTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHCTextField.m; path = HungryTools/Classes/UITool/ZHCTextField.m; sourceTree = "<group>"; };
-		A2D3F9386EE00DE6CDBFEADB10D7C4AC /* UITableViewCell+SeparatorLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableViewCell+SeparatorLine.h"; path = "HungryTools/Classes/Category/UITableViewCell+SeparatorLine.h"; sourceTree = "<group>"; };
+		A16394E3332F5B5683F9169E73A417D9 /* eye_open@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "eye_open@2x.png"; path = "HungryTools/Assets/Resource/eye_open@2x.png"; sourceTree = "<group>"; };
 		A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
-		A83B61A477B04095252B8721E2300550 /* UIImage+Color.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Color.m"; path = "HungryTools/Classes/Category/UIImage+Color.m"; sourceTree = "<group>"; };
 		AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
-		AC891AA40AF610866E4F090540DD7DD1 /* UIView+Initializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+Initializer.h"; path = "HungryTools/Classes/Category/UIView+Initializer.h"; sourceTree = "<group>"; };
 		AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
-		AD88B5135CC8161950FEB61E5175D0CB /* UIImage+Chameleon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Chameleon.m"; path = "HungryTools/Classes/Category/UIImage+Chameleon.m"; sourceTree = "<group>"; };
+		AF27B50627118D1CAC8DEB0359ED39B9 /* UIView+Init.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Init.swift"; path = "HungryTools/Classes/Category/UIView+Init.swift"; sourceTree = "<group>"; };
 		B5708BBF42A697289DE7BD27614654A4 /* Pods-HungryTools_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HungryTools_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B5E0371204E223BA49D1E1CF8BB261E3 /* NSDate+Format.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Format.m"; path = "HungryTools/Classes/Category/NSDate+Format.m"; sourceTree = "<group>"; };
-		B610CB9DF47BE2A121B8751C593337F7 /* UIViewController+NavigationItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+NavigationItem.m"; path = "HungryTools/Classes/Category/UIViewController+NavigationItem.m"; sourceTree = "<group>"; };
 		B766D773A1840A680FA881E3804D4B7E /* Pods-HungryTools_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HungryTools_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B7F46A97D3414DFA0171221E38266733 /* Pods-HungryTools_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HungryTools_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
-		BA373405F8AE288F6BC30C6FBA9D9492 /* UILabel+Size.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+Size.m"; path = "HungryTools/Classes/Category/UILabel+Size.m"; sourceTree = "<group>"; };
 		BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
-		BBA70A316CF867D615C401CF1ABDA79C /* UILabel+Initializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+Initializer.h"; path = "HungryTools/Classes/Category/UILabel+Initializer.h"; sourceTree = "<group>"; };
+		BE5DDD54D8241B3A9A73F1B1788A9EC1 /* ZHCCountingButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZHCCountingButton.swift; path = HungryTools/Classes/UITool/ZHCCountingButton.swift; sourceTree = "<group>"; };
 		BF3897E6C980C3BB52EFA9667E4D911B /* Pods-HungryTools_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HungryTools_Example-Info.plist"; sourceTree = "<group>"; };
+		C0D6F614852E249569DC8DF1EABF277A /* UITableViewCell+Separator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableViewCell+Separator.swift"; path = "HungryTools/Classes/Category/UITableViewCell+Separator.swift"; sourceTree = "<group>"; };
+		C27D89F85C35B1791F5C0318D6D54A26 /* HungryTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HungryTools-dummy.m"; sourceTree = "<group>"; };
 		C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
-		CD7F7CB7121C14CAAE9FC6ADCAD63D13 /* NSString+Check.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Check.m"; path = "HungryTools/Classes/Category/NSString+Check.m"; sourceTree = "<group>"; };
+		CC19C6CA5A8B9C1BCD988F3C2E932AEE /* HungryTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HungryTools-Info.plist"; sourceTree = "<group>"; };
 		D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealiases.swift; path = Source/Typealiases.swift; sourceTree = "<group>"; };
+		D161ED360F3CA74DA6A5004AE08F7764 /* UIImage+Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Color.swift"; path = "HungryTools/Classes/Category/UIImage+Color.swift"; sourceTree = "<group>"; };
 		D36455FBC305F48EA5290180CA45FBC2 /* Pods-HungryTools_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HungryTools_Tests-Info.plist"; sourceTree = "<group>"; };
 		D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		D489467938A7704FF523027D63FDCCD3 /* ResourceBundle-Resource-HungryTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Resource-HungryTools-Info.plist"; sourceTree = "<group>"; };
+		D4CB681D0833B56DDC19C854F3DF3AE2 /* HungryTools.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HungryTools.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		D5C86BD0342E4D15E3C24B09CF5F6810 /* Pods-HungryTools_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HungryTools_Example-umbrella.h"; sourceTree = "<group>"; };
 		DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
+		DFD1A130FC16E68684D120AE57850A9B /* eye_close@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "eye_close@2x.png"; path = "HungryTools/Assets/Resource/eye_close@2x.png"; sourceTree = "<group>"; };
+		E0703EC8B3274A8CE5EA31DF6FDCE7C3 /* UILabel+Init.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Init.swift"; path = "HungryTools/Classes/Category/UILabel+Init.swift"; sourceTree = "<group>"; };
 		E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConstantTarget.swift; path = Source/ConstraintConstantTarget.swift; sourceTree = "<group>"; };
 		E2070246046EC94EF1396AC30E3FC5E8 /* SnapKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapKit.modulemap; sourceTree = "<group>"; };
+		E221363C1F6E11206CA6CAE16019DF02 /* HungryTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HungryTools.debug.xcconfig; sourceTree = "<group>"; };
 		E887F5BC85E664CAF1EAD58DB6EF027D /* ConstraintMakerRelatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerRelatable.swift; path = Source/ConstraintMakerRelatable.swift; sourceTree = "<group>"; };
-		EB0FF418FD2D1D88A86FA6BD9C8F38AF /* UIViewController+NavigationItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+NavigationItem.h"; path = "HungryTools/Classes/Category/UIViewController+NavigationItem.h"; sourceTree = "<group>"; };
-		EB7C5647FB241FFEA2EAF8174086521A /* ZHCCountingButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZHCCountingButton.m; path = HungryTools/Classes/UITool/ZHCCountingButton.m; sourceTree = "<group>"; };
-		F3783351A8E512A042B49FBB8C777A62 /* NSString+Attributed.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Attributed.m"; path = "HungryTools/Classes/Category/NSString+Attributed.m"; sourceTree = "<group>"; };
+		EB30DD74EEF65073552F459F14815EA9 /* UIView+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Frame.swift"; path = "HungryTools/Classes/Category/UIView+Frame.swift"; sourceTree = "<group>"; };
 		F4469ADEB375C0CBD8CA4A3A9A3FAF79 /* Resource.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Resource.bundle; path = "HungryTools-Resource.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F49DB892F44D1B34269DE808D32B86A5 /* HungryTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HungryTools.debug.xcconfig; sourceTree = "<group>"; };
-		F625CEF316F0BF38000056814669B27D /* eye_open@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "eye_open@2x.png"; path = "HungryTools/Assets/Resource/eye_open@2x.png"; sourceTree = "<group>"; };
-		F84942FCA45B3041243B3FBD53BA909E /* UIImage+Color.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Color.h"; path = "HungryTools/Classes/Category/UIImage+Color.h"; sourceTree = "<group>"; };
-		F9017D5450EB16D442B40B37284881D3 /* HungryTools-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HungryTools-Info.plist"; sourceTree = "<group>"; };
-		F99EE43528D9FB8A03D16FF05BE17B8A /* HungryTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HungryTools-umbrella.h"; sourceTree = "<group>"; };
 		F9E7364FC22B41FCEDA3C5927930D0BF /* Pods_HungryTools_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_HungryTools_Tests.framework; path = "Pods-HungryTools_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerFinalizable.swift; path = Source/ConstraintMakerFinalizable.swift; sourceTree = "<group>"; };
+		FE415DA2BC11ED4B155E55AEC4127F90 /* ZHCWeakProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ZHCWeakProxy.swift; path = HungryTools/Classes/UITool/ZHCWeakProxy.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0E32D12D417498396AAABD21F7706B84 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E88B8FA81D56FFB6F7125211CE4FF415 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4E742BD80C0EFCDE71759B5FACC8DEF3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9C1B52F438F4F693E3DA854B7C3B01CE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D877639BE5CD59DC98313AA2235E095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BB1C6EE2EFDBD2EC06FAA9D3E77269F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,13 +227,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		929068DE83EB15CE25A2233E6E923EC1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		978052713E8A14F8A8B0C717CB309729 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -294,33 +235,55 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A6A3B16474E61470084D7A4029C3A1F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23F3AC910D642C7F1BF7B491D222E339 /* UITool */ = {
+		1F2EF75CFD909AAEE8D4CE1BBA0708EA /* HungryTools */ = {
 			isa = PBXGroup;
 			children = (
-				0CAE99B5AFEA082A51B350974CEFCA48 /* eye_close@2x.png */,
-				F625CEF316F0BF38000056814669B27D /* eye_open@2x.png */,
-				2E65F9D57E6045014E256236770F6561 /* navi_back@2x.png */,
-				93E52DD24E9D6C6D0F0E40F135581BAA /* ZHCButton.h */,
-				4D171988CCC0F89DDD431C2132B4EB49 /* ZHCButton.m */,
-				1DE16129CD959A7CA240A73EB2C703BF /* ZHCCountingButton.h */,
-				EB7C5647FB241FFEA2EAF8174086521A /* ZHCCountingButton.m */,
-				18FA82A5F46E4DF2286C7905BA1E1038 /* ZHCTextField.h */,
-				9FD770D37CD7BABB5B811FDBF871ED25 /* ZHCTextField.m */,
-				6AAD46FA4E5241E94A82A7B719849621 /* ZHCWebViewController.h */,
-				4D9FD0DEA8138BE30248B448AB98A8F9 /* ZHCWebViewController.m */,
+				8C6FEBA9FCCDDE7990B43B05FE4ECF5A /* Category */,
+				68BA8C89C9D1A2323AEF48E32AFAED26 /* Pod */,
+				29ED55D470C549192BEB3838BE490E3C /* Support Files */,
+				3BC4676E1B343351F1E62D0FC1E9099C /* UITool */,
 			);
-			name = UITool;
+			name = HungryTools;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		344486A0955CC61DE368521B0712819F /* Macro */ = {
+		29ED55D470C549192BEB3838BE490E3C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				9FD451AE1656858B362B10360EDC4EBB /* HungryToolsMacro.h */,
+				9CB9A65AE24D6220E22029FFD7C388FE /* HungryTools.modulemap */,
+				C27D89F85C35B1791F5C0318D6D54A26 /* HungryTools-dummy.m */,
+				CC19C6CA5A8B9C1BCD988F3C2E932AEE /* HungryTools-Info.plist */,
+				44F4692E14F86C8AD3D49FFCEEBFE6D9 /* HungryTools-prefix.pch */,
+				8A8100E07179BCAE4846C4C03EB4D1BC /* HungryTools-umbrella.h */,
+				E221363C1F6E11206CA6CAE16019DF02 /* HungryTools.debug.xcconfig */,
+				56F2E642A2E556E4FF5E7E0DD00C1438 /* HungryTools.release.xcconfig */,
+				D489467938A7704FF523027D63FDCCD3 /* ResourceBundle-Resource-HungryTools-Info.plist */,
 			);
-			name = Macro;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HungryTools";
+			sourceTree = "<group>";
+		};
+		3BC4676E1B343351F1E62D0FC1E9099C /* UITool */ = {
+			isa = PBXGroup;
+			children = (
+				DFD1A130FC16E68684D120AE57850A9B /* eye_close@2x.png */,
+				A16394E3332F5B5683F9169E73A417D9 /* eye_open@2x.png */,
+				291DA2E509597CC5365E0B8CD52F8460 /* navi_back@2x.png */,
+				BE5DDD54D8241B3A9A73F1B1788A9EC1 /* ZHCCountingButton.swift */,
+				04EE2102BE25F48AD49CDF1F6B9215DD /* ZHCTextField.swift */,
+				FE415DA2BC11ED4B155E55AEC4127F90 /* ZHCWeakProxy.swift */,
+			);
+			name = UITool;
 			sourceTree = "<group>";
 		};
 		427B270BD76A5EF45313FBF29233B96D /* Pods */ = {
@@ -329,45 +292,6 @@
 				CA51EB6A266DFF60E2669DC4F20AE5DD /* SnapKit */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		4607421B16011E201D189F497D6EBD2B /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				8E70249E9781670F19F13EBC693312E2 /* NSDate+Format.h */,
-				B5E0371204E223BA49D1E1CF8BB261E3 /* NSDate+Format.m */,
-				43A6C5D7BCCC4A8A195BEDF534AFB794 /* NSString+Attributed.h */,
-				F3783351A8E512A042B49FBB8C777A62 /* NSString+Attributed.m */,
-				0FA7961AE8EBF49938ADE2E5D795428B /* NSString+Check.h */,
-				CD7F7CB7121C14CAAE9FC6ADCAD63D13 /* NSString+Check.m */,
-				935FF6F075B7090581DF9EB7E48283F2 /* NSString+MD5.h */,
-				6108E75EF3F4F76CE607B299E4CF336F /* NSString+MD5.m */,
-				020E97ABFD358909F52DDC744B7F09A5 /* UIAlertController+Show.h */,
-				93B699B696430ED1C6AF0B48E86016EF /* UIAlertController+Show.m */,
-				9D774D5FE320D09E2702CDCFDE3DF783 /* UIButton+Initializer.h */,
-				2E9EF9679D0586768B6E936E14A8AAB1 /* UIButton+Initializer.m */,
-				9082AE8B32F709A049B3E504EBC98941 /* UIImage+Chameleon.h */,
-				AD88B5135CC8161950FEB61E5175D0CB /* UIImage+Chameleon.m */,
-				F84942FCA45B3041243B3FBD53BA909E /* UIImage+Color.h */,
-				A83B61A477B04095252B8721E2300550 /* UIImage+Color.m */,
-				79D7CA2DE1D64E12E55B19E40EDCE466 /* UIImage+Compress.h */,
-				32650EC346F28334AC05D8116FC082E0 /* UIImage+Compress.m */,
-				BBA70A316CF867D615C401CF1ABDA79C /* UILabel+Initializer.h */,
-				2004A8BA86ECE7F44BABF4E36F6394EE /* UILabel+Initializer.m */,
-				121462425F0485A2227F021A93A893CE /* UILabel+Size.h */,
-				BA373405F8AE288F6BC30C6FBA9D9492 /* UILabel+Size.m */,
-				40F6F43647D9DD0CA6D158E7E90509D3 /* UINavigationController+ZHCExtend.h */,
-				2BE32981393A2ED1BF17D0597C3EF6BE /* UINavigationController+ZHCExtend.m */,
-				A2D3F9386EE00DE6CDBFEADB10D7C4AC /* UITableViewCell+SeparatorLine.h */,
-				5911769104D2810C9AE54C792AAF8887 /* UITableViewCell+SeparatorLine.m */,
-				AC891AA40AF610866E4F090540DD7DD1 /* UIView+Initializer.h */,
-				877043C709C0D821650F59E8D636A1E9 /* UIView+Initializer.m */,
-				75A5C0BE53344A9D5EEC8BF87C57BFA1 /* UIViewController+Current.h */,
-				5912A4388FBCEB133A805C6C7AA22DE0 /* UIViewController+Current.m */,
-				EB0FF418FD2D1D88A86FA6BD9C8F38AF /* UIViewController+NavigationItem.h */,
-				B610CB9DF47BE2A121B8751C593337F7 /* UIViewController+NavigationItem.m */,
-			);
-			name = Category;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -395,25 +319,41 @@
 			path = "Target Support Files/Pods-HungryTools_Example";
 			sourceTree = "<group>";
 		};
-		64CF5A05567F634E57D85948094F7D1C /* Development Pods */ = {
+		68BA8C89C9D1A2323AEF48E32AFAED26 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				88EA3B5F2AF5E52C91A3BFE838BCF50C /* HungryTools */,
+				D4CB681D0833B56DDC19C854F3DF3AE2 /* HungryTools.podspec */,
+				4451765D92FBB7A1C2AE4D2C7C1A1516 /* LICENSE */,
+				8BB1EF4B7FA9DDE2531196E1CD59B9A4 /* README.md */,
 			);
-			name = "Development Pods";
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		88EA3B5F2AF5E52C91A3BFE838BCF50C /* HungryTools */ = {
+		8C6FEBA9FCCDDE7990B43B05FE4ECF5A /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				4607421B16011E201D189F497D6EBD2B /* Category */,
-				344486A0955CC61DE368521B0712819F /* Macro */,
-				B710D4A58F3D1966C61E0EC9D94F2718 /* Pod */,
-				CB41D92BD277921806D5FFC69C28DAB3 /* Support Files */,
-				23F3AC910D642C7F1BF7B491D222E339 /* UITool */,
+				56B92206A358393B4A2BB5C4B5B02F28 /* String+Attributed.swift */,
+				7F76D303D9DCAC86D3BCBC081FFE18AC /* String+Check.swift */,
+				63E933933E40E80EB65C99BEB7017FED /* UIButton+Init.swift */,
+				922AF6E4DCC667A31B5B707A0A29D92B /* UIImage+Chameleon.swift */,
+				D161ED360F3CA74DA6A5004AE08F7764 /* UIImage+Color.swift */,
+				2515940CD2AAA2712D2C411094693BD6 /* UIImage+Compress.swift */,
+				65F91718369E320CB905753076FF5D7E /* UIImageView+Init.swift */,
+				E0703EC8B3274A8CE5EA31DF6FDCE7C3 /* UILabel+Init.swift */,
+				4B392852DFF48561179C91023504680F /* UILabel+Size.swift */,
+				C0D6F614852E249569DC8DF1EABF277A /* UITableViewCell+Separator.swift */,
+				EB30DD74EEF65073552F459F14815EA9 /* UIView+Frame.swift */,
+				AF27B50627118D1CAC8DEB0359ED39B9 /* UIView+Init.swift */,
 			);
-			name = HungryTools;
-			path = ../..;
+			name = Category;
+			sourceTree = "<group>";
+		};
+		8E8157860421498DAD40DE02EF135A02 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F2EF75CFD909AAEE8D4CE1BBA0708EA /* HungryTools */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		9B0325E728015A979E9737982637C00A /* Products */ = {
@@ -442,16 +382,6 @@
 			);
 			name = "Pods-HungryTools_Tests";
 			path = "Target Support Files/Pods-HungryTools_Tests";
-			sourceTree = "<group>";
-		};
-		B710D4A58F3D1966C61E0EC9D94F2718 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				234541DF09BE5BAEFE7BE9A1E29BA623 /* HungryTools.podspec */,
-				2BEAF200A8F345B5BF4C687DF7820619 /* LICENSE */,
-				032BED5A3386CADEE08A24B18ACCE092 /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		BCFD650071C290469D0F9409D9C206E7 /* Targets Support Files */ = {
@@ -506,27 +436,11 @@
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
-		CB41D92BD277921806D5FFC69C28DAB3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7D119A95B41DB28AAFA3DDB71493894D /* HungryTools.modulemap */,
-				5C1F6F597C0F71D301C72683FA607683 /* HungryTools-dummy.m */,
-				F9017D5450EB16D442B40B37284881D3 /* HungryTools-Info.plist */,
-				855EFBFECEA6CC4E14C0C8B07DD98EBA /* HungryTools-prefix.pch */,
-				F99EE43528D9FB8A03D16FF05BE17B8A /* HungryTools-umbrella.h */,
-				F49DB892F44D1B34269DE808D32B86A5 /* HungryTools.debug.xcconfig */,
-				3C8469703477ECC0D1F362D8B79A2B0A /* HungryTools.release.xcconfig */,
-				19788F363692C048BCA379C8653C93A3 /* ResourceBundle-Resource-HungryTools-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HungryTools";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				64CF5A05567F634E57D85948094F7D1C /* Development Pods */,
+				8E8157860421498DAD40DE02EF135A02 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				427B270BD76A5EF45313FBF29233B96D /* Pods */,
 				9B0325E728015A979E9737982637C00A /* Products */,
@@ -560,32 +474,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		072C29EB4B774B26EFB697BBBB85E789 /* Headers */ = {
+		13E6FC8FF51B91EF3B4194204A435DEF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				499918AB99C4632A46CC9E76545C1A93 /* HungryTools-umbrella.h in Headers */,
-				19E0FF32DCE5F2830167BAACFAA1F99D /* HungryToolsMacro.h in Headers */,
-				85D816156EB003AFD3BEB49C5BACAAA4 /* NSDate+Format.h in Headers */,
-				31C90DB2FE5D01A319A8643AB3C8902C /* NSString+Attributed.h in Headers */,
-				459251993F0C5643FFEE14517E3D5BB3 /* NSString+Check.h in Headers */,
-				D9F09C01FAEC1511C77A1E22B2A0CE9C /* NSString+MD5.h in Headers */,
-				443B12E6653BE2DEB123DB5000E17C6A /* UIAlertController+Show.h in Headers */,
-				47610A3EB1E90687AC039D84C4702E23 /* UIButton+Initializer.h in Headers */,
-				AC343ED16986694AED6A70894E230844 /* UIImage+Chameleon.h in Headers */,
-				D6D5A2F47CCDAF2ABD2ACE90EB862F7E /* UIImage+Color.h in Headers */,
-				1E7222663E9E895924DA857E0386B479 /* UIImage+Compress.h in Headers */,
-				46801664D88FCFCA53043AEA9585B8B8 /* UILabel+Initializer.h in Headers */,
-				FD38CCAE59BE3F0F9072EF9156033CDA /* UILabel+Size.h in Headers */,
-				5D17047D5ACE00671963B73501F75F2E /* UINavigationController+ZHCExtend.h in Headers */,
-				0CFEFD1FB805716BB68EF02B6994F594 /* UITableViewCell+SeparatorLine.h in Headers */,
-				6DA0F75087CB24EAB71653D038DDF3DB /* UIView+Initializer.h in Headers */,
-				1D09ED03F0947B196F949DC14E8B785F /* UIViewController+Current.h in Headers */,
-				24E9010410406023AFEE5559CBFB1003 /* UIViewController+NavigationItem.h in Headers */,
-				579181D09022722BC1F21C5CFC287E9A /* ZHCButton.h in Headers */,
-				EA3E8235B054000848B54E5C361D4DC8 /* ZHCCountingButton.h in Headers */,
-				0A18C20D1AC4B77CBCC9161F687D711A /* ZHCTextField.h in Headers */,
-				549A1883809D805298CE2F4583A83FA8 /* ZHCWebViewController.h in Headers */,
+				DA5BCCB08B965F20C875FD9EE10683C4 /* HungryTools-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,8 +539,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				5C658883A0D11C946E71080B2DC5C74E /* PBXTargetDependency */,
-				8C3B19BDAE85CF889F00301EE5F1DFE1 /* PBXTargetDependency */,
+				DD8AB22639AD4742D9D572B5FDBC7493 /* PBXTargetDependency */,
+				E920144523C20BB0705D4EA77B4747A2 /* PBXTargetDependency */,
 			);
 			name = "Pods-HungryTools_Example";
 			productName = "Pods-HungryTools_Example";
@@ -656,11 +549,11 @@
 		};
 		768ED5A3788BC29F57FCF01850AB5C5B /* HungryTools-Resource */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3FA2A9668159E7473C331100C4023C8E /* Build configuration list for PBXNativeTarget "HungryTools-Resource" */;
+			buildConfigurationList = 9D63C50809F43D0873B4C8659C2DE39B /* Build configuration list for PBXNativeTarget "HungryTools-Resource" */;
 			buildPhases = (
-				B9F725EE06579A2D63509102476D4CF4 /* Sources */,
-				929068DE83EB15CE25A2233E6E923EC1 /* Frameworks */,
-				B28B2C1CCFCF33284BE708B8377F4201 /* Resources */,
+				65718797D1583A48D95DE0F420C64019 /* Sources */,
+				A6A3B16474E61470084D7A4029C3A1F6 /* Frameworks */,
+				4AA9F60F3E032D08408D0018ED11B11C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -683,7 +576,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				AEB30F8B61A4BF9FA281311806149906 /* PBXTargetDependency */,
+				AC6E0161FC8516AFBF9DB7C016A85C0D /* PBXTargetDependency */,
 			);
 			name = "Pods-HungryTools_Tests";
 			productName = "Pods-HungryTools_Tests";
@@ -692,17 +585,17 @@
 		};
 		C87D517FAFB6788CCD4A2708A65D3DF7 /* HungryTools */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C3271E0F600B29EB29DDD0B175DD34F3 /* Build configuration list for PBXNativeTarget "HungryTools" */;
+			buildConfigurationList = 0BB21BC428001528F48F09598E4FB19C /* Build configuration list for PBXNativeTarget "HungryTools" */;
 			buildPhases = (
-				072C29EB4B774B26EFB697BBBB85E789 /* Headers */,
-				E78944D1A5E856A70F6C3E9571852873 /* Sources */,
-				0E32D12D417498396AAABD21F7706B84 /* Frameworks */,
-				D0374BD1D49F1A6739B64B56B9D25600 /* Resources */,
+				13E6FC8FF51B91EF3B4194204A435DEF /* Headers */,
+				3BFCB07018EEE0575DBEF5EF103CD524 /* Sources */,
+				6D877639BE5CD59DC98313AA2235E095 /* Frameworks */,
+				8C0E34C4EEA29EA46FF2EA94A6F33A56 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3AC85DC229CC7D7101A39E52905D199B /* PBXTargetDependency */,
+				CCA43AD759276A061616BD0E6AC2CB4B /* PBXTargetDependency */,
 			);
 			name = HungryTools;
 			productName = HungryTools;
@@ -748,6 +641,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4AA9F60F3E032D08408D0018ED11B11C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01F3B1B850307ED05C8069BA2E175366 /* eye_close@2x.png in Resources */,
+				A452C6F96A21488DEA2B53459A09D39D /* eye_open@2x.png in Resources */,
+				389ABFA3669C6E37E86D4B798BB5B511 /* navi_back@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6D4600A67059F2F31FEE2AE7ACB9FBA5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -762,21 +665,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B28B2C1CCFCF33284BE708B8377F4201 /* Resources */ = {
+		8C0E34C4EEA29EA46FF2EA94A6F33A56 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B622AC2D7E56933EE962331BC7DC2D57 /* eye_close@2x.png in Resources */,
-				D1BEF8A28FA3276FF0A184802D3CF236 /* eye_open@2x.png in Resources */,
-				DD6FAFA1EF7E4CC92D676B8FA6DE76B3 /* navi_back@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0374BD1D49F1A6739B64B56B9D25600 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E073B33EE0345D5F4688519780346A35 /* Resource.bundle in Resources */,
+				FF76474AB833C2AECC3D9293174D8B54 /* Resource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,6 +681,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E88BEEA64C6DF3148A28EE350C5617B /* Pods-HungryTools_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BFCB07018EEE0575DBEF5EF103CD524 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63ADF9A65B1A4F5054BD013AD0CDBBCC /* HungryTools-dummy.m in Sources */,
+				4EAF1079D2108F98ECFDFDCC617C9B94 /* String+Attributed.swift in Sources */,
+				000AD699F6A5D928D94A05AF120E6EE1 /* String+Check.swift in Sources */,
+				80DD2635585B6B0F2E7DC8BCE6030754 /* UIButton+Init.swift in Sources */,
+				BDF3D3593062B01D68A2F88754BCC433 /* UIImage+Chameleon.swift in Sources */,
+				DE1D39CA69AE1E9026CC382CFFE2B7E7 /* UIImage+Color.swift in Sources */,
+				8EEC16DB8C60EBCD902727F1F3238E32 /* UIImage+Compress.swift in Sources */,
+				A94E3DC4395B0F7B2C890865581C80F1 /* UIImageView+Init.swift in Sources */,
+				16FDB8C6343498EC171FBE23C8A33022 /* UILabel+Init.swift in Sources */,
+				9BFCC14243381E4C44CD957BD89BB0B1 /* UILabel+Size.swift in Sources */,
+				3B60B74FCB08FEC40BE3C5F58DB55A89 /* UITableViewCell+Separator.swift in Sources */,
+				812D1B083CE840E4F14C4220E02DD183 /* UIView+Frame.swift in Sources */,
+				5DD4CCE3CC9225204E9EA2E132ECB375 /* UIView+Init.swift in Sources */,
+				F95BA8A3210CEE8261085E93CF349409 /* ZHCCountingButton.swift in Sources */,
+				C36C5E649B2952FEAC352CB981563A20 /* ZHCTextField.swift in Sources */,
+				698A6C206D05F41E6483061927B0E2E5 /* ZHCWeakProxy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65718797D1583A48D95DE0F420C64019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -841,225 +764,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B9F725EE06579A2D63509102476D4CF4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E78944D1A5E856A70F6C3E9571852873 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AC62496CC36D95CC536FD059547E184D /* HungryTools-dummy.m in Sources */,
-				879A47B7A336FDE6B6D7DFFD233D4BD4 /* NSDate+Format.m in Sources */,
-				A0CFC4313E49F7156025D8D9C6840228 /* NSString+Attributed.m in Sources */,
-				13F469F9BB5FDFABD4316B8D8FD88B99 /* NSString+Check.m in Sources */,
-				95CE8794AD0EE28462D1589AED96885C /* NSString+MD5.m in Sources */,
-				C020D3D949580D556A85532FACE6C071 /* UIAlertController+Show.m in Sources */,
-				11599778FD848C05FE58B5EA9F29A750 /* UIButton+Initializer.m in Sources */,
-				E6E65F81457E392C6AB6149A2EAED6EA /* UIImage+Chameleon.m in Sources */,
-				C988FEAAA78E3EFEEF4FFFF1BBD722C2 /* UIImage+Color.m in Sources */,
-				BD28B6FBD6298C0D8BA1190DE8A6DA86 /* UIImage+Compress.m in Sources */,
-				A6C8D4911217FA49450227988BD25C28 /* UILabel+Initializer.m in Sources */,
-				8DFE87EA98F25A9E9D96B5B7F3A1A144 /* UILabel+Size.m in Sources */,
-				722AD944672328831E68981D74714660 /* UINavigationController+ZHCExtend.m in Sources */,
-				BB3D1EEC5E52C47B4B5785CC34FC6423 /* UITableViewCell+SeparatorLine.m in Sources */,
-				CDB06ABB752181B0E7AF58DDB8E5EE24 /* UIView+Initializer.m in Sources */,
-				B972DBBAE664D39D349EF717DCDC62F4 /* UIViewController+Current.m in Sources */,
-				594380B0966B5975226A1D1AA8DBCFBA /* UIViewController+NavigationItem.m in Sources */,
-				C78E21F1E90540489E7378FCF7021FEB /* ZHCButton.m in Sources */,
-				395012937D43EA836011BDCF163498D4 /* ZHCCountingButton.m in Sources */,
-				3F36C3578F2A3F872CF42C158D1F95D2 /* ZHCTextField.m in Sources */,
-				62B1DBAAC4EF58AF999F49348EEED6F4 /* ZHCWebViewController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3AC85DC229CC7D7101A39E52905D199B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "HungryTools-Resource";
-			target = 768ED5A3788BC29F57FCF01850AB5C5B /* HungryTools-Resource */;
-			targetProxy = 430B1BCD83E06ADF276AFD1175F85DF9 /* PBXContainerItemProxy */;
-		};
-		5C658883A0D11C946E71080B2DC5C74E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HungryTools;
-			target = C87D517FAFB6788CCD4A2708A65D3DF7 /* HungryTools */;
-			targetProxy = 3D29160E425EED6A8E61BCDFA2D391C3 /* PBXContainerItemProxy */;
-		};
-		8C3B19BDAE85CF889F00301EE5F1DFE1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnapKit;
-			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
-			targetProxy = 8BDC978DDB7C8E67F235237A9EC1E995 /* PBXContainerItemProxy */;
-		};
-		AEB30F8B61A4BF9FA281311806149906 /* PBXTargetDependency */ = {
+		AC6E0161FC8516AFBF9DB7C016A85C0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-HungryTools_Example";
 			target = 6C1EB08B9580CAA1091FE8E5809A3CCA /* Pods-HungryTools_Example */;
-			targetProxy = DB7DFAE69D2D9297B4B417FAC54BCF71 /* PBXContainerItemProxy */;
+			targetProxy = 72DC40ACB2A0115308461FC4B4B91C15 /* PBXContainerItemProxy */;
+		};
+		CCA43AD759276A061616BD0E6AC2CB4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HungryTools-Resource";
+			target = 768ED5A3788BC29F57FCF01850AB5C5B /* HungryTools-Resource */;
+			targetProxy = C95FBE1B9D8B56BE3CAE510AC0877FFD /* PBXContainerItemProxy */;
+		};
+		DD8AB22639AD4742D9D572B5FDBC7493 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HungryTools;
+			target = C87D517FAFB6788CCD4A2708A65D3DF7 /* HungryTools */;
+			targetProxy = 788051A9BD32A246FCB1C20F702DBE63 /* PBXContainerItemProxy */;
+		};
+		E920144523C20BB0705D4EA77B4747A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SnapKit;
+			target = 19622742EBA51E823D6DAE3F8CDBFAD4 /* SnapKit */;
+			targetProxy = C4AFCC931C78642DF24A09E3C081265C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0407DA6E18A4C85F7604E1E686C51CB1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F49DB892F44D1B34269DE808D32B86A5 /* HungryTools.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HungryTools";
-				IBSC_MODULE = HungryTools;
-				INFOPLIST_FILE = "Target Support Files/HungryTools/ResourceBundle-Resource-HungryTools-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = Resource;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		475416B4C8F4151F762723F29F73AB89 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82446E9A9DB3B8B5557D8BAD0E878870 /* Pods-HungryTools_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HungryTools_Tests/Pods-HungryTools_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HungryTools_Tests/Pods-HungryTools_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		8998E12874A0F4D2D8141E254C0A2BA7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3383F30CF2D14DDE218A29F11CD0F0F4 /* Pods-HungryTools_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-HungryTools_Example/Pods-HungryTools_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-HungryTools_Example/Pods-HungryTools_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		942BB55BF1E87FAAFF131153EEFB22C9 /* Debug */ = {
+		1BAC1BC2D2955EBF53B47CD8FACDDC6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 935CD06D972B8E7F1D408ACE440C34EF /* Pods-HungryTools_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1070,7 +809,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-HungryTools_Tests/Pods-HungryTools_Tests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HungryTools_Tests/Pods-HungryTools_Tests.modulemap";
@@ -1087,70 +826,7 @@
 			};
 			name = Debug;
 		};
-		97AE333977FAB3E4531FD461D0077D28 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F49DB892F44D1B34269DE808D32B86A5 /* HungryTools.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HungryTools/HungryTools-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HungryTools/HungryTools-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HungryTools/HungryTools.modulemap";
-				PRODUCT_MODULE_NAME = HungryTools;
-				PRODUCT_NAME = HungryTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		9DB51AE4CB01E4595FE7823FFAA2645E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C8469703477ECC0D1F362D8B79A2B0A /* HungryTools.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HungryTools/HungryTools-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HungryTools/HungryTools-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HungryTools/HungryTools.modulemap";
-				PRODUCT_MODULE_NAME = HungryTools;
-				PRODUCT_NAME = HungryTools;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */ = {
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -1203,7 +879,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1216,13 +892,90 @@
 			};
 			name = Debug;
 		};
-		D58B3F2067FB86E5E84F92C623E5C235 /* Release */ = {
+		435D1FF9131A13467631D984053ADFE2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B7F46A97D3414DFA0171221E38266733 /* Pods-HungryTools_Example.release.xcconfig */;
+			baseConfigurationReference = 82446E9A9DB3B8B5557D8BAD0E878870 /* Pods-HungryTools_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HungryTools_Tests/Pods-HungryTools_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HungryTools_Tests/Pods-HungryTools_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46CF3C31DA1EC7CDEFF1585EFF3184D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
+				PRODUCT_MODULE_NAME = SnapKit;
+				PRODUCT_NAME = SnapKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		72A7EAFCC82E84E7009247E779868CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F2E642A2E556E4FF5E7E0DD00C1438 /* HungryTools.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HungryTools";
+				IBSC_MODULE = HungryTools;
+				INFOPLIST_FILE = "Target Support Files/HungryTools/ResourceBundle-Resource-HungryTools-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = Resource;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		74895E013A9E61F1896133EAAE7BDFB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3383F30CF2D14DDE218A29F11CD0F0F4 /* Pods-HungryTools_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1233,7 +986,100 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-HungryTools_Example/Pods-HungryTools_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-HungryTools_Example/Pods-HungryTools_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8483E9448FDC598328BA5A40EF8E119B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E221363C1F6E11206CA6CAE16019DF02 /* HungryTools.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HungryTools/HungryTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HungryTools/HungryTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HungryTools/HungryTools.modulemap";
+				PRODUCT_MODULE_NAME = HungryTools;
+				PRODUCT_NAME = HungryTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8EDAF49DD85DCAA61836286467ADB304 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F2E642A2E556E4FF5E7E0DD00C1438 /* HungryTools.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HungryTools/HungryTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HungryTools/HungryTools-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HungryTools/HungryTools.modulemap";
+				PRODUCT_MODULE_NAME = HungryTools;
+				PRODUCT_NAME = HungryTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		949CC16844405C4BCD4ACA8EF1F56CE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7F46A97D3414DFA0171221E38266733 /* Pods-HungryTools_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-HungryTools_Example/Pods-HungryTools_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-HungryTools_Example/Pods-HungryTools_Example.modulemap";
@@ -1251,40 +1097,9 @@
 			};
 			name = Release;
 		};
-		EBB89A8735B53F57FAA37BB11C50437F /* Debug */ = {
+		9F4E827428CE48F681730BCE42659B4F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SnapKit/SnapKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapKit/SnapKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SnapKit/SnapKit.modulemap";
-				PRODUCT_MODULE_NAME = SnapKit;
-				PRODUCT_NAME = SnapKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EC75EB41117CB73F45989B342798C389 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C8469703477ECC0D1F362D8B79A2B0A /* HungryTools.release.xcconfig */;
+			baseConfigurationReference = E221363C1F6E11206CA6CAE16019DF02 /* HungryTools.debug.xcconfig */;
 			buildSettings = {
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HungryTools";
 				IBSC_MODULE = HungryTools;
@@ -1296,13 +1111,12 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
+			name = Debug;
 		};
-		EDC1B430EAE0589383570E33172E090B /* Release */ = {
+		AB1FA7C79A5390BE00F2DFF24DBB3272 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1330,23 +1144,85 @@
 			};
 			name = Release;
 		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		31C2F67A24EFF2D5F6410E6A9D00BB2A /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
+		0BB21BC428001528F48F09598E4FB19C /* Build configuration list for PBXNativeTarget "HungryTools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBB89A8735B53F57FAA37BB11C50437F /* Debug */,
-				EDC1B430EAE0589383570E33172E090B /* Release */,
+				8483E9448FDC598328BA5A40EF8E119B /* Debug */,
+				8EDAF49DD85DCAA61836286467ADB304 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3FA2A9668159E7473C331100C4023C8E /* Build configuration list for PBXNativeTarget "HungryTools-Resource" */ = {
+		31C2F67A24EFF2D5F6410E6A9D00BB2A /* Build configuration list for PBXNativeTarget "SnapKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0407DA6E18A4C85F7604E1E686C51CB1 /* Debug */,
-				EC75EB41117CB73F45989B342798C389 /* Release */,
+				46CF3C31DA1EC7CDEFF1585EFF3184D8 /* Debug */,
+				AB1FA7C79A5390BE00F2DFF24DBB3272 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1354,17 +1230,17 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4EFE046ACF8F37157F6E322C7FCFC28 /* Debug */,
-				903A0004D3E6651EFD5D2E16214D101B /* Release */,
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C3271E0F600B29EB29DDD0B175DD34F3 /* Build configuration list for PBXNativeTarget "HungryTools" */ = {
+		9D63C50809F43D0873B4C8659C2DE39B /* Build configuration list for PBXNativeTarget "HungryTools-Resource" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97AE333977FAB3E4531FD461D0077D28 /* Debug */,
-				9DB51AE4CB01E4595FE7823FFAA2645E /* Release */,
+				9F4E827428CE48F681730BCE42659B4F /* Debug */,
+				72A7EAFCC82E84E7009247E779868CED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1372,8 +1248,8 @@
 		D085C1B4282A74071CF31CD82B6E7753 /* Build configuration list for PBXNativeTarget "Pods-HungryTools_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				942BB55BF1E87FAAFF131153EEFB22C9 /* Debug */,
-				475416B4C8F4151F762723F29F73AB89 /* Release */,
+				1BAC1BC2D2955EBF53B47CD8FACDDC6D /* Debug */,
+				435D1FF9131A13467631D984053ADFE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1381,8 +1257,8 @@
 		EB2B23C363AFC56A1E85778B2B033251 /* Build configuration list for PBXNativeTarget "Pods-HungryTools_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8998E12874A0F4D2D8141E254C0A2BA7 /* Debug */,
-				D58B3F2067FB86E5E84F92C623E5C235 /* Release */,
+				74895E013A9E61F1896133EAAE7BDFB5 /* Debug */,
+				949CC16844405C4BCD4ACA8EF1F56CE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

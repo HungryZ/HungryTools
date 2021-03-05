@@ -3,13 +3,11 @@ PODS:
     - HungryTools/Category (= 1.4.2)
     - HungryTools/UITool (= 1.4.2)
   - HungryTools/Category (1.4.2)
-  - HungryTools/Macro (1.4.2)
   - HungryTools/UITool (1.4.2)
   - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - HungryTools (from `../`)
-  - HungryTools/Macro (from `../`)
   - SnapKit
 
 SPEC REPOS:
@@ -24,6 +22,6 @@ SPEC CHECKSUMS:
   HungryTools: 1df6edf09ce5a4b645562995e67f4ffe11ac9555
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 7b94cb07366420b87ab5a25f5402d5460fab968d
+PODFILE CHECKSUM: d509afe895e9812d2300e3841a86d7d7a8add08c
 
 COCOAPODS: 1.10.1

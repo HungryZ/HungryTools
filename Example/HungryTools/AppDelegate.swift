@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  HungryTools
 //
-//  Created by Hungry on 02/09/2020.
-//  Copyright (c) 2020 Hungry. All rights reserved.
+//  Created by zhanghaichuan on 03/05/2021.
+//  Copyright (c) 2021 zhanghaichuan. All rights reserved.
 //
 
 import UIKit
@@ -16,12 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let navi = UINavigationController(rootViewController: HomeViewController())
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navi
-        window?.makeKeyAndVisible()
-        
         return true
     }
 
